@@ -436,6 +436,24 @@ footer {
     position: absolute;
     right: .2rem; }
 
+/*---------------ABOUT US HTML--------------*/
+.content {
+  position: relative; }
+
+.forLogoImg {
+  margin-top: 5rem;
+  shape-outside: circle();
+  clip-path: circle();
+  height: 10em;
+  width: 10em;
+  float: left;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 1em transparent; }
+  .forLogoImg img {
+    width: 115%; }
+
 @media only screen and (min-width: 35rem) {
   body {
     font-size: 15px; }
