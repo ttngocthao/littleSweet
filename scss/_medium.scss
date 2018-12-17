@@ -1,0 +1,138 @@
+body{
+    font-size: 15px;
+}
+
+/*------------------ HEADER -----------------*/
+#logo{
+    margin: 0;
+}
+header #logo img{
+    width: 5rem;
+ }
+/*------------------ NAVIGATION -----------------*/
+.menuIcon{
+    display: none;
+}
+.navBar{
+    width:auto;
+    text-align: center;
+    
+    float:right;
+    top:1.8rem;
+    right: 0;
+    text-align: right;
+    transition: .5s linear; 
+    background-color: transparent;
+
+    ul li{
+        display: inline-block;
+        color: $secondaryColor;
+        padding: .5rem .7rem;
+        transition: .3s;
+        font-size: 1rem;       
+    }
+
+    ul li:hover{
+        background-color: transparent;
+        border-bottom: 2px double white;
+
+    }
+    ul a:hover li{
+        color: lighten($lemonColor,40%);
+    }
+    
+}
+/*------------------- MAIN ----------------*/
+
+/*--------------HOME CONTENT ----------*/
+#home {
+    width: 90%;
+    padding:1rem;
+    
+    h1{
+        clear:both;
+    }
+
+    .deco-line {
+        width:100%;
+        top:2.9rem;
+    }
+}
+/*-------------------SLIDE SHOWS---------------*/
+.banner img{
+    width:100%;
+}
+.banner {
+    margin-top: 2rem;
+}
+#slide {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  align-items: center;
+  
+  .info{
+    line-height: 1.5rem;
+  }
+  
+}
+
+/*------------------FLAG----------------------*/
+.flag{
+    width: 45%;
+    margin: 1rem auto 1.5rem 2rem;
+}
+/*------------------OPEN HOURs--------------*/
+.location .grid{
+    display:grid;
+    grid-template-columns: repeat(2,50% 50%);
+    align-items: center;
+    background-color: $secondaryColor;
+    margin: 0 auto 1.5rem auto;
+
+}
+.location .grid div:first-child{
+    line-height: 1.5rem;
+    margin:.5rem 0;
+    padding:0;
+    text-align: center;
+    span{
+        position: relative;
+       left:1rem;
+    }
+}
+/*---MAP---*/
+#map{
+    margin:0;
+    height: 11.6rem;
+}
+/*-------------CONTACT AREA------------*/
+.contact{
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,50% 50%);
+        align-items: center;
+    }
+
+    .address{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}
+/*-----------SOCIAL MEDIA---------*/
+.media ul{
+   text-align: center;
+}
+.media ul li i{
+    font-size: 1.6rem;
+    padding: .2rem 0;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+/*-----------FOOTER--------*/
+footer{
+    padding:1em .5rem;
+    font-size: .7rem;
+}

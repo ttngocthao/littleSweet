@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{margin:0; padding:0;}
+        .photoGrid{
+            width:100%;
+            font-size: 0;   
+            grid-template-columns: 22.915% 37.671% auto;
+            display: grid;
+            grid-template-areas: "pic1 pic2 pic4"
+                                 "pic3 pic3 pic4";
+            
+        }
+        .photo1{
+            grid-area: pic1;
+            font-size:0;
+        }
+        .photo2{
+            grid-area: pic2;
+        }
+        .photo3{
+            grid-area: pic3;
+        }
+        .photo4{
+            grid-area: pic4;
+        }
+        .photo1 img, .photo2 img, .photo3 img, .photo4 img{
+            width: 100%;
+            object-fit:cover;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class='photoGrid'>
+        <div class='photo1'><img src='images/dessert.png'></div>
+        <div class='photo2'><img src='images/pieping.png'></div>
+        <div class='photo3'><img src='images/macaron.png'></div>
+        <div class='photo4'><img src='images/choco.png'></div>
+        
+    </div>
+
+    <div>grid-template-columns: 22.91% 37.67% 39.42%;
+            grid-template-rows: 43.3% 54%;</div>
+</body>
+</html>

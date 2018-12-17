@@ -1,0 +1,178 @@
+/*prevent adjustments of font size after oreientation changes in IE on windows phone and ios*/
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%};
+
+/*apply a natural box layout model to all elements*/
+*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;margin:0; padding:0;}
+
+/*------------------- BODY ----------------------*/
+body{
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: repeat(3, 30% auto 10%)
+
+}//end of body
+
+
+
+/*------------------- HEADER ----------------------*/
+header{
+    width:100%;
+    position: fixed;
+    background-color:$primaryColor;
+    top:0;
+}
+
+#logo{
+    margin: .2rem 0;
+    width: 25%;
+    // background-color: red;
+}
+// #logo img{
+//     width:100%;
+// }
+#menuIcon {
+    position: absolute;
+    right:0;
+    top:.3rem;
+    margin: $gutter;
+}
+#menuIcon div{
+    width: 35px;
+    margin: 4px 0;
+    background-color:white;
+    height: 4px;
+    border-radius: 10px;
+}
+
+
+/*------------------ NAVIGATION -----------------*/
+// #nav-bar{
+//     background-color:$lemonColor;
+   
+// }
+// #nav-bar ul li{
+//     width: 100%;
+//     text-align: center;
+//     padding: .5rem;
+
+
+// }
+// #nav-bar a{
+//     text-decoration: none;
+// }
+
+
+
+/*------------------------- MAIN -------------------------*/
+
+
+
+
+
+/*-----------------------BANNER-----------------------*/
+.banner {
+    clear: both;
+    width: 100%;
+    position: relative;
+   
+  }
+  .slideShow{
+    // transition: 1s ease-in;
+    opacity:1;
+    // position: absolute;
+    background-color: red;
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(2,60% 40%);
+   
+  }
+
+/*---------------CONTACT US----------------*/
+// .contact{
+//     clear: both;
+//     position: relative;
+//     padding: 2% 0;
+//     background-color: $primaryColor;
+//     width: 100%;
+//     bottom: 5%;
+//     left:0;
+// }
+// .wrapper div{
+//     width: 48%;
+//     float: left;
+//     margin: 1%;    
+// }
+// .openHours,.address{
+//     background-color: $lemonColor;
+//    h5{text-align: center;}
+// }
+// .openHours p, .address p{
+//     margin:1% 4%;
+// }
+// .openHours span{
+//     position: absolute;
+//     left: 25%;
+// }
+// .address{
+//     text-align: center;
+//     i{
+//         margin: 0 2%;
+//     }
+// }
+// .media{
+//     clear: left;
+//     position: absolute;
+    
+//     bottom:1%;
+// }
+// .media ul{
+//     list-style: none;
+    
+//     text-align: center;
+    
+// }
+// .media ul li{
+//     display: inline-block;
+//     margin: 0 4%;
+
+// }
+// .media ul li i{
+//     font-size: 1.2rem;
+//     border: 2px solid $lemonColor;
+//     color: $fontColor;
+//     text-align: center;
+//     border-radius: 50%;
+//     background-color:lighten($primaryColor,20%);
+//     padding: .1rem 0;
+//     height: 1.8rem;
+//     width: 1.8rem;
+// }
+// #map{
+//     height: 100px;
+//     background-color: red;
+// }
+
+
+
+
+
+
+
+/*-------------------- FOOTER ------------------------------*/
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
