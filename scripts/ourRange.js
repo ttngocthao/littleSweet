@@ -1,14 +1,6 @@
+
 //clb -> celebration, ch -> children
-// var celebrationArray=[
-//     {itemId: 'clb1', name:'Birthday',price:12, info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
-//     {itemId: 'clb2', name:'Wedding',price:58, info:'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-// ];
-var childrenArray=[
-    {itemId: 'ch1',name:'Mermaid',price:26,info:' Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '},
-    {itemId: 'ch2',name:'Dragon',price:30,info:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-]
-
-
+//get data from json file.
 var xhr = new XMLHttpRequest();
 
 xhr.open('GET','./api/cakes.json',true);
@@ -17,10 +9,13 @@ xhr.responseType='text';
 xhr.onload = function(){
     if(xhr.status===200){
         var cakes= JSON.parse(xhr.responseText);
+        var showCake= document.getElementById('showCake');
+        var choice = document.getElementById('cakeList');
+
         choice.addEventListener('change',function(){
             var cakeArray;
-        
-            //get the right array base on the value of the selected option
+            //get a right object from json base on the value of the selected option
+            //index=0 : celebration
             switch(choice.value){
                 case "celebrationList":
                 cakeArray= cakes[0]
@@ -45,12 +40,8 @@ xhr.onload = function(){
 
 xhr.send();
 
-var showCake= document.getElementById('showCake');
-var choice = document.getElementById('cakeList');
-//this function gets the right cake list based on the value of the selected option
-function getCakeList(x,y){
-    
-}
+
+
 //this function creates a template for each product
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
