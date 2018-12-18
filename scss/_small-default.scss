@@ -211,7 +211,7 @@ main{
 }
 
 /*---------------HOME CONTENT-----------*/
-#home {
+.content {
     margin: 2% auto;
     padding:0 1rem;
     text-align: right;
@@ -219,7 +219,7 @@ main{
     position: relative;
 }
 
-#home h1{
+.content h1{
     font-size: 1.8rem;
     color:$primaryColor;
     padding:.5rem 0;
@@ -232,7 +232,7 @@ main{
     // border-bottom: 5px solid transparent;
     // border-image: radial-gradient($lemonColor,white) 1;
 }
-#home .deco-line {    
+.content .deco-line {    
     border-bottom: 2px dotted $lemonColor;
     // border-image: radial-gradient($lemonColor,white) 1;
     position: absolute;
@@ -242,7 +242,7 @@ main{
     width: 94%;
     z-index: -5;
 }
-#home div{
+.content div{
     margin: 1rem auto;
     text-align: center;
 }
@@ -385,21 +385,105 @@ footer{
 }
 
 /*---------------ABOUT US HTML--------------*/
-.content{
-    position: relative;
+#aboutUs{
+    margin-top: 1.5rem;
 }
-.forLogoImg{
-  margin-top:5rem;
+   
+.forLogoImg{  
   shape-outside:circle();
   clip-path:circle();
-  height: 10em;
-  width:10em;
+  height: 10rem;
+  width:10rem;
   float:left;
-  background-image: url('./images/logo.png');
-  background-size:cover;
+  position: relative;
   border-radius:50%;
-  border: solid 1em transparent;
-  img{
-      width:115%;
-  }
+  border: solid .5rem transparent;
+    
+    img{
+        position: relative;
+        width: 90%;
+        top: 1rem;
+    }
+  
+}
+
+.forCakeTowerImg{
+    
+    img{
+        width: 60%;
+    }
+}
+
+//our clients
+.clientLogo{
+
+    ul li{
+        float:left;
+        width: 50%;
+        margin: .5rem auto;
+        list-style: none;
+        
+    }
+    img{
+        width: 75%;
+        border-radius: 50%;
+        box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.657);
+        border: 2px solid #dcb3399b;
+        transition: .3s;
+    }
+
+    ul li:hover img{
+        transform: scale(1.2);
+        border:3px dotted $lemonColor;
+        cursor: pointer;
+
+    }
+}
+
+/*---------------OUR RANGES----------*/
+/*-------- Search box --------*/ 
+input[name=searchBar] {
+    width: 1rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    background-image: url('../images/searchIconSmall.png'), linear-gradient(white,rgb(199, 199, 199));
+    background-position: 0px 4px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[name=searchBar]:focus {
+    width: 50%;
+    background-color:$secondaryColor;
+    border: $primaryColor;
+    background-image:  url('../images/searchIconSmall.png');
+}   
+
+/*-------CAKE'S INFORMATION BOX------*/
+.infoBox{
+    display:none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: lightblue;
+}
+.infoContent{
+    border:2px solid red;
+    background-color: lightpink;
+    margin: 25% auto;
+    padding: 2rem;
+    width: 80%;
+}
+.infoContent .closeBtn{
+    float:right;
+    cursor: pointer;
+    font-weight:bold;
 }

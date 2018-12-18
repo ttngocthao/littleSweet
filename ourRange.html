@@ -1,4 +1,71 @@
-<section class='content' id='home' style='clear:left;'>
-    <h1>{{message}}</h1>
-    <div class='deco-line'></div>
-</section>
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <!--TELL PHONES NOT TO LIE ABOUT THEIR WIDTH-->
+        <meta name="viewport" content="width=device-width,intial-scale=1,maximum-scale=1">
+        <meta charset="utf-8">
+        <title>Little Sweet</title>
+        <link rel="icon" href="images/logoIcon.png">
+        <!--EMBED GOOGLE FONT-->
+        <link href="https://fonts.googleapis.com/css?family=Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+         <!--EMBED FONT AWESOME-->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+        <!-- STYLE SHEETS-->
+        <link href='css/styles.css' rel='stylesheet'>
+        <!--EMBED JQUERY-->
+    </head>
+
+    <body>
+        <!--page header goes here-->
+        <header>
+            <!-- <?php include 'header.php';?> -->
+            <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
+                <div class='menuIcon'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            <nav class='navBar'>            
+                <ul>
+                    <a href='index.html'><li>Home</li></a>
+                    <a href='aboutUs.html' ><li>About Us</li></a>
+                    <a href='ourRange.html'class='active'><li>Our Ranges</li></a>
+                    <a href='#'><li>Catering</li></a>
+                    <a href='#'><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                 <section class='content' id='ourRange' style='clear:left;'>
+                        <h1>Our Ranges</h1>
+                        <div class='deco-line'></div>
+                        <select id='cakeList'>
+                            <option value=''>Choose a type</option>
+                            <option value='celebrationList'>Celebration Cakes</option>
+                            <option value='childrenList'>Children Cakes</option>
+                            <option value='dessertList'>Desserts</option>
+                            <option value='savouryList'>Savouries</option>    
+                            <option value='cupcakeList'>Cupcakes</option>    
+                            <option value='muffinList'>Muffins</option>    
+                            <option value='macaronList'>Macarons</option>    
+                            <option value='cateringList'>Catering</option>    
+                        </select>
+                        <form id='searchCake'><input name='searchBar' type="text" placeholder="Search.."></form>      
+                </section>
+                <section class='content'>
+                    <div id='showCake'></div>
+                </section>
+        </main>
+
+         <!--Page footer goes here-->
+        <footer style='clear:both'>
+                <!-- <?php include 'footer.php';?>  -->
+                <p>@Copyright 2018 <span>WebDeveloper@thaotruong.uk</span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src='scripts/menuToggle.js'></script>
+        <script src='scripts/ourRange.js'></script>
+    </body>
+</html>

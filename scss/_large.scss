@@ -11,7 +11,7 @@
 
  /*-----------------HOME CONTENT------------*/
  //slide show   
- #home div{
+ .content div{
     font-size: 1rem;
     line-height: 2em;
  }   
@@ -19,3 +19,22 @@
     width: 70%;
     line-height: 2rem;
 } 
+/*-------------ABOUT US------------*/
+.forLogoImg{  
+   
+   height: 15rem;
+   width: 15rem;
+   position: relative;
+     
+     img{
+         position: relative;
+         top: 1rem;
+         width: 80%;
+     }
+   
+ }
+ .clientLogo{
+    img{
+        width: 60%;
+    }
+}

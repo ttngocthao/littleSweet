@@ -1,40 +1,57 @@
 //clb -> celebration, ch -> children
-var celebrationArray=[
-    {itemId: 'clb1', name:'Birthday',price:12, info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
-    {itemId: 'clb2', name:'Wedding',price:58, info:'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-];
+// var celebrationArray=[
+//     {itemId: 'clb1', name:'Birthday',price:12, info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
+//     {itemId: 'clb2', name:'Wedding',price:58, info:'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+// ];
 var childrenArray=[
     {itemId: 'ch1',name:'Mermaid',price:26,info:' Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '},
     {itemId: 'ch2',name:'Dragon',price:30,info:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
 ]
 
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET','./api/cakes.json',true);
+xhr.responseType='text';
+
+xhr.onload = function(){
+    if(xhr.status===200){
+        var cakes= JSON.parse(xhr.responseText);
+        choice.addEventListener('change',function(){
+            var cakeArray;
+        
+            //get the right array base on the value of the selected option
+            switch(choice.value){
+                case "celebrationList":
+                cakeArray= cakes[0]
+                break;
+                
+                case "childrenList":
+                cakeArray= cakes[1]
+                break;
+            }
+        
+            //loop through an array to print out all items
+            showCake.innerHTML = `
+                <h2>${choice.options[choice.selectedIndex].text}</h2>
+                ${cakeArray.map(cakeTemplate).join('')}   
+            `
+            //render the information box
+            clickInfoBtn();
+           
+        })
+    }
+}
+
+xhr.send();
+
 var showCake= document.getElementById('showCake');
 var choice = document.getElementById('cakeList');
-
-choice.addEventListener('change',function(){
-    var cakeArray;
-
-    //get the right array base on the value of the selected option
-    switch(choice.value){
-        case "celebrationList":
-        cakeArray= celebrationArray
-        break;
-        
-        case "childrenList":
-        cakeArray= childrenArray
-        break;
-    }
-
-    //loop through an array to print out all items
-    showCake.innerHTML = `
-        <h1>${choice.options[choice.selectedIndex].text}</h1>
-        ${cakeArray.map(cakeTemplate).join('')}   
-    `
-    //render the information box
-    clickInfoBtn();
-   
-})
-
+//this function gets the right cake list based on the value of the selected option
+function getCakeList(x,y){
+    
+}
+//this function creates a template for each product
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
                 <h3>${cakeChoice.name}</h3>
