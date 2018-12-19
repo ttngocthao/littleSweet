@@ -9,23 +9,6 @@ var Item = function(id, name, price, count){
     this.count = count;
 }
 
-//this function add a click event to a addToCart Btn
-function addToCartBtn(){
-    event.preventDefault();
-    var btns = document.getElementsByClassName('addToCartBtn');
-    //loop through the addToCartBtn to add a click event to each btn
-    for (var i = 0; i < btns.length; i++){
-        btns[i].addEventListener('click', function(){
-            var idNo= this.getAttribute('dataId');
-            var name= this.getAttribute('dataName');
-            var price= this.getAttribute('dataPrice');
-            addItemToCart(idNo,name,price,1);
-            console.log(cart);   
-        })
-    } 
-      
-}
-
 //function add Item to cart
 function addItemToCart(id, name, price, count){
     for(var i in cart){
@@ -50,11 +33,14 @@ function countCart(){
     return totalCount;
 }
 
-//
-function displayCountCart(){
-    
-    //when the item is added, show how many items in basket
-    document.getElementById('cartIcon').innerHTML=countCart();
+//function returns the total cost of the items in cart
+
+function totalCost(){
+    var totalCost=0;
+    for(var i in cart){
+        totalCost += cart[i].price * cart[i].count
+    }
+    return totalCost;
 }
 
 //listCart()--> create a copy of cart
@@ -62,8 +48,7 @@ function listCart(){
     var cartCopy =JSON.parse(JSON.stringify(cart));
     return cartCopy;
 }
-var array = listCart()
-console.log(array);
+
 //save the cart into local storage
 function saveCart(){
     //shoppingCart is the data name in local storage
@@ -73,4 +58,44 @@ function saveCart(){
 //get the cart out from local storage
 function loadCart(){
     cart=JSON.parse(localStorage.getItem('shoppingCart'))
+}
+
+//**************************************//
+loadCart();
+displayCart();
+displayCountCart();
+
+//this function add a click event to a addToCart Btn
+function addToCartBtn(){
+    
+    var btns = document.getElementsByClassName('addToCartBtn');
+    //loop through the addToCartBtn to add a click event to each btn
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            event.preventDefault();
+            var idNo= this.getAttribute('dataId');
+            var name= this.getAttribute('dataName');
+            var price= this.getAttribute('dataPrice');
+            addItemToCart(idNo,name,price,1);
+            displayCart();
+            displayCountCart(); 
+
+        })
+    }   
+}
+
+
+function displayCart(){
+    //using a copy of the cart to display
+    var cartArray = listCart();
+    var output='';
+    for(var i in cartArray){
+        output +='<div>'+cartArray[i].name + '  ' + cartArray[i].count+'</div>'
+    }
+    document.getElementById('cartList').innerHTML= output;
+    document.getElementById('cartTotal').innerHTML =  totalCost();
+}
+
+function displayCountCart(){
+    document.getElementById('cartCount').innerHTML=countCart();
 }
