@@ -1,88 +1,76 @@
+//variable to hold the items in cart.
 var cart=[];
-var Item =function(name, price, count){
+
+//object constructor
+var Item = function(id, name, price, count){
+    this.id= id;
     this.name = name;
-    this.price =price;
+    this.price = price;
     this.count = count;
 }
-//addItemToCart(name,price,count)
-function addItemToCart(name,price,count){
-   for(var i in cart){
-       if(cart[i].name === name){
-           cart[i].count += count;
-           return;
-       }
-   }
-   var item = new Item(name,price,count);
-   cart.push(item);
-}
-addItemToCart('Apple',1.87,1);
-addItemToCart('Pear', 1.5, 3);
-addItemToCart('Apple',1.87,3);
-addItemToCart('Orange',1,1);
-addItemToCart('Apple',1.87,1);
-addItemToCart('Pear',1.5,5);
 
-
-
-//removeItemFromCart(name) //remove one amount of the particular item only
-function removeItemFromCart(name){
-   for(var i in cart){
-       if(cart[i].name === name){
-           cart[i].count --;
-           if(cart[i].count == 0){
-               removeItemFromCartAll(name);
-           }
-           break;
-       }
-   }
+//this function add a click event to a addToCart Btn
+function addToCartBtn(){
+    event.preventDefault();
+    var btns = document.getElementsByClassName('addToCartBtn');
+    //loop through the addToCartBtn to add a click event to each btn
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener('click', function(){
+            var idNo= this.getAttribute('dataId');
+            var name= this.getAttribute('dataName');
+            var price= this.getAttribute('dataPrice');
+            addItemToCart(idNo,name,price,1);
+            console.log(cart);   
+        })
+    } 
+      
 }
 
-
-//removeItemFromCartAll(name)  //removes all item name
-function removeItemFromCartAll(name) {
+//function add Item to cart
+function addItemToCart(id, name, price, count){
     for(var i in cart){
-        if(cart[i].name === name){
-            cart.splice(i,1);
-            break;
+        if(cart[i].id === id){
+            cart[i].count +=count;
+            saveCart();
+            return;            
         }
     }
+    var item = new Item(id, name, price, count);
+    cart.push(item);  
+    saveCart(); 
 }
 
-//clearCart()
-function clearCart(){
-    cart = [];
-}    
-
-//countCart() -> return total count
+//function to count how many items in cart --> return total items count
 function countCart(){
-   var totalCount=0;
-   for(var i in cart){
-       totalCount += cart[i].count;
-   }
-   return totalCount;
+    //then count the item in local storage
+    var totalCount= 0;
+    for(var i in cart){
+        totalCount += cart[i].count;
+    }
+    return totalCount;
 }
-console.log(cart)
-console.log(countCart());
 
-//totalCost() -> return total cost
-function totalCost(){
-   var totalCost = 0;
-   for(var i in cart){
-       totalCost += cart[i].price* cart[i].count
-   }
-   return totalCost
+//
+function displayCountCart(){
+    
+    //when the item is added, show how many items in basket
+    document.getElementById('cartIcon').innerHTML=countCart();
 }
-console.log(totalCost());
-//listCart() -> return array of Item
+
+//listCart()--> create a copy of cart
 function listCart(){
-   //I stop here...
+    var cartCopy =JSON.parse(JSON.stringify(cart));
+    return cartCopy;
 }
-//saveCart() -> use local storage to store
+var array = listCart()
+console.log(array);
+//save the cart into local storage
+function saveCart(){
+    //shoppingCart is the data name in local storage
+    localStorage.setItem('shoppingCart',JSON.stringify(cart));
+}
 
-//loadCart()
-
-
-
-
-
-
+//get the cart out from local storage
+function loadCart(){
+    cart=JSON.parse(localStorage.getItem('shoppingCart'))
+}
