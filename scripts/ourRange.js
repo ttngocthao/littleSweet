@@ -37,6 +37,7 @@ xhr.onload = function(){
 
             addToCartBtn();
 
+            document.getElementById('searchInput').addEventListener('keyup',searchCake);
 
          
            
@@ -51,7 +52,7 @@ xhr.send();
 //this function creates a template for each product
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
-                <h3>${cakeChoice.name}</h3>
+                <h3 class='cakeName'>${cakeChoice.name}</h3>
                 <h5>${cakeChoice.price}</h5>
                 <button class='infoBtn' id='infoBtn${cakeChoice.itemId}'>More Info</button>
                 <button class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'>Add to basket</button>              
@@ -115,11 +116,28 @@ function renderInfoBox(index){
 }
 
 //search Cake
-// var searchBar = document.forms['searchCake'].querySelector('input');
-// searchBar.addEventListener('keyup',function(e){
-//     var term = e.target.value.toLowerCase();
-//     var items = document.getElementsByClassName('item');
-// })
+function searchCake(){
+    var input = document.getElementById("searchInput");
+     //get the value from the input element, capitalise that
+ var filter = input.value.toUpperCase();
+ var listItem= document.getElementById('showCake');
+ var items= listItem.getElementsByClassName('item')
+ for (var i=0; i<items.length;i++){
+   var names = items[i].getElementsByClassName('cakeName');
+   for (var j=0; j<names.length;j++){
+     var name=names[j].innerText
+     if(name.toUpperCase().indexOf(filter) > -1){
+       // names[j].style.display='';
+       items[i].style.display='';
+     }else{
+       items[i].style.display='none';
+       // names[j].style.display='none';
+     }
+   }
+   
+   
+ }
+  }
 
 
 
