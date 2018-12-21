@@ -39,10 +39,25 @@
 
         <main>
             <section class='shoppingCart'>
-                <div class='cartIcon' id='cartCount'>0</div>
-                <button id='clearCartBtn'>Clear Cart</button>
+                <div id='cartIcon'><span id='cartCount'>0</span> <button id='clearCartBtn'>Clear Cart</button></div>
+                
                 <div id='showCart'>
-                    <div id='cartList'>Cart is empty</div>
+                    <!-- <div id='cartList'>Cart is empty</div> -->
+                    <table>
+                        <tr>
+                            <th>Pic</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th></th>
+                            <th></th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tbody id='tableContent'>
+
+                        </tbody>
+                    </table>
                     <div>Total Cost: £ <span id='cartTotal'></span></div>
                 </div>
             </section>

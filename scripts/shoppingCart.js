@@ -67,7 +67,7 @@ function totalCost(){
     for(var i in cart){
         totalCost += cart[i].price * cart[i].count
     }
-    //toFixed(2) round the answer to 2dp
+    //toFixed(2) round the number to 2dp
     return totalCost.toFixed(2);
 }
 
@@ -89,7 +89,7 @@ function removeItem(id){
     saveCart();
 }
 
-//listCart()--> create a copy of cart
+//listCart()--> create a copy of cart to show
 function listCart(){
     var cartCopy =JSON.parse(JSON.stringify(cart));
     for ( var i in cartCopy){
@@ -133,24 +133,26 @@ function addToCartBtn(){
         })
     }   
 }
-
+function displayCartTemplate(list){
+    return `
+        <tr>
+            <td>pic</td>
+            <td>${list.name}</td>
+            <td>${list.count}</td>
+            <td><button class="addBtn" dataId="${list.id}"><i class="fas fa-plus"></i></button></td>
+            <td><button class="subBtn" dataId="${list.id}"><i class="fas fa-minus"></i></button></td>
+            <td>x ${list.price}</td>
+            <td>= ${list.price * list.count}</td>
+            <td><button class="deleteItemBtn" dataId="${list.id}"><i class="fas fa-times"></i></button></td>
+        </tr>
+    
+    `
+}
 
 function displayCart(){
     //using a copy of the cart to display
     var cartArray = listCart();
-    var output='';
-    for(var i in cartArray){
-        output +='<div>'
-        +cartArray[i].name 
-        + '  <button class="subBtn" dataId="'+ cartArray[i].id +'">-</button>'
-        +' <button class="addBtn" dataId="'+ cartArray[i].id +'">+</button> '
-        + cartArray[i].count 
-        + ' x '+ cartArray[i].price 
-        +' = '+ cartArray[i].total+ ' '
-        + '<button class="deleteItemBtn" dataId="'+cartArray[i].id+'">X</button>'
-        +'</div>'
-    }
-    document.getElementById('cartList').innerHTML= output;
+    document.getElementById('tableContent').innerHTML= `${cartArray.map(displayCartTemplate).join('')}`;
     document.getElementById('cartTotal').innerHTML =  totalCost();
     //for delete Item btn
     deleteItemBtn();
@@ -215,3 +217,13 @@ clearCartBtn.addEventListener('click',function(){
     displayCart();
     displayCountCart();
 });
+
+//close the list of items when click back icon
+document.getElementById('backToShop').addEventListener('click',function(){
+    document.getElementById('showCart').style.opacity=0;
+})
+
+//show the list of items when click basket icon
+document.getElementById('cartIcon').addEventListener('click', function(){
+    document.getElementById('showCart').style.opacity=1;
+})

@@ -474,7 +474,7 @@ footer {
   cursor: pointer; }
 
 /*---------------OUR RANGES----------*/
-.cartIcon::before {
+#cartIcon::before {
   content: '\f291';
   font-family: 'Font Awesome 5 Free';
   font-size: 3rem;
