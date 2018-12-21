@@ -474,12 +474,27 @@ footer {
   cursor: pointer; }
 
 /*---------------OUR RANGES----------*/
-#cartIcon::before {
+.shoppingCart #cartIcon::before {
   content: '\f291';
   font-family: 'Font Awesome 5 Free';
   font-size: 3rem;
   font-weight: 900;
   color: #fedcd2; }
+.shoppingCart #showCart {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 5rem;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: lightblue; }
 
 /*-------- Search box --------*/
 input[name=searchBar] {

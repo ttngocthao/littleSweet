@@ -39,10 +39,10 @@
 
         <main>
             <section class='shoppingCart'>
-                <div id='cartIcon'><span id='cartCount'>0</span> <button id='clearCartBtn'>Clear Cart</button></div>
-                
+                <div id='cartIcon'><span id='cartCount'>0</span> </div>
+                <button id='clearCartBtn'>Clear Cart</button>
                 <div id='showCart'>
-                    <!-- <div id='cartList'>Cart is empty</div> -->
+                    <div id='backToShop'>back</div>
                     <table>
                         <tr>
                             <th>Pic</th>
@@ -60,8 +60,10 @@
                     </table>
                     <div>Total Cost: £ <span id='cartTotal'></span></div>
                 </div>
+            
             </section>
-                 <section class='content' id='ourRange' style='clear:left;'>
+
+             <section class='content' id='ourRange' style='clear:left;'>
                         <h1>Our Ranges</h1>
                         <div class='deco-line'></div>
                         <select id='cakeList'>
@@ -76,10 +78,11 @@
                             <option value='cateringList'>Catering</option>    
                         </select>
                         <form id='searchCake'><input name='searchBar' type="text" placeholder="Search.."></form>      
-                </section>
-                <section class='content'>
-                    <div id='showCake'></div>
-                </section>
+            </section>
+
+            <section class='content'>
+                <div id='showCake'></div>
+            </section>
         </main>
 
          <!--Page footer goes here-->

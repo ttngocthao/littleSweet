@@ -37,7 +37,7 @@ xhr.onload = function(){
 
             addToCartBtn();
 
-            closeInfoBtn();
+
          
            
         })
@@ -69,8 +69,13 @@ function cakeTemplate(cakeChoice){
 
 //this function add a click event to a InfoBtn which is clicked by users
 function clickInfoBtn(){
+    var infoBtns = document.getElementsByClassName("infoBtn");
+    //figure out which infoBtn is clicked
+    //add click event to that Info btn        
     var infoBtns = document.getElementsByClassName("infoBtn");      
     for (var i = 0; i <infoBtns.length; i++) {
+        var infoBtn=infoBtns[i];
+        infoBtn.addEventListener('click', renderInfoBox);
         infoBtns[i].addEventListener('click',renderInfoBox)
     }    
 }
@@ -92,11 +97,21 @@ function closeInfoBox(){
 }
 
 //show the information of the product
-function renderInfoBox(){  
-        var infoBoxes = document.getElementsByClassName('infoBox');       
-        for(var i = 0; i < infoBoxes.length;i++){
-            infoBoxes[i].style.display='block';
-        }
+function renderInfoBox(index){  
+    var idBtn, idBox, idClose;  
+    idBtn=this.id ;
+    //figure out the id of the information box base on the id of the clicked information btn
+    idBox= idBtn.replace('infoBtn','infoBox')
+   //open the information box
+   var infoBox=document.getElementById(idBox); 
+   infoBox.style.display='block';
+   //figure out which close-btn is shown
+    idClose=idBtn.replace('infoBtn','closeBtn');
+   //add the click event on that close-btn
+   var closeBtn = document.getElementById(idClose);
+    closeBtn.addEventListener('click', function(){
+        infoBox.style.display='none';
+    })
 }
 
 //search Cake

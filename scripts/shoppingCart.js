@@ -220,10 +220,10 @@ clearCartBtn.addEventListener('click',function(){
 
 //close the list of items when click back icon
 document.getElementById('backToShop').addEventListener('click',function(){
-    document.getElementById('showCart').style.opacity=0;
+    document.getElementById('showCart').style.display='none';
 })
 
 //show the list of items when click basket icon
 document.getElementById('cartIcon').addEventListener('click', function(){
-    document.getElementById('showCart').style.opacity=1;
+    document.getElementById('showCart').style.display='block'
 })
