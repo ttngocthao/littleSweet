@@ -42,7 +42,13 @@ header #logo img{
     }
     
 }
-/*------------------- MAIN ----------------*/
+/*-------BANNER-------------*/
+.banner img:first-child{
+    top: 25px;
+}
+.banner img:last-child{
+    top: -45px;
+}
 
 /*--------------HOME CONTENT ----------*/
 .content {
@@ -58,7 +64,7 @@ header #logo img{
         top:2.9rem;
     }
 }
-/*-------------------SLIDE SHOWS---------------*/
+/*--------------SLIDE SHOWS------------*/
 .banner img{
     width:100%;
 }
@@ -75,7 +81,7 @@ header #logo img{
   }
   
 }
-/*-------------------ABOUT US-------------------*/
+/*-------------ABOUT US-----------------*/
 #aboutUs{
     margin-top: 2.5rem;
     position: relative;
@@ -92,12 +98,12 @@ header #logo img{
     }
 }
 
-/*------------------FLAG----------------------*/
+/*------------FLAG------------------*/
 .flag{
     width: 45%;
     margin: 1rem auto 1.5rem 2rem;
 }
-/*------------------OPEN HOURs--------------*/
+/*---------------OPEN HOURs------------*/
 .location .grid{
     display:grid;
     grid-template-columns: repeat(2,50% 50%);

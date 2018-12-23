@@ -166,9 +166,37 @@ header .menuIcon div {
 
 /*------------------- MAIN ----------------------*/
 main {
-  padding-top: 3.8rem; }
+  padding-top: 3rem; }
 
-/*------------------- SLIDE SHOW ----------------------*/
+/*------------------BANNER----------------------*/
+.banner {
+  position: relative;
+  text-align: center; }
+
+.banner img:first-child {
+  opacity: 0;
+  width: 20%;
+  position: relative;
+  top: 15px;
+  animation-name: showText;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; }
+
+.banner img:last-child {
+  opacity: 0;
+  width: 60%;
+  position: relative;
+  top: -30px;
+  animation-name: showText;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; }
+
+@keyframes showText {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*----------------- SLIDE SHOW ------------------*/
 @keyframes fader {
   from {
     opacity: 0; }
@@ -253,32 +281,6 @@ main {
   background-image: linear-gradient(to right, #66b9bf, #295f63), linear-gradient(to right, gray, lightgray);
   background-repeat: no-repeat;
   background-size: 5%, auto; }
-
-/*-----------------PHOTO GRID----------------*/
-.photoGrid {
-  margin: 1rem auto;
-  width: 100%;
-  font-size: 0;
-  grid-template-columns: 22.915% 37.671% auto;
-  display: grid;
-  grid-template-areas: "pic1 pic2 pic4" "pic3 pic3 pic4"; }
-
-.photo1 {
-  grid-area: pic1;
-  font-size: 0; }
-
-.photo2 {
-  grid-area: pic2; }
-
-.photo3 {
-  grid-area: pic3; }
-
-.photo4 {
-  grid-area: pic4; }
-
-.photo1 img, .photo2 img, .photo3 img, .photo4 img {
-  width: 100%;
-  object-fit: cover; }
 
 /*---------------HOME CONTENT-----------*/
 .content {
@@ -474,27 +476,48 @@ footer {
   cursor: pointer; }
 
 /*---------------OUR RANGES----------*/
-.shoppingCart #cartIcon::before {
-  content: '\f291';
-  font-family: 'Font Awesome 5 Free';
-  font-size: 3rem;
-  font-weight: 900;
-  color: #fedcd2; }
-.shoppingCart #showCart {
-  display: none;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 5rem;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: lightblue; }
+.shoppingCart {
+  position: relative;
+  z-index: 10; }
+  .shoppingCart #cartIcon {
+    position: fixed;
+    top: 1.3rem;
+    right: 4.25rem; }
+  .shoppingCart #cartIcon::after {
+    content: '\f291';
+    position: absolute;
+    top: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fedcd2; }
+  .shoppingCart #cartCount {
+    position: absolute;
+    top: -0.6rem;
+    right: -1.9rem;
+    width: 2rem;
+    text-align: center; }
+  .shoppingCart #showCart {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: lightblue; }
+
+#cakeList {
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  background-color: #fedcd2;
+  color: #827775; }
 
 /*-------- Search box --------*/
 input[name=searchBar] {
@@ -546,6 +569,26 @@ input[name=searchBar]:focus {
   cursor: pointer;
   font-weight: bold; }
 
+/*-----------------style rating stars------------------*/
+.starsOuter {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome; }
+
+.starsOuter::before {
+  content: "\f006 \f006 \f006 \f006 \f006"; }
+
+.starsInner {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.starsInner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b; }
+
 @media only screen and (min-width: 35rem) {
   body {
     font-size: 15px; }
@@ -582,7 +625,13 @@ input[name=searchBar]:focus {
     .navBar ul a:hover li {
       color: #fbf5e6; }
 
-  /*------------------- MAIN ----------------*/
+  /*-------BANNER-------------*/
+  .banner img:first-child {
+    top: 25px; }
+
+  .banner img:last-child {
+    top: -45px; }
+
   /*--------------HOME CONTENT ----------*/
   .content {
     width: 90%;
@@ -593,7 +642,7 @@ input[name=searchBar]:focus {
       width: 100%;
       top: 2.9rem; }
 
-  /*-------------------SLIDE SHOWS---------------*/
+  /*--------------SLIDE SHOWS------------*/
   .banner img {
     width: 100%; }
 
@@ -607,7 +656,7 @@ input[name=searchBar]:focus {
     #slide .info {
       line-height: 1.5rem; }
 
-  /*-------------------ABOUT US-------------------*/
+  /*-------------ABOUT US-----------------*/
   #aboutUs {
     margin-top: 2.5rem;
     position: relative; }
@@ -619,12 +668,12 @@ input[name=searchBar]:focus {
     .forCakeTowerImg img {
       width: 50%; }
 
-  /*------------------FLAG----------------------*/
+  /*------------FLAG------------------*/
   .flag {
     width: 45%;
     margin: 1rem auto 1.5rem 2rem; }
 
-  /*------------------OPEN HOURs--------------*/
+  /*---------------OPEN HOURs------------*/
   .location .grid {
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
@@ -686,7 +735,13 @@ input[name=searchBar]:focus {
   /*------------------- BODY ----------------*/
   /*------------------- NAVIGATION ----------------*/
   /*------------------- MAIN ----------------*/
-  /*slide show*/
+  /*-------------BANNER--------------*/
+  .banner img:first-child {
+    top: 35px; }
+
+  .banner img:last-child {
+    top: -90px; }
+
   /*-----------------HOME CONTENT------------*/
   .content div {
     font-size: 1rem;

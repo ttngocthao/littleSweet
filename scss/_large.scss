@@ -7,8 +7,13 @@
 
 
 /*------------------- MAIN ----------------*/
-/*slide show*/
-
+/*-------------BANNER--------------*/
+.banner img:first-child{
+    top: 35px;
+}
+.banner img:last-child{
+    top: -90px;
+}
  /*-----------------HOME CONTENT------------*/
  //slide show   
  .content div{

@@ -38,8 +38,8 @@ xhr.onload = function(){
             addToCartBtn();
 
             document.getElementById('searchInput').addEventListener('keyup',searchCake);
-
-         
+            //can display the percentage.
+            showRatingStar(cakeArray); 
            
         })
     }
@@ -47,12 +47,25 @@ xhr.onload = function(){
 
 xhr.send();
 
+//this function shows the rating stars of each product
+function showRatingStar(cakeChoice){
+    var starsInner = document.getElementsByClassName('starsInner')
+    function convertToPercentage(starRating){
+       return (Math.round(starRating *20/10)*10).toString() +'%';
+    }
+    for (var i =0; i< starsInner.length;i++){
+        starsInner[i].style.width = convertToPercentage(cakeChoice[i].starRating);
+    }
+}
 
 
 //this function creates a template for each product
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
                 <h3 class='cakeName'>${cakeChoice.name}</h3>
+                <div class='starsOuter'>
+                    <div class='starsInner'></div>
+                </div>
                 <h5>${cakeChoice.price}</h5>
                 <button class='infoBtn' id='infoBtn${cakeChoice.itemId}'>More Info</button>
                 <button class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'>Add to basket</button>              
@@ -126,6 +139,7 @@ function searchCake(){
    var names = items[i].getElementsByClassName('cakeName');
    for (var j=0; j<names.length;j++){
      var name=names[j].innerText
+     //indexOf returns a number, representing the position where the specified searchvalue occurs for the first time, or -1 if it never occurs
      if(name.toUpperCase().indexOf(filter) > -1){
        // names[j].style.display='';
        items[i].style.display='';

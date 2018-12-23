@@ -18,9 +18,28 @@
     <body>
         <!--page header goes here-->
         <header>
-           <div class='shoppingCart'>
-                <div class='cartIcon' id='cartIcon'>0</div>
-            </div>
+            <section class='shoppingCart'>
+                <div id='cartIcon'><span id='cartCount'>0</span> </div>
+                <button id='clearCartBtn'style='display:none'>Clear Cart</button>
+                <div id='showCart'>
+                    <div id='backToShop'>back</div>
+                    <table>
+                        <tr>
+                            <th>Pic</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th></th>
+                            <th></th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tbody id='tableContent'>
+
+                        </tbody>
+                    </table>
+                    <div>Total Cost: £ <span id='cartTotal'></span></div>
+                </div>
             <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
                 <div class='menuIcon'>
                     <div></div>
@@ -85,6 +104,7 @@
                 <p>@Copyright 2018 <span>WebDeveloper@thaotruong.uk</span></p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/shoppingCart.js"></script>
         <script src='scripts/menuToggle.js'></script>
     </body>
 </html>

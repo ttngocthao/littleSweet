@@ -84,9 +84,38 @@ header .menuIcon div{
 /*------------------- MAIN ----------------------*/
 
 main{
-    padding-top: 3.8rem;
+    padding-top: 3rem;
 }
-/*------------------- SLIDE SHOW ----------------------*/
+
+/*------------------BANNER----------------------*/
+.banner{
+    position: relative;
+    text-align: center;
+}
+.banner img:first-child{
+    opacity: 0;
+    width:20%;
+    position: relative;
+    top:15px;
+    animation-name: showText;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.banner img:last-child{
+    opacity: 0;
+    width: 60%;
+    position: relative;
+    top: -30px;
+    animation-name: showText;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes showText{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+/*----------------- SLIDE SHOW ------------------*/
 @keyframes fader {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -181,34 +210,6 @@ main{
     background-size: 5%, auto;
 }
 
-/*-----------------PHOTO GRID----------------*/
-.photoGrid{
-    margin: 1rem auto;
-    width:100%;
-    font-size: 0;   
-    grid-template-columns: 22.915% 37.671% auto;
-    display: grid;
-    grid-template-areas: "pic1 pic2 pic4"
-                         "pic3 pic3 pic4";
-    
-}
-.photo1{
-    grid-area: pic1;
-    font-size:0;
-}
-.photo2{
-    grid-area: pic2;
-}
-.photo3{
-    grid-area: pic3;
-}
-.photo4{
-    grid-area: pic4;
-}
-.photo1 img, .photo2 img, .photo3 img, .photo4 img{
-    width: 100%;
-    object-fit:cover;
-}
 
 /*---------------HOME CONTENT-----------*/
 .content {
@@ -442,12 +443,28 @@ footer{
 
 /*---------------OUR RANGES----------*/
 .shoppingCart{
-    #cartIcon::before{
+    position: relative;
+    z-index: 10;
+    #cartIcon{
+        position: fixed;
+        top:1.3rem;
+        right:4.25rem;
+    }
+    #cartIcon::after{
         content: '\f291';
+        position: absolute;
+        top:0;
         font-family: 'Font Awesome 5 Free';
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: 900;
         color: $secondaryColor;
+    }
+    #cartCount{
+        position: absolute;
+        top:-0.6rem;
+        right: -1.9rem;
+        width: 2rem;
+        text-align: center;
     }
    
     #showCart{
@@ -462,6 +479,14 @@ footer{
         background-color: lightblue;
     }
    
+}
+
+#cakeList{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: $secondaryColor;
+    color: $fontColor;
+    
 }
 /*-------- Search box --------*/ 
 input[name=searchBar] {
@@ -509,3 +534,27 @@ input[name=searchBar]:focus {
     cursor: pointer;
     font-weight:bold;
 }
+
+/*-----------------style rating stars------------------*/
+.starsOuter{
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+  }
+   
+  .starsOuter::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+  }
+  
+  .starsInner {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    // width:0;
+  }
+  .starsInner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+  }

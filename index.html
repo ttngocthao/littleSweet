@@ -23,9 +23,30 @@
         <!--page header goes here-->
         <header>
             <!-- <?php include 'header.php';?> -->
-            <div class='shoppingCart'>
-                <div class='cartIcon' id='cartIcon'>0</div>
-            </div>
+            <section class='shoppingCart'>
+                <div id='cartIcon'><span id='cartCount'>0</span> </div>
+                <button id='clearCartBtn'style='display:none'>Clear Cart</button>
+                <div id='showCart'>
+                    <div id='backToShop'>back</div>
+                    <table>
+                        <tr>
+                            <th>Pic</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th></th>
+                            <th></th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tbody id='tableContent'>
+
+                        </tbody>
+                    </table>
+                    <div>Total Cost: £ <span id='cartTotal'></span></div>
+                </div>
+            
+            </section>
             <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
                 <div class='menuIcon'>
                     <div></div>
@@ -51,8 +72,10 @@
         <main>
 
         <!--banner pic goes here-->
-            <div  class='banner'>                
-                <img src='images/cupcakes.jpg'>
+            <div  class='banner'>
+                <img src='images/shop-name.png'>                
+                <img src='images/banner.png'>
+                <img src="images/slogan.png">
             </div>
         <!--HOME content goes here-->
             <section class='content' id='home' style='clear:left;'>
@@ -128,6 +151,7 @@
         <!-- <script src="scripts/googleMap.js"></script>
         <script async defer src='https://maps.googleapis.com/maps/api/js?key='></script> -->
         <!-- AIzaSyBOSU8QdW-5gki-a2Sv9wtLrk308gCKy7Y&callback=initMap -->
+        <script src="scripts/shoppingCart.js"></script>
         <script src="scripts/slideShow.js"></script>
         <script src='scripts/menuToggle.js'></script>
     </body>
