@@ -14,34 +14,38 @@ body{
 }//end of body
 /*------------------- HEADER ----------------------*/
 header{
-    background-color: $primaryColor;
+    background-color: white;
     position: fixed;
     z-index: 5;
     width:100%;
 }
 header #logo{
-    margin: $gutter/2;    
+    margin: $gutter/2;  
+    text-align: center;  
 }
 header #logo img{
    width: 3.5rem;
+   animation-name: showText;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
 }
 header .menuIcon{
     position: absolute;
-    top:0.85rem;
+    top:1rem;
     right:0;
     cursor: pointer;
     transition: .3s;
 }
 
 .menuIcon:hover div{
-    background-color: azure;
+    background-color: darken($primaryColor,20%);
 }
 header .menuIcon div{    
-    width: 2rem;
-    height:.3rem;
+    width: 1.3rem;
+    height:.1rem;
     margin:.2rem;
     border-radius: 5px;
-    background-color: lighten($primaryColor,30%);
+    background-color: $primaryColor;
 }
 .rotateIcon{
     width: .3rem;
@@ -53,7 +57,8 @@ header .menuIcon div{
     text-align: center;
     position: absolute;
     right: -2000px;
-    background-color: $lemonColor;
+    background-color: white;
+    background-image: linear-gradient(to bottom right,$primaryColor,darken($primaryColor,10%));
     transition: .5s linear;    
 
     ul li{
@@ -62,12 +67,10 @@ header .menuIcon div{
         font-weight: bold;
         
     }
-    ul li:nth-child(2n){
-        background-color: lighten($lemonColor,3%);
-    }
+    
 
     ul li:hover{
-        background-color: lighten($lemonColor,40%);
+        background-color: white;
 
     }
     ul a:hover li{
@@ -75,7 +78,7 @@ header .menuIcon div{
     }
     a {
         text-decoration: none;
-        color: $fontColor;
+        color: white;
     }
 }
 .showNavBar{
@@ -92,15 +95,15 @@ main{
     position: relative;
     text-align: center;
 }
-.banner img:first-child{
-    opacity: 0;
-    width:20%;
-    position: relative;
-    top:15px;
-    animation-name: showText;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
+// .banner img:first-child{
+//     opacity: 0;
+//     width:20%;
+//     position: relative;
+//     top:15px;
+//     animation-name: showText;
+//     animation-duration: 5s;
+//     animation-fill-mode: forwards;
+// }
 .banner img:last-child{
     opacity: 0;
     width: 60%;
