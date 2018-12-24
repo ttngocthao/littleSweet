@@ -82,6 +82,7 @@ function cakeTemplate(cakeChoice){
                         <span class="closeBtn" id='closeBtn${cakeChoice.itemId}'>&times;</span>
                         <h3>${cakeChoice.name}</h3>
                         <div class='cakeImg'><img src='${cakeChoice.imageUrl}'></div>
+                        
                         <h5>Price: £${cakeChoice.price}</h5>
                         <p>${cakeChoice.info}</p>
                     </div>
@@ -96,8 +97,6 @@ function clickInfoBtn(){
     //add click event to that Info btn        
     var infoBtns = document.getElementsByClassName("infoBtn");      
     for (var i = 0; i <infoBtns.length; i++) {
-        var infoBtn=infoBtns[i];
-        infoBtn.addEventListener('click', renderInfoBox);
         infoBtns[i].addEventListener('click',renderInfoBox)
     }    
 }

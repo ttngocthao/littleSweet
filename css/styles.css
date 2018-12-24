@@ -396,10 +396,12 @@ main {
 /*---------FOOTER-----------*/
 footer {
   background-color: #66b9bf;
+  margin-top: 1rem;
   padding: .3rem;
   color: gainsboro;
   position: relative;
-  font-size: .7rem; }
+  font-size: .7rem;
+  clear: both; }
   footer span {
     position: absolute;
     right: .2rem; }
@@ -501,11 +503,11 @@ footer {
   margin: 2rem auto 0 auto;
   box-sizing: content-box;
   padding: .5rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   position: relative;
   color: white;
   text-align: center;
-  letter-spacing: .1rem;
+  letter-spacing: .05rem;
   background-image: linear-gradient(to right, #66b9bf, #47a4ab);
   clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%); }
 
@@ -701,7 +703,7 @@ input[name=searchBar]:focus {
 
   /*-------------ABOUT US-----------------*/
   #aboutUs {
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     position: relative; }
 
   .forCakeTowerImg {
@@ -710,11 +712,6 @@ input[name=searchBar]:focus {
     clip-path: polygon(10% 100%, 40% 0, 65% 0, 90% 100%); }
     .forCakeTowerImg img {
       width: 50%; }
-
-  /*------------FLAG------------------*/
-  .flag {
-    width: 45%;
-    margin: 1rem auto 1.5rem 2rem; }
 
   /*---------------OPEN HOURs------------*/
   .location .grid {
@@ -766,8 +763,8 @@ input[name=searchBar]:focus {
   /*--------------About us-------------*/
   .forLogoImg img {
     position: relative;
-    top: 1rem;
-    width: 100%; }
+    top: 2rem;
+    width: 90%; }
 
   .clientLogo ul li {
     width: 25%; }
@@ -782,7 +779,25 @@ input[name=searchBar]:focus {
     padding: .5rem 1rem; }
 
   input[name=searchBar] {
-    width: 80%; } }
+    width: 80%; }
+
+  /*------------FLAG------------------*/
+  .item {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 1rem; }
+    .item .wrapper {
+      border: 2px #dcb239 dotted;
+      border-top: transparent;
+      margin: 0 auto;
+      box-shadow: 3px 3px 3px lightgrey; }
+    .item .cakeImg {
+      margin: .2rem auto; }
+    .item .cakeImg img {
+      width: 95%; }
+
+  /*------------INFORMATION OF EACH CAKE*/ }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*------------------- BODY ----------------*/

@@ -20,7 +20,7 @@
     
         {
             "itemId":"clb3",
-            "name":"Chocolate Birthday",
+            "name":"Birthday",
             "starRating": 4.4,
             "imageUrl":"https://via.placeholder.com/200",
             "price":38,
@@ -38,7 +38,7 @@
     
         {
             "itemId":"clb5",
-            "name":"Strawberry Anniversary",
+            "name":"Anniversary",
             "starRating": 4.5,
             "imageUrl":"https://via.placeholder.com/200",
             "price":68,
@@ -47,7 +47,7 @@
     
         {
             "itemId":"clb6",
-            "name":"2 Tier Wedding",
+            "name":"Wedding",
             "starRating": 4.5,
             "imageUrl":"https://via.placeholder.com/200",
             "price":68,
@@ -56,7 +56,7 @@
     
         {
             "itemId":"clb7",
-            "name":"Strawberry Birthday",
+            "name":"Birthday",
             "starRating": 4,
             "imageUrl":"https://via.placeholder.com/200",
             "price":68,

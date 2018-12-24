@@ -84,7 +84,7 @@ header #logo img{
 }
 /*-------------ABOUT US-----------------*/
 #aboutUs{
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     position: relative;
 }
 
@@ -99,11 +99,7 @@ header #logo img{
     }
 }
 
-/*------------FLAG------------------*/
-.flag{
-    width: 45%;
-    margin: 1rem auto 1.5rem 2rem;
-}
+
 /*---------------OPEN HOURs------------*/
 .location .grid{
     display:grid;
@@ -156,6 +152,7 @@ header #logo img{
 
 /*-----------FOOTER--------*/
 footer{
+  
     padding:1em .5rem;
     font-size: .7rem;
 }
@@ -165,8 +162,8 @@ footer{
 .forLogoImg{
     img{
         position: relative;
-        top: 1rem;
-        width: 100%;
+        top: 2rem;
+        width: 90%;
     }
 }
 
@@ -190,3 +187,25 @@ footer{
 input[name=searchBar] {
     width: 80%;
 }
+
+/*------------FLAG------------------*/
+.item{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 1rem;
+    .wrapper{
+        border: 2px $lemonColor dotted;
+        border-top: transparent;        
+        margin: 0 auto;
+        box-shadow: 3px 3px 3px lightgrey;
+    }
+    
+    .cakeImg{
+        margin: .2rem auto;
+    }
+    .cakeImg img{
+        width: 95%;
+    }
+}
+/*------------INFORMATION OF EACH CAKE*/
