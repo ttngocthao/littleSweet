@@ -568,25 +568,35 @@ input[name=searchBar]:focus {
 .infoBox{
     display:none;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 25; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: lightblue;
+    background-color: $secondaryColor;
 }
 .infoContent{
-    border:2px solid red;
-    background-color: lightpink;
-    margin: 25% auto;
-    padding: 2rem;
+    border:2px dotted $lemonColor;
+    background-color: white;
+    margin: 2% auto;
+    position: relative;
+    padding: 1rem;
+    width: 85%;
+}
+.infoContent img{
     width: 80%;
 }
+
 .infoContent .closeBtn{
     float:right;
     cursor: pointer;
-    font-weight:bold;
+    color: $primaryColor;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 
 /*--------style rating stars--------------*/

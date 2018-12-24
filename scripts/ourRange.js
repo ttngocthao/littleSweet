@@ -81,7 +81,8 @@ function cakeTemplate(cakeChoice){
                     <div class='infoContent'>
                         <span class="closeBtn" id='closeBtn${cakeChoice.itemId}'>&times;</span>
                         <h3>${cakeChoice.name}</h3>
-                        <h5>${cakeChoice.price}</h5>
+                        <div class='cakeImg'><img src='${cakeChoice.imageUrl}'></div>
+                        <h5>Price: £${cakeChoice.price}</h5>
                         <p>${cakeChoice.info}</p>
                     </div>
                 </div>
@@ -118,7 +119,7 @@ function closeInfoBox(){
 }
 
 //show the information of the product
-function renderInfoBox(index){  
+function renderInfoBox(){  
     var idBtn, idBox, idClose;  
     idBtn=this.id ;
     //figure out the id of the information box base on the id of the clicked information btn
@@ -133,6 +134,7 @@ function renderInfoBox(index){
     closeBtn.addEventListener('click', function(){
         infoBox.style.display='none';
     })
+    
 }
 
 //search Cake

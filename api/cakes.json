@@ -16,6 +16,96 @@
             "imageUrl":"https://via.placeholder.com/200",
             "price":58,
             "info":"Wedding Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb3",
+            "name":"Chocolate Birthday",
+            "starRating": 4.4,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":38,
+            "info":"Chocolate Birthday Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb4",
+            "name":"Anniversary",
+            "starRating": 4.5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Anniversary Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb5",
+            "name":"Strawberry Anniversary",
+            "starRating": 4.5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Strawberry Anniversary Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb6",
+            "name":"2 Tier Wedding",
+            "starRating": 4.5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Strawberry Anniversary Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb7",
+            "name":"Strawberry Birthday",
+            "starRating": 4,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Strawberry Birthday Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb8",
+            "name":"Summer Party",
+            "starRating": 5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Summer Party Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb9",
+            "name":"Anniversary",
+            "starRating": 4.5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Anniversary Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb10",
+            "name":"Birthday",
+            "starRating": 4.3,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Birthday Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb11",
+            "name":"Birthday",
+            "starRating": 4,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Birthday Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"clb12",
+            "name":"Wedding",
+            "starRating": 5,
+            "imageUrl":"https://via.placeholder.com/200",
+            "price":68,
+            "info":"Wedding Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
     ],
    
