@@ -73,9 +73,9 @@ function cakeTemplate(cakeChoice){
                 <div class='wrapper'>
                     <div class='cakeImg'><img src='${cakeChoice.imageUrl}'></div>
                     <div class='starsOuter'><div class='starsInner'></div></div>
-                    <h5>£ ${cakeChoice.price}</h5>
-                    <button class='infoBtn' id='infoBtn${cakeChoice.itemId}'>More Info</button>
-                    <button class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'>Add to basket</button> 
+                    <h5>Price: £${cakeChoice.price}</h5>
+                    <div class='infoBtn' id='infoBtn${cakeChoice.itemId}'><i class="fas fa-question"></i></div>
+                    <div class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'><i class="fas fa-cart-plus"></i></div> 
                 </div>
                 <div id='infoBox${cakeChoice.itemId}' class='infoBox'>
                     <div class='infoContent'>

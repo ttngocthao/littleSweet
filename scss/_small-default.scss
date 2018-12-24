@@ -484,7 +484,8 @@ footer{
     position: relative;
     color:white;
     text-align: center;
-    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,20%));
+    letter-spacing: .1rem;
+    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,10%));
     clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%);
 }
 .flag::after{
@@ -504,16 +505,38 @@ footer{
     .wrapper{
         border: 2px $lemonColor dotted;
         border-top: transparent;
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
+        box-shadow: 3px 3px 3px lightgrey;
     }
     
-
     .cakeImg{
         margin: .2rem auto;
     }
     .cakeImg img{
-        width: 90%;
+        width: 95%;
+    }
+
+    .infoBtn, .addToCartBtn{
+        display: inline-block;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    .infoBtn i, .addToCartBtn i{
+        font-size: 1.2rem;
+        border: 2px solid $lemonColor;
+        color: $fontColor;
+        text-align: center;
+        border-radius: 50%;
+        background-color:lighten($primaryColor,20%);
+        padding: .2rem 0;
+        height: 1.8rem;
+        width: 1.8rem;
+        transition: .3s;
+    }
+    .infoBtn:hover i, .addToCartBtn:hover i{
+        color:darken($primaryColor, 30%);
+        background-color: lighten($secondaryColor,10%);
     }
 }
 /*-------- Search box --------*/ 
