@@ -585,6 +585,12 @@ input[name=searchBar]:focus {
     padding: 1rem;
     width: 85%;
 }
+.infoContent h3{
+    color: $primaryColor;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    
+}
 .infoContent img{
     width: 80%;
 }
@@ -599,7 +605,10 @@ input[name=searchBar]:focus {
     top: 0;
     right: 10px;
 }
-
+.infoBox h5{
+    margin: .5rem auto;
+    
+}
 /*--------style rating stars--------------*/
 .starsOuter{
     display: inline-block;

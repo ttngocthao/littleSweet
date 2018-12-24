@@ -600,6 +600,11 @@ input[name=searchBar]:focus {
   padding: 1rem;
   width: 85%; }
 
+.infoContent h3 {
+  color: #66b9bf;
+  font-size: 1.2rem;
+  padding-bottom: .5rem; }
+
 .infoContent img {
   width: 80%; }
 
@@ -612,6 +617,9 @@ input[name=searchBar]:focus {
   position: absolute;
   top: 0;
   right: 10px; }
+
+.infoBox h5 {
+  margin: .5rem auto; }
 
 /*--------style rating stars--------------*/
 .starsOuter {
@@ -797,7 +805,16 @@ input[name=searchBar]:focus {
     .item .cakeImg img {
       width: 95%; }
 
-  /*------------INFORMATION OF EACH CAKE*/ }
+  /*------------INFORMATION OF EACH CAKE*/
+  .infoContent {
+    height: 60%; }
+
+  .infoBox .cakeImg {
+    float: left; }
+  .infoBox h5 {
+    color: blue; }
+  .infoBox p {
+    color: red; } }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*------------------- BODY ----------------*/

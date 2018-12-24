@@ -209,3 +209,19 @@ input[name=searchBar] {
     }
 }
 /*------------INFORMATION OF EACH CAKE*/
+.infoContent{
+    height: 60%;
+}
+.infoBox{
+    
+    .cakeImg{
+       float: left;
+    }
+    h5{
+        color:blue;
+    }
+    p{
+        color: red;
+        
+    }
+}
