@@ -14,31 +14,32 @@ header #logo img{
     display: none;
 }
 .navBar{
-    width:auto;
-    text-align: center;
-    
-    float:right;
-    top:1.8rem;
+    width:100%;
+    text-align: center;    
+    position: relative;
     right: 0;
-    text-align: right;
     transition: .5s linear; 
     background-color: transparent;
 
+    ul{
+        text-align: center;
+        position: relative;
+        background-color: white;
+    }
     ul li{
         display: inline-block;
-        color: $secondaryColor;
-        padding: .5rem .7rem;
+        color: $primaryColor;
+        padding: .5rem .8rem;
         transition: .3s;
         font-size: 1rem;       
     }
 
     ul li:hover{
-        background-color: transparent;
-        border-bottom: 2px double white;
+        border-bottom: 2px dotted $lemonColor;
 
     }
     ul a:hover li{
-        color: lighten($lemonColor,40%);
+        color: $lemonColor;
     }
     
 }
@@ -177,4 +178,15 @@ footer{
     img{
         width: 80%;
     }
+}
+
+/*OUR RANGES*/
+#ourRange{
+    margin-top: 5rem;
+}
+.navBar ul li {
+    padding: .5rem 1rem;
+}
+input[name=searchBar] {
+    width: 80%;
 }

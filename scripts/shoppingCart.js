@@ -133,6 +133,7 @@ function addToCartBtn(){
         })
     }   
 }
+//template to be used for display shopping basket
 function displayCartTemplate(list){
     return `
         <tr>
@@ -148,7 +149,7 @@ function displayCartTemplate(list){
     
     `
 }
-
+//show the shopping basket
 function displayCart(){
     //using a copy of the cart to display
     var cartArray = listCart();
@@ -177,7 +178,7 @@ function addBtn(){
         })
     }
 }
-
+//decrease the amount of item by one
 function subBtn(){
     var subBtns = document.getElementsByClassName('subBtn');
     for(var i=0; i <subBtns.length;i++){
