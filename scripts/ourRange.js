@@ -62,7 +62,7 @@ function showRatingStar(cakeChoice){
 //this function creates a template for each product
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
-                <h3 class='cakeName'>${cakeChoice.name}</h3>
+                <h3 class='flag cakeName'>${cakeChoice.name}</h3>
                 <div class='starsOuter'>
                     <div class='starsInner'></div>
                 </div>

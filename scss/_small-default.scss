@@ -187,17 +187,15 @@ main{
 
 /*--------------FLAG TITLE----------*/
 .flag{
-    width: 70%;
-    margin-left: 1%;
+    width: 90%;
+    margin: .5% auto;
     margin-bottom: 1rem;
     box-sizing: content-box;
     padding:.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     position: relative;
     color:white;
-    letter-spacing: 0.2em;
     text-align: center;
-    text-transform: uppercase;
     background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,20%));
     clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%);
 }
@@ -492,6 +490,14 @@ footer{
     background-color: $secondaryColor;
     font-family: $defaultFont;
     color: $fontColor;
+    
+}
+#showCake h2{
+    font-size: 1.2rem;
+    color:$primaryColor;
+    padding:.5rem 0;    
+    margin: .5rem;
+    border-bottom: 2px dotted $lemonColor;
     
 }
 /*-------- Search box --------*/ 
