@@ -70,12 +70,13 @@ function showRatingStar(cakeChoice){
 function cakeTemplate(cakeChoice){
     return  `<div class='item'>
                 <h3 class='flag cakeName'>${cakeChoice.name}</h3>
-                <div class='starsOuter'>
-                    <div class='starsInner'></div>
+                <div class='wrapper'>
+                    <div class='cakeImg'><img src='${cakeChoice.imageUrl}'></div>
+                    <div class='starsOuter'><div class='starsInner'></div></div>
+                    <h5>£ ${cakeChoice.price}</h5>
+                    <button class='infoBtn' id='infoBtn${cakeChoice.itemId}'>More Info</button>
+                    <button class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'>Add to basket</button> 
                 </div>
-                <h5>${cakeChoice.price}</h5>
-                <button class='infoBtn' id='infoBtn${cakeChoice.itemId}'>More Info</button>
-                <button class='addToCartBtn' dataId='${cakeChoice.itemId}' dataName='${cakeChoice.name}'  dataPrice='${cakeChoice.price}'>Add to basket</button>              
                 <div id='infoBox${cakeChoice.itemId}' class='infoBox'>
                     <div class='infoContent'>
                         <span class="closeBtn" id='closeBtn${cakeChoice.itemId}'>&times;</span>

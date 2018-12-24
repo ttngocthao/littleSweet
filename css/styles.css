@@ -249,31 +249,6 @@ main {
   content: 'Visit!';
   color: #4c4645; }
 
-/*--------------FLAG TITLE----------*/
-.flag {
-  width: 90%;
-  margin: .5% auto;
-  margin-bottom: 1rem;
-  box-sizing: content-box;
-  padding: .5rem 0;
-  font-size: 1.1rem;
-  position: relative;
-  color: white;
-  text-align: center;
-  background-image: linear-gradient(to right, #66b9bf, #388187);
-  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%); }
-
-.flag::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  bottom: -20px;
-  right: 0;
-  background-image: linear-gradient(to right, #66b9bf, #295f63), linear-gradient(to right, gray, lightgray);
-  background-repeat: no-repeat;
-  background-size: 5%, auto; }
-
 /*---------------HOME CONTENT-----------*/
 .content {
   margin: 2% auto;
@@ -303,7 +278,6 @@ main {
   z-index: -5; }
 
 .content div {
-  margin: 1rem auto;
   text-align: center; }
 
 /*--------------OPEN HOUR-------------*/
@@ -521,6 +495,41 @@ footer {
   margin: .5rem;
   border-bottom: 2px dotted #dcb239; }
 
+/*--------------FLAG TITLE----------*/
+.flag {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  box-sizing: content-box;
+  padding: .5rem 0;
+  font-size: 1.1rem;
+  position: relative;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, #66b9bf, #388187);
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%); }
+
+.flag::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  right: 0;
+  background-image: linear-gradient(to right, #66b9bf, #295f63), linear-gradient(to right, gray, lightgray);
+  background-repeat: no-repeat;
+  background-size: 5%, auto; }
+
+/*EACH CAKE*/
+.item .wrapper {
+  border: 2px #dcb239 dotted;
+  border-top: transparent;
+  width: 75%;
+  margin: 0 auto; }
+.item .cakeImg {
+  margin: .2rem auto; }
+.item .cakeImg img {
+  width: 90%; }
+
 /*-------- Search box --------*/
 input[name=searchBar] {
   width: .5em;
@@ -573,7 +582,7 @@ input[name=searchBar]:focus {
   cursor: pointer;
   font-weight: bold; }
 
-/*-----------------style rating stars------------------*/
+/*--------style rating stars--------------*/
 .starsOuter {
   display: inline-block;
   position: relative;
@@ -584,7 +593,7 @@ input[name=searchBar]:focus {
 
 .starsInner {
   position: absolute;
-  top: -20px;
+  top: 0;
   left: 0;
   white-space: nowrap;
   overflow: hidden; }

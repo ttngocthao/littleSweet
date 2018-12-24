@@ -4,7 +4,7 @@
             "itemId":"clb1",
             "name":"Birthday",
             "starRating":3.5,
-            "imageUrl":"#birthday",
+            "imageUrl":"https://via.placeholder.com/200",
             "price":12,
             "info":"Birthday Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -13,7 +13,7 @@
             "itemId":"clb2",
             "name":"Wedding",
             "starRating":4,
-            "imageUrl":"#wedding",
+            "imageUrl":"https://via.placeholder.com/200",
             "price":58,
             "info":"Wedding Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
@@ -24,7 +24,7 @@
             "itemId":"ch1",
             "name":"Mermaid",
             "starRating":5,
-            "imageUrl":"#mermaid",
+            "imageUrl":"https://via.placeholder.com/200",
             "price":26,
             "info":"Mermaid Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -33,7 +33,7 @@
             "itemId":"ch2",
             "name":"Dragon",
             "starRating":4.5,
-            "imageUrl":"#dragon",
+            "imageUrl":"https://via.placeholder.com/200",
             "price":30,
             "info":"Dragon Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }

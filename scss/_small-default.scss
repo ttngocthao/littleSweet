@@ -185,32 +185,6 @@ main{
     
 }
 
-/*--------------FLAG TITLE----------*/
-.flag{
-    width: 90%;
-    margin: .5% auto;
-    margin-bottom: 1rem;
-    box-sizing: content-box;
-    padding:.5rem 0;
-    font-size: 1.1rem;
-    position: relative;
-    color:white;
-    text-align: center;
-    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,20%));
-    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%);
-}
-.flag::after{
-    content: "";
-    position: absolute;
-    width:100%;
-    height:20px;
-    bottom:-20px;
-    right:0;
-    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,30%)), linear-gradient(to right, gray, lightgray);
-    background-repeat: no-repeat;
-    background-size: 5%, auto;
-}
-
 
 /*---------------HOME CONTENT-----------*/
 .content {
@@ -245,7 +219,7 @@ main{
     z-index: -5;
 }
 .content div{
-    margin: 1rem auto;
+    // margin: 1rem auto;
     text-align: center;
 }
 
@@ -500,6 +474,48 @@ footer{
     border-bottom: 2px dotted $lemonColor;
     
 }
+/*--------------FLAG TITLE----------*/
+.flag{
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    box-sizing: content-box;
+    padding:.5rem 0;
+    font-size: 1.1rem;
+    position: relative;
+    color:white;
+    text-align: center;
+    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,20%));
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 5% 120%, 0 100%);
+}
+.flag::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:20px;
+    bottom:-20px;
+    right:0;
+    background-image: linear-gradient(to right, $primaryColor, darken($primaryColor,30%)), linear-gradient(to right, gray, lightgray);
+    background-repeat: no-repeat;
+    background-size: 5%, auto;
+}
+
+/*EACH CAKE*/
+.item{
+    .wrapper{
+        border: 2px $lemonColor dotted;
+        border-top: transparent;
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+
+    .cakeImg{
+        margin: .2rem auto;
+    }
+    .cakeImg img{
+        width: 90%;
+    }
+}
 /*-------- Search box --------*/ 
 input[name=searchBar] {
     width: .5em;
@@ -550,7 +566,7 @@ input[name=searchBar]:focus {
     font-weight:bold;
 }
 
-/*-----------------style rating stars------------------*/
+/*--------style rating stars--------------*/
 .starsOuter{
     display: inline-block;
     position: relative;
@@ -563,7 +579,7 @@ input[name=searchBar]:focus {
   
   .starsInner {
     position: absolute;
-    top: -20px;
+    top: 0;
     left: 0;
     white-space: nowrap;
     overflow: hidden;
