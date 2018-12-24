@@ -194,19 +194,6 @@ input[name=searchBar] {
     float: left;
     width: 50%;
     margin-bottom: 1rem;
-    .wrapper{
-        border: 2px $lemonColor dotted;
-        border-top: transparent;        
-        margin: 0 auto;
-        box-shadow: 3px 3px 3px lightgrey;
-    }
-    
-    .cakeImg{
-        margin: .2rem auto;
-    }
-    .cakeImg img{
-        width: 95%;
-    }
 }
 /*------------INFORMATION OF EACH CAKE*/
 .infoContent{
