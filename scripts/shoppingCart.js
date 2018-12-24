@@ -106,7 +106,10 @@ function saveCart(){
 
 //get the cart out from local storage
 function loadCart(){
-    cart=JSON.parse(localStorage.getItem('shoppingCart'))
+   var aCart =JSON.parse(localStorage.getItem('shoppingCart'));
+    if(isValid(aCart)){
+        cart=aCart;
+    }
 }
 
 //**************************************//

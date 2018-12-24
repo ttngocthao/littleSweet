@@ -14,7 +14,7 @@ xhr.onload = function(){
         var choice = document.getElementById('cakeList');
 
         choice.addEventListener('change',function(){
-            var cakeArray;
+            var cakeArray=null;
             //get a right object from json base on the value of the selected option
             //index=0 : celebration
             switch(choice.value){
@@ -26,7 +26,13 @@ xhr.onload = function(){
                 cakeArray= cakes[1]
                 break;
             }
-        
+            
+            //Ensure that sth was selected
+            //so that cakeArray.map does not crash us
+            if(cakeArray == null){
+                cakeArray = cakes[0];
+            }            
+            
             //loop through an array to print out all items
             showCake.innerHTML = `
                 <h2>${choice.options[choice.selectedIndex].text}</h2>
@@ -38,7 +44,8 @@ xhr.onload = function(){
             addToCartBtn();
 
             document.getElementById('searchInput').addEventListener('keyup',searchCake);
-            //can display the percentage.
+            
+            //display the rating stars.
             showRatingStar(cakeArray); 
            
         })
@@ -83,7 +90,6 @@ function cakeTemplate(cakeChoice){
 
 //this function add a click event to a InfoBtn which is clicked by users
 function clickInfoBtn(){
-    var infoBtns = document.getElementsByClassName("infoBtn");
     //figure out which infoBtn is clicked
     //add click event to that Info btn        
     var infoBtns = document.getElementsByClassName("infoBtn");      
