@@ -103,7 +103,8 @@ html {
 body {
   font-family: "Merienda", cursive;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  transition: .5s ease-in-out; }
 
 /*------------------- HEADER ----------------------*/
 header {
@@ -499,6 +500,9 @@ footer {
   font-family: "Merienda", cursive;
   color: #827775; }
 
+#showCake img {
+  width: 100%; }
+
 #showCake h2 {
   font-size: 1.2rem;
   color: #66b9bf;
@@ -805,7 +809,8 @@ input[name=searchBar]:focus {
     padding: .5rem 1rem; }
 
   input[name=searchBar] {
-    width: 80%; }
+    width: 80%;
+    border-radius: 10px; }
 
   /*------------FLAG------------------*/
   .item {

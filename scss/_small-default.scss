@@ -9,6 +9,7 @@ body{
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 14px;
+    transition: .5s ease-in-out;
     
 
 }//end of body
@@ -475,6 +476,9 @@ footer{
     font-family: $defaultFont;
     color: $fontColor;
     
+}
+#showCake img{
+    width:100%;
 }
 #showCake h2{
     font-size: 1.2rem;
