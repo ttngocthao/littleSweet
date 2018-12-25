@@ -18,6 +18,10 @@ header{
     position: fixed;
     z-index: 5;
     width:100%;
+    transition: 1s ease-in-out;
+}
+.scrollUp{
+    transform: translateY(-200px);
 }
 header #logo{
     margin: $gutter/2;  
@@ -33,25 +37,29 @@ header #logo img{
 header .menuIcon{
     position: absolute;
     top:1rem;
-    right:0;
+    right:$gutter;
     cursor: pointer;
     transition: .3s;
 }
 
-.menuIcon:hover div{
-    background-color: darken($primaryColor,20%);
+.menuIcon i{
+    font-size: 1.2rem;
+    border: 2px solid $lemonColor;
+    color: $fontColor;
+    text-align: center;
+    border-radius: 50%;
+    background-color:lighten($primaryColor,20%);
+    padding: .2rem 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    transition: .3s;
 }
-header .menuIcon div{    
-    width: 1.3rem;
-    height:.1rem;
-    margin:.2rem;
-    border-radius: 5px;
-    background-color: $primaryColor;
+.menuIcon:hover i{
+    color:darken($primaryColor, 30%);
+    background-color: lighten($secondaryColor,10%);
 }
 .rotateIcon{
-    width: .3rem;
-    transform-origin: bottom left;
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
 }
 .navBar{
     width: 100%;

@@ -110,7 +110,11 @@ header {
   background-color: white;
   position: fixed;
   z-index: 5;
-  width: 100%; }
+  width: 100%;
+  transition: 1s ease-in-out; }
+
+.scrollUp {
+  transform: translateY(-200px); }
 
 header #logo {
   margin: 1%;
@@ -126,24 +130,28 @@ header #logo img {
 header .menuIcon {
   position: absolute;
   top: 1rem;
-  right: 0;
+  right: 2%;
   cursor: pointer;
   transition: .3s; }
 
-.menuIcon:hover div {
-  background-color: #388187; }
+.menuIcon i {
+  font-size: 1.2rem;
+  border: 2px solid #dcb239;
+  color: #827775;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #aedadd;
+  padding: .2rem 0;
+  height: 1.8rem;
+  width: 1.8rem;
+  transition: .3s; }
 
-header .menuIcon div {
-  width: 1.3rem;
-  height: .1rem;
-  margin: .2rem;
-  border-radius: 5px;
-  background-color: #66b9bf; }
+.menuIcon:hover i {
+  color: #295f63;
+  background-color: white; }
 
 .rotateIcon {
-  width: .3rem;
-  transform-origin: bottom left;
-  transform: rotate(-90deg); }
+  transform: rotate(180deg); }
 
 .navBar {
   width: 100%;

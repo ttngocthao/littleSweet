@@ -1,7 +1,19 @@
-$(document).on('scroll',function(){
-    if($(document).scrollTop()>100){
-       $('#logo img').addClass('shrinkLogo');
-    }else{
-       $('#logo img').removeClass('shrinkLogo');
-    }
+$(document).ready(function(){
+   var prevScrollpos= 0;
+
+$(window).scroll(function(event){
+   var currentScrollpos =$(window).scrollTop();
+   var headerHeight = $('header').height();
+   
+   if (currentScrollpos>headerHeight&&prevScrollpos<currentScrollpos){
+      $('header').addClass('scrollUp');
+   }else{
+      $('header').removeClass('scrollUp');
+   }
+   prevScrollpos = currentScrollpos;
+})
+
+
+
+
 })
