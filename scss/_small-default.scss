@@ -9,7 +9,10 @@ body{
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 14px;
-    transition: .5s ease-in-out;
+    transition: 1s ease-in-out;
+    animation-name: show;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
     
 
 }//end of body
@@ -31,7 +34,7 @@ header #logo{
 header #logo img{
    width: 3.5rem;
    transition: .5s ease-in-out;
-   animation-name: showText;
+   animation-name: show;
    animation-duration: 5s;
    animation-fill-mode: forwards;
 }
@@ -105,25 +108,17 @@ main{
     position: relative;
     text-align: center;
 }
-// .banner img:first-child{
-//     opacity: 0;
-//     width:20%;
-//     position: relative;
-//     top:15px;
-//     animation-name: showText;
-//     animation-duration: 5s;
-//     animation-fill-mode: forwards;
-// }
+
 .banner img:last-child{
     opacity: 0;
     width: 60%;
     position: relative;
     top: -30px;
-    animation-name: showText;
+    animation-name: show;
     animation-duration: 7s;
     animation-fill-mode: forwards;
 }
-@keyframes showText{
+@keyframes show{
     from{opacity: 0;}
     to{opacity: 1;}
 }
