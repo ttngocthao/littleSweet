@@ -206,17 +206,18 @@ input[name=searchBar] {
 /*------------INFORMATION OF EACH CAKE*/
 .infoContent{
     height: 60%;
+    width: 90%;
+    margin: 10% auto;
+
+    img{
+        width: 100%;
+        margin-right: 2rem;
+    }
 }
 .infoBox{
     
     .cakeImg{
        float: left;
     }
-    h5{
-        color:blue;
-    }
-    p{
-        color: red;
-        
-    }
+   
 }

@@ -554,7 +554,7 @@ input[name=searchBar] {
     width: .5em;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 10px;
+    border-radius: 50%;
     font-size: 1rem;
     background-color: white;
     background-image: url('../images/searchIconSmall.png');
@@ -567,6 +567,7 @@ input[name=searchBar] {
 }
 
 input[name=searchBar]:focus {
+    border-radius: 10px;
     width: 80%;
     background-color:lighten($color: $primaryColor, $amount: 30%);
     color:darken($color: $primaryColor, $amount: 30%);
@@ -619,17 +620,17 @@ input[name=searchBar]:focus {
     
 }
 /*--------style rating stars--------------*/
-.starsOuter{
+.starsOuter, .infoStarsOuter{
     display: inline-block;
     position: relative;
     font-family: FontAwesome;
   }
    
-  .starsOuter::before {
+  .starsOuter::before , .infoStarsOuter::before{
     content: "\f006 \f006 \f006 \f006 \f006";
   }
   
-  .starsInner {
+  .starsInner, .infoStarsInner {
     position: absolute;
     top: 0;
     left: 0;
@@ -637,7 +638,7 @@ input[name=searchBar]:focus {
     overflow: hidden;
     // width:0;
   }
-  .starsInner::before {
+  .starsInner::before , .infoStarsInner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     color: #f8ce0b;
   }

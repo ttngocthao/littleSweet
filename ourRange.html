@@ -18,23 +18,6 @@
     <body>
         <!--page header goes here-->
         <header>
-            <!-- <?php include 'header.php';?> -->
-            <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
-                <div class='menuIcon'>
-                    <i class="fas fa-angle-down"></i>
-                </div>
-            <nav class='navBar'>            
-                <ul>
-                    <a href='index.html'><li>Home</li></a>
-                    <a href='aboutUs.html' ><li>About Us</li></a>
-                    <a href='ourRange.html'class='active'><li>Our Ranges</li></a>
-                    <a href='#'><li>Catering</li></a>
-                    <a href='#'><li>Contact</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
             <section class='shoppingCart'>
                 <div id='cartIcon'><span id='cartCount'>0</span> </div>
                 <div id='showCart'>
@@ -57,10 +40,25 @@
                     </table>
                     <div>Total Cost: £ <span id='cartTotal'></span></div>
                 </div>
-            
             </section>
+            
+            <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
+                <div class='menuIcon'>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            <nav class='navBar'>            
+                <ul>
+                    <a href='index.html'><li>Home</li></a>
+                    <a href='aboutUs.html' ><li>About Us</li></a>
+                    <a href='ourRange.html'class='active'><li>Our Ranges</li></a>
+                    <a href='#'><li>Catering</li></a>
+                    <a href='#'><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
 
-             <section class='content' id='ourRange' style='clear:left;'>
+        <main>
+            <section class='content' id='ourRange' style='clear:left;'>
                         <h1>Our Ranges</h1>
                         <div class='deco-line'></div>
                         <select id='cakeList'>

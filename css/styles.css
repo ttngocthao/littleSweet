@@ -566,7 +566,7 @@ input[name=searchBar] {
   width: .5em;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 10px;
+  border-radius: 50%;
   font-size: 1rem;
   background-color: white;
   background-image: url("../images/searchIconSmall.png");
@@ -578,6 +578,7 @@ input[name=searchBar] {
   transition: width 0.4s ease-in-out; }
 
 input[name=searchBar]:focus {
+  border-radius: 10px;
   width: 80%;
   background-color: #d2eaec;
   color: #295f63;
@@ -631,22 +632,22 @@ input[name=searchBar]:focus {
   margin: .5rem auto; }
 
 /*--------style rating stars--------------*/
-.starsOuter {
+.starsOuter, .infoStarsOuter {
   display: inline-block;
   position: relative;
   font-family: FontAwesome; }
 
-.starsOuter::before {
+.starsOuter::before, .infoStarsOuter::before {
   content: "\f006 \f006 \f006 \f006 \f006"; }
 
-.starsInner {
+.starsInner, .infoStarsInner {
   position: absolute;
   top: 0;
   left: 0;
   white-space: nowrap;
   overflow: hidden; }
 
-.starsInner::before {
+.starsInner::before, .infoStarsInner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b; }
 
@@ -815,14 +816,15 @@ input[name=searchBar]:focus {
 
   /*------------INFORMATION OF EACH CAKE*/
   .infoContent {
-    height: 60%; }
+    height: 60%;
+    width: 90%;
+    margin: 10% auto; }
+    .infoContent img {
+      width: 100%;
+      margin-right: 2rem; }
 
   .infoBox .cakeImg {
-    float: left; }
-  .infoBox h5 {
-    color: blue; }
-  .infoBox p {
-    color: red; } }
+    float: left; } }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*------------------- BODY ----------------*/
@@ -865,7 +867,8 @@ input[name=searchBar]:focus {
     margin-top: 7rem; }
 
   .infoContent {
-    width: 80%; }
+    width: 80%;
+    margin: 8% auto; }
 
   .item {
     position: relative;

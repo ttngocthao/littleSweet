@@ -48,6 +48,8 @@ xhr.onload = function(){
             //display the rating stars.
             showRatingStar(cakeArray); 
            
+            //show rating stars in info box
+            showInfoRatingStar(cakeArray);
         })
     }
 }
@@ -64,7 +66,16 @@ function showRatingStar(cakeChoice){
         starsInner[i].style.width = convertToPercentage(cakeChoice[i].starRating);
     }
 }
-
+//this function shows the rating stars in the information box of each product
+function showInfoRatingStar(cakeChoice){
+    var starsInner = document.getElementsByClassName('infoStarsInner')
+    function convertToPercentage(starRating){
+       return (Math.round(starRating *20/10)*10).toString() +'%';
+    }
+    for (var i =0; i< starsInner.length;i++){
+        starsInner[i].style.width = convertToPercentage(cakeChoice[i].starRating);
+    }
+}
 
 //this function creates a template for each product
 function cakeTemplate(cakeChoice){
@@ -82,7 +93,7 @@ function cakeTemplate(cakeChoice){
                         <span class="closeBtn" id='closeBtn${cakeChoice.itemId}'>&times;</span>
                         <h3>${cakeChoice.name}</h3>
                         <div class='cakeImg'><img src='${cakeChoice.imageUrl}'></div>
-                        
+                        <div class='infoStarsOuter'><div class='infoStarsInner'></div></div>
                         <h5>Price: £${cakeChoice.price}</h5>
                         <p>${cakeChoice.info}</p>
                     </div>
