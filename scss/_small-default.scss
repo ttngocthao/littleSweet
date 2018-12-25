@@ -25,6 +25,7 @@ header #logo{
 }
 header #logo img{
    width: 3.5rem;
+   transition: .5s ease-in-out;
    animation-name: showText;
    animation-duration: 5s;
    animation-fill-mode: forwards;
@@ -110,7 +111,7 @@ main{
     position: relative;
     top: -30px;
     animation-name: showText;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-fill-mode: forwards;
 }
 @keyframes showText{
