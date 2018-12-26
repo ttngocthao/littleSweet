@@ -143,11 +143,11 @@ function displayCartTemplate(list){
             <td>pic</td>
             <td>${list.name}</td>
             <td>${list.count}</td>
-            <td><button class="addBtn" dataId="${list.id}"><i class="fas fa-plus"></i></button></td>
-            <td><button class="subBtn" dataId="${list.id}"><i class="fas fa-minus"></i></button></td>
-            <td>x ${list.price}</td>
-            <td>= ${list.price * list.count}</td>
-            <td><button class="deleteItemBtn" dataId="${list.id}"><i class="fas fa-times"></i></button></td>
+            <td><div class="subBtn" dataId="${list.id}"><i class="fas fa-minus"></i></div></td>
+            <td><div class="addBtn" dataId="${list.id}"><i class="fas fa-plus"></div></td>            
+            <td>£ ${(list.price).toFixed(2)}</td>
+            <td>£ ${(list.price * list.count).toFixed(2)}</td>
+            <td><div class="deleteItemBtn" dataId="${list.id}"><i class="fas fa-times"></i></div></td>
         </tr>
     
     `
@@ -157,7 +157,7 @@ function displayCart(){
     //using a copy of the cart to display
     var cartArray = listCart();
     document.getElementById('tableContent').innerHTML= `${cartArray.map(displayCartTemplate).join('')}`;
-    document.getElementById('cartTotal').innerHTML =  totalCost();
+    document.getElementById('cartTotal').innerHTML = '£'+ totalCost();
     //for delete Item btn
     deleteItemBtn();
     //for '+' btn
