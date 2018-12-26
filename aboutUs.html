@@ -21,24 +21,27 @@
             <section class='shoppingCart'>
                 <div id='cartIcon'><span id='cartCount'>0</span> </div>       
                 <div id='showCart'>
-                    <div id='backToShop'>back</div>
-                    <button id='clearCartBtn'style='display:none'>Clear Cart</button>
-                    <table>
-                        <tr>
-                            <th>Pic</th>
-                            <th>Name</th>
-                            <th>Amount</th>
-                            <th></th>
-                            <th></th>
-                            <th>Price</th>
-                            <th>Total</th>
-                            <th></th>
-                        </tr>
-                        <tbody id='tableContent'>
+                     <div class='showCartContent'>
+                         <div id='backToShop'>&times</div>
+                        <div id='clearCartBtn'>Clear All</div>
+                        <table>
+                            <tr>
+                                <th>Pic</th>
+                                <th>Name</th>
+                                <th>Qua.</th>
+                                <th></th>
+                                <th></th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th><i class="fas fa-times"></i></th>
+                            </tr>
+                            <tbody id='tableContent'>
 
-                        </tbody>
-                    </table>
-                    <div>Total Cost: £ <span id='cartTotal'></span></div>
+                            </tbody>
+                        </table>
+                        <div class='cartTotal'>Total Cost:    <span id='cartTotal'></span></div>
+                        <div id='confirmBtn'>Confirm</div>
+                    </div>
                 </div>
             <div id='logo'><img src='images/logo1x.png' srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></div>
                 <div class='menuIcon'>
