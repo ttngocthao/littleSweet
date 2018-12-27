@@ -2,15 +2,16 @@
 var cart=[];
 
 //object constructor
-var Item = function(id, name, price, count){
+var Item = function(id, name, price, count, imageUrl){
     this.id= id;
     this.name = name;
     this.price = price;
     this.count = count;
+    this.imageUrl = imageUrl;
 }
 
 //function add Item to cart
-function addItemToCart(id, name, price, count){
+function addItemToCart(id, name, price, count, imageUrl){
     for(var i in cart){
         if(cart[i].id === id){
             cart[i].count +=count;
@@ -18,7 +19,7 @@ function addItemToCart(id, name, price, count){
             return;            
         }
     }
-    var item = new Item(id, name, price, count);
+    var item = new Item(id, name, price, count, imageUrl);
     cart.push(item);  
     saveCart(); 
 }
@@ -127,7 +128,8 @@ function addToCartBtn(){
             var idNo= this.getAttribute('dataId');
             var name= this.getAttribute('dataName');
             var price= Number(this.getAttribute('dataPrice'));
-            addItemToCart(idNo,name,price,1);
+            var image=this.getAttribute('dataimg');
+            addItemToCart(idNo,name,price,1,image);
             //update showing cart list
             displayCart();
             //update showing item number in cart
@@ -140,7 +142,7 @@ function addToCartBtn(){
 function displayCartTemplate(list){
     return `
         <tr>
-            <td>pic</td>
+            <td><img src='${list.imageUrl}'></td>
             <td>${list.name}</td>
             <td>${list.count}</td>
             <td><div class="subBtn" dataId="${list.id}"><i class="fas fa-minus"></i></div></td>

@@ -222,3 +222,11 @@ input[name=searchBar] {
     }
    
 }
+/*SHOPPING CART*/
+table th:nth-child(1),#tableContent td:nth-child(1), table th:nth-child(7),#tableContent td:nth-child(7) {
+    display: table-cell !important;
+    max-width: 2rem;  
+}
+#tableContent td:nth-child(1) img{
+    width: 30%;
+}

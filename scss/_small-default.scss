@@ -448,117 +448,117 @@ footer{
         text-align: center;
     }
    
-    #showCart{
-        display:none;
-        position: fixed; /* Stay in place */
-        z-index: 25; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: $secondaryColor;
-    }
-    .showCartContent{
-        border:2px dotted $lemonColor;
-        background-color: white;
-        margin: 2% auto;
-        position: relative;
-        padding: 1rem;
-        width: 95%;
-    }
-    #backToShop{
-        float:right;
-        cursor: pointer;
-        color: $primaryColor;
-        font-size: 1.5rem;
-        font-weight: 600;
-        position: absolute;
-        top: 0;
-        right: 10px;
-    }
-    table{
-        border-collapse: collapse;
-        width: 100%;
-        margin:.5rem 0;
-       
-    }
-    table th{
-        color: $primaryColor;
-        font-size: 1rem;
-        padding: .2rem 0;
-        border-bottom: 1px solid $lemonColor;
-        margin: .5rem 0;
-    }
-    #tableContent tr{
-        text-align: center;
-        color:$fontColor;
-    }
-    #tableContent td{
-        padding:1rem 0;
-    }
-    //hide the first column(item's product) of the table
-    //hide the total price of each product
-    table th:nth-of-type(1),#tableContent td:nth-of-type(1), table th:nth-of-type(7),#tableContent td:nth-of-type(7) {
-        display: none;        
-    }        
-    .cartTotal{
-        margin-right: $gutter;
-        text-align: right;
-        font-size: 1rem;
-        color:$fontColor;
-        padding: 1rem 0;
-        border-top: .5px solid $lemonColor;
-    }
-    #cartTotal {
-        padding:0 $gutter;
-        color:$primaryColor;
-    }
-    #clearCartBtn{
-        display: inline-block;
-        color:$fontColor;
-        background-color: lighten($primaryColor,20%);
-        border-radius: 0 10px 0 10PX;
-        border: 2px solid $lemonColor;
-        font-weight: bold;
-        padding: .5rem .2rem;
-        cursor: pointer;
-        margin-bottom: .5rem;
-        box-shadow: 2px 2px 2px lightgrey;
-    }
-    #clearCartBtn:hover,  #confirmBtn:hover{
-        background-color: $primaryColor;
-        color:white;
-        border: 2px dotted $lemonColor;
-    }
-    #confirmBtn{
-        text-align: center;
-        
-        width:50%;
-        color:$fontColor;
-        background-color: lighten($primaryColor,20%);
-        border-radius: 0 10px 0 10PX;
-        border: 2px solid $lemonColor;
-        font-weight: bold;
-        padding: .5rem .2rem;
-        cursor: pointer;
-        margin:0 auto .5rem auto;
-        box-shadow: 2px 2px 2px lightgrey;
-    }
-    .subBtn, .addBtn, .deleteItemBtn{
-        cursor: pointer;
-    }
-    .subBtn i, .addBtn i, .deleteItemBtn i{
-        border: 2px solid $lemonColor; color: $fontColor;
-        text-align: center;
-        border-radius: 50%;
-        background-color:lighten($primaryColor,20%);
-        padding: .2rem 0;
-        height: 1rem;
-        width: 1rem;
-        font-size: .5rem;
-    }
+}
+#showCart{
+    display:none;
+    position: fixed; /* Stay in place */
+    z-index: 25; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: $secondaryColor;
+}
+.showCartContent{
+    border:2px dotted $lemonColor;
+    background-color: white;
+    margin: 2% auto;
+    position: relative;
+    padding: 1rem;
+    width: 95%;
+}
+#backToShop{
+    float:right;
+    cursor: pointer;
+    color: $primaryColor;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin:.5rem 0;
    
+}
+table th{
+    color: $primaryColor;
+    font-size: 1rem;
+    padding: .2rem 0;
+    border-bottom: 1px solid $lemonColor;
+    margin: .5rem 0;
+}
+#tableContent tr{
+    text-align: center;
+    color:$fontColor;
+}
+#tableContent td{
+    padding:1rem 0;
+}
+   //hide the first column(item's product) of the table
+//hide the total price of each product
+table th:nth-child(1),#tableContent td:nth-child(1), table th:nth-child(7),#tableContent td:nth-child(7) {
+    display: none;  
+}
+     
+.cartTotal{
+    margin-right: $gutter;
+    text-align: right;
+    font-size: 1rem;
+    color:$fontColor;
+    padding: 1rem 0;
+    border-top: .5px solid $lemonColor;
+}
+#cartTotal {
+    padding:0 $gutter;
+    color:$primaryColor;
+}
+#clearCartBtn{
+    display: inline-block;
+    color:$fontColor;
+    background-color: lighten($primaryColor,20%);
+    border-radius: 0 10px 0 10PX;
+    border: 2px solid $lemonColor;
+    font-weight: bold;
+    padding: .5rem .2rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+#clearCartBtn:hover,  #confirmBtn:hover{
+    background-color: $primaryColor;
+    color:white;
+    border: 2px dotted $lemonColor;
+}
+#confirmBtn{
+    text-align: center;
+    
+    width:50%;
+    color:$fontColor;
+    background-color: lighten($primaryColor,20%);
+    border-radius: 0 10px 0 10PX;
+    border: 2px solid $lemonColor;
+    font-weight: bold;
+    padding: .5rem .2rem;
+    cursor: pointer;
+    margin:0 auto .5rem auto;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+.subBtn, .addBtn, .deleteItemBtn{
+    cursor: pointer;
+}
+.subBtn i, .addBtn i, .deleteItemBtn i{
+    border: 2px solid $lemonColor; color: $fontColor;
+    text-align: center;
+    border-radius: 50%;
+    background-color:lighten($primaryColor,20%);
+    padding: .2rem 0;
+    height: 1rem;
+    width: 1rem;
+    font-size: .5rem;
 }
 
 #cakeList{
