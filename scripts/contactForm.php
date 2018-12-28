@@ -5,7 +5,7 @@ if( isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['pho
 	$phone = $_POST['phone']; // HINT: use preg_replace() to filter the data
 	$email = $_POST['email'];
 	$m = nl2br($_POST['message']);
-	$to = "ttngocthao_87@yahoo.com";	
+	$to = "webdeveloper@thaotruong.uk";
 	$from = $email;
 	$subject = 'Contact Form Message';
 	$message = '<b>First Name:</b> '.$firstName. '<b>Last Name:</b> ' .$lastName.' <br><b>phone:</b> ' .$phone. ' <br><b>Email:</b> '.$email.' <p>'.$m.'</p>';
