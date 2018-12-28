@@ -130,6 +130,8 @@ function addToCartBtn(){
             var price= Number(this.getAttribute('dataPrice'));
             var image=this.getAttribute('dataimg');
             addItemToCart(idNo,name,price,1,image);
+            //show message 'added to basket'
+            popUpMsg('Added to The Basket');
             //update showing cart list
             displayCart();
             //update showing item number in cart
@@ -138,6 +140,18 @@ function addToCartBtn(){
         })
     }   
 }
+
+//show message when user has added item into a basket
+function popUpMsg(stringMsg){
+   var popUpMsg = document.getElementById('popUpMsg');
+    popUpMsg.innerHTML = stringMsg;
+    // Add the "appear" class to popUpMsg
+       popUpMsg.className ='appear';
+  
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ popUpMsg.className = popUpMsg.className.replace("appear", ""); }, 3000);
+    
+  }
 //template to be used for display shopping basket
 function displayCartTemplate(list){
     return `
@@ -232,4 +246,16 @@ document.getElementById('backToShop').addEventListener('click',function(){
 //show the list of items when click basket icon
 document.getElementById('cartIcon').addEventListener('click', function(){
     document.getElementById('showCart').style.display='block'
+})
+//confirmBTN in display cart
+//show the message 'Thank you for your order'
+//clear the basket
+//close the cart list
+document.getElementById('confirmBtn').addEventListener('click',function(){
+    document.getElementById('showCart').style.display='none';
+    clearCart();
+    displayCart();
+    displayCountCart();
+    popUpMsg('Thank you for your order');
+
 })
