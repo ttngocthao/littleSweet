@@ -230,3 +230,30 @@ table th:nth-child(1),#tableContent td:nth-child(1), table th:nth-child(7),#tabl
 #tableContent td:nth-child(1) img{
     width: 30%;
 }
+
+/*-----CONTACT US HTML*/
+#contact{
+    margin-top:5rem;
+}
+
+#contact_form{
+    text-align: left;
+    input{
+        
+        width: 70%;
+        
+    }
+    textarea{
+        width:100%;
+        text-align: center;
+    }
+    label{
+        text-align: left;
+        display: inline-block;
+        width:30%;
+        
+    }
+    #contactSubmitBtn{
+        width: 50%;
+    }
+}

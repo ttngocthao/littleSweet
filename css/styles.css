@@ -755,6 +755,37 @@ input[name=searchBar]:focus {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b; }
 
+/*-----------------CONTACT US HTML ------------------*/
+#contact_form {
+  text-align: center; }
+  #contact_form input, #contact_form textarea {
+    width: 90%;
+    padding: .5rem;
+    border-radius: 15px;
+    border: 2px solid #dcb239;
+    font-family: "Merienda", cursive; }
+  #contact_form label {
+    display: block;
+    margin: 1rem auto 0 auto;
+    font-size: .8rem; }
+  #contact_form #contactSubmitBtn {
+    color: #827775;
+    background-color: #aedadd;
+    border-radius: 0 10px 0 10PX;
+    border: 2px solid #dcb239;
+    font-weight: bold;
+    padding: .5rem .2rem;
+    cursor: pointer;
+    margin: 0 auto .5rem auto;
+    box-shadow: 2px 2px 2px lightgrey; }
+  #contact_form #contactSubmitBtn:hover {
+    background-color: #66b9bf;
+    color: white;
+    border: 2px dotted #dcb239; }
+
+#contact {
+  margin-top: 3rem; }
+
 @media only screen and (min-width: 35rem) {
   body {
     font-size: 15px; }
@@ -937,7 +968,25 @@ input[name=searchBar]:focus {
     max-width: 2rem; }
 
   #tableContent td:nth-child(1) img {
-    width: 30%; } }
+    width: 30%; }
+
+  /*-----CONTACT US HTML*/
+  #contact {
+    margin-top: 5rem; }
+
+  #contact_form {
+    text-align: left; }
+    #contact_form input {
+      width: 70%; }
+    #contact_form textarea {
+      width: 100%;
+      text-align: center; }
+    #contact_form label {
+      text-align: left;
+      display: inline-block;
+      width: 30%; }
+    #contact_form #contactSubmitBtn {
+      width: 50%; } }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*------------------- BODY ----------------*/
@@ -987,5 +1036,9 @@ input[name=searchBar]:focus {
     position: relative;
     float: left;
     width: 33.33%;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  /*CONTACT US HTML*/
+  #contact_form #contactSubmitBtn {
+    width: 30%; } }
 /*end media query*/
