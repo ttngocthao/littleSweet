@@ -10,6 +10,7 @@ function submitForm(){
 	formdata.append( "email", _("customerEmail").value );
 	formdata.append( "message", _("customerMsg").value );
 	var ajax = new XMLHttpRequest();
+
     ajax.open( "POST", "contactForm.php" );
     
     ajax.onreadystatechange = function() {

@@ -97,9 +97,7 @@ header #logo img{
 }
 
 .forCakeTowerImg{
-    float:right;
-    
-    // background-color: pink;
+    float:right;    
     shape-outside: polygon(10% 100%, 40% 0, 65% 0, 100% 90%);
     clip-path: polygon(10% 100%, 40% 0, 65% 0, 90% 100%);
     img{
