@@ -171,8 +171,7 @@
             "imageUrl":"./images/CH/spiderMan.jpg",
             "price":30,
             "info":"Spider Man Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        }
-        ,
+        },
     
         {
             "itemId":"ch8",
@@ -192,5 +191,343 @@
             "info":"Unicorn Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
 
+    ],
+   
+    [
+        {
+            "itemId":"dss1",
+            "name":"Choco-CheeseCake",
+            "starRating":5,
+            "imageUrl":"./images/DSS/cheese1.jpg",
+            "price":16,
+            "info":"Chocolate Cheese Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss2",
+            "name":"CheeseCake",
+            "starRating":3.8,
+            "imageUrl":"./images/DSS/cheese2.jpg",
+            "price":10,
+            "info":"Cheese 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss3",
+            "name":"CheeseCake",
+            "starRating":4,
+            "imageUrl":"./images/DSS/cheese3.jpg",
+            "price":18,
+            "info":"Cheese 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss4",
+            "name":"CheeseCake",
+            "starRating":4.5,
+            "imageUrl":"./images/DSS/cheese4.jpg",
+            "price":20,
+            "info":"Cheese 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss5",
+            "name":"CheeseCake",
+            "starRating":4.2,
+            "imageUrl":"./images/DSS/cheese5.jpg",
+            "price":10,
+            "info":"Cheese 5 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss6",
+            "name":"CheeseCake",
+            "starRating":4.5,
+            "imageUrl":"./images/DSS/cheese6.jpg",
+            "price":16,
+            "info":"Cheese 6 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss7",
+            "name":"CheeseCake",
+            "starRating":4,
+            "imageUrl":"./images/DSS/cheese7.jpg",
+            "price":20,
+            "info":"Cheese 7 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss8",
+            "name":"CheeseCake",
+            "starRating":5,
+            "imageUrl":"./images/DSS/cheese8.jpg",
+            "price":16,
+            "info":"Cheese 8 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"dss9",
+            "name":"CheeseCake",
+            "starRating":3.8,
+            "imageUrl":"./images/DSS/cheese10.jpg",
+            "price":16,
+            "info":"Cheese 9 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+
+    
+    ],
+
+    [
+        {
+            "itemId":"svr1",
+            "name":"Pastry 1",
+            "starRating":5,
+            "imageUrl":"./images/SVR/pastry1.jpg",
+            "price":8,
+            "info":"Pastry 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr2",
+            "name":"Pastry 2",
+            "starRating":4.5,
+            "imageUrl":"./images/SVR/pastry2.jpg",
+            "price":8,
+            "info":"Pastry 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr3",
+            "name":"Pastry 3",
+            "starRating":5,
+            "imageUrl":"./images/SVR/pastry3.jpg",
+            "price":8,
+            "info":"Pastry 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr4",
+            "name":"Pastry 4",
+            "starRating":4,
+            "imageUrl":"./images/SVR/pastry4.jpg",
+            "price":8,
+            "info":"Pastry 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr5",
+            "name":"Pastry 5",
+            "starRating":5,
+            "imageUrl":"./images/SVR/pastry5.jpg",
+            "price":8,
+            "info":"Pastry 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr6",
+            "name":"Pastry 6",
+            "starRating":3.8,
+            "imageUrl":"./images/SVR/pastry6.jpg",
+            "price":8,
+            "info":"Pastry 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"svr7",
+            "name":"Pastry 7",
+            "starRating":3.8,
+            "imageUrl":"./images/SVR/pastry7.jpg",
+            "price":8,
+            "info":"Pastry 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+
+    ],
+    [
+        {
+            "itemId":"cup1",
+            "name":"Cup cake 1",
+            "starRating":4,
+            "imageUrl":"./images/CUP/cup1.jpg",
+            "price":5,
+            "info":"Cup Cake 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup2",
+            "name":"Cup Cake 2",
+            "starRating":5,
+            "imageUrl":"./images/CUP/cup2.jpg",
+            "price":5,
+            "info":"Cup Cake 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup3",
+            "name":"Cup Cake 3",
+            "starRating":4.2,
+            "imageUrl":"./images/CUP/cup3.jpg",
+            "price":5,
+            "info":"Cup Cake 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup4",
+            "name":"Cup Cake 4",
+            "starRating":4,
+            "imageUrl":"./images/CUP/cup4.jpg",
+            "price":5,
+            "info":"Cup Cake 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup5",
+            "name":"Cup Cake 5",
+            "starRating":4.5,
+            "imageUrl":"./images/CUP/cup5.jpg",
+            "price":5,
+            "info":"Cup Cake 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup6",
+            "name":"Cup Cake 6",
+            "starRating":5,
+            "imageUrl":"./images/CUP/cup6.jpg",
+            "price":5,
+            "info":"Cup Cake 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"cup7",
+            "name":"Cup Cake 7",
+            "starRating":4,
+            "imageUrl":"./images/CUP/cup7.jpg",
+            "price":5,
+            "info":"Cup Cake 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    [
+        {
+            "itemId":"mff1",
+            "name":"Muffin 1",
+            "starRating":5,
+            "imageUrl":"./images/MFF/muffin1.jpg",
+            "price":5,
+            "info":"Muffin 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mff2",
+            "name":"Muffin 2",
+            "starRating":4.5,
+            "imageUrl":"./images/MFF/muffin2.jpg",
+            "price":5,
+            "info":"Muffin 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mff3",
+            "name":"Muffin 3",
+            "starRating":4.8,
+            "imageUrl":"./images/MFF/muffin3.jpg",
+            "price":5,
+            "info":"Muffin 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mff4",
+            "name":"Muffin 4",
+            "starRating":5,
+            "imageUrl":"./images/MFF/muffin4.jpg",
+            "price":5,
+            "info":"Muffin 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mff5",
+            "name":"Muffin 5",
+            "starRating":5,
+            "imageUrl":"./images/MFF/muffin5.jpg",
+            "price":5,
+            "info":"Muffin 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+
+    [
+        {
+            "itemId":"mcr1",
+            "name":"Macaron 1",
+            "starRating":4,
+            "imageUrl":"./images/MCR/mcr1.jpg",
+            "price":5,
+            "info":"Macaron 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mcr2",
+            "name":"Macaron 2",
+            "starRating":4.5,
+            "imageUrl":"./images/MCR/mcr2.jpg",
+            "price":5,
+            "info":"Macaron 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mcr3",
+            "name":"Macaron 3",
+            "starRating":5,
+            "imageUrl":"./images/MCR/mcr3.jpg",
+            "price":5,
+            "info":"Macaron 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mcr4",
+            "name":"Macaron 4",
+            "starRating":4,
+            "imageUrl":"./images/MCR/mcr4.jpg",
+            "price":5,
+            "info":"Macaron 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mcr5",
+            "name":"Macaron 5",
+            "starRating":4.5,
+            "imageUrl":"./images/MCR/mcr5.jpg",
+            "price":5,
+            "info":"Macaron 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"mcr6",
+            "name":"Macaron 6",
+            "starRating":5,
+            "imageUrl":"./images/MCR/mcr6.jpg",
+            "price":5,
+            "info":"Macaron 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ],
+    [
+        {
+            "itemId":"ctr1",
+            "name":"Sandwich 1",
+            "starRating":5,
+            "imageUrl":"./images/CTR/ctr1.jpg",
+            "price":5,
+            "info":"Sandwich 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"ctr2",
+            "name":"Sandwich 2",
+            "starRating":4.5,
+            "imageUrl":"./images/CTR/ctr2.jpg",
+            "price":5,
+            "info":"Sandwich 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"ctr3",
+            "name":"Sandwich 3",
+            "starRating":5,
+            "imageUrl":"./images/CTR/ctr3.jpg",
+            "price":5,
+            "info":"Sandwich 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"ctr4",
+            "name":"Sandwich 4",
+            "starRating":4,
+            "imageUrl":"./images/CTR/ctr4.jpg",
+            "price":5,
+            "info":"Sandwich 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"ctr5",
+            "name":"Sandwich 5",
+            "starRating":5,
+            "imageUrl":"./images/CTR/ctr5.jpg",
+            "price":5,
+            "info":"Sandwich 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "itemId":"ctr6",
+            "name":"Sandwich 6",
+            "starRating":4.8,
+            "imageUrl":"./images/CTR/ctr6.jpg",
+            "price":5,
+            "info":"Sandwich 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
     ]
 ]

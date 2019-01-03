@@ -204,21 +204,17 @@ input[name=searchBar] {
 }
 /*------------INFORMATION OF EACH CAKE*/
 .infoContent{
-    height: 60%;
-    width: 90%;
-    margin: 10% auto;
-
-    img{
-        width: 100%;
-        margin-right: 2rem;
-    }
+    height: auto;
+    width: 80%;
+    margin: 5% auto;
+    padding:.5rem;
 }
-.infoBox{
-    
-    .cakeImg{
-       float: left;
-    }
-   
+.infoContent p{
+    width: 80%;
+    margin: .5rem auto;
+}
+#showCake .infoContent .cakeImg img{
+    width: 30%;
 }
 /*SHOPPING CART*/
 table th:nth-child(1),#tableContent td:nth-child(1), table th:nth-child(7),#tableContent td:nth-child(7) {

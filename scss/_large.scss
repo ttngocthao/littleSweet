@@ -1,5 +1,7 @@
 /*------------------- BODY ----------------*/
-
+body{
+    color: blue;
+}
 
 
 
@@ -51,8 +53,11 @@
     margin-top: 7rem;
 }
 .infoContent {
-    width: 80%;
-    margin: 8% auto;
+    width: 70%;
+    padding:1rem;
+}
+#showCake .infoContent .cakeImg img{
+    width: 30%;
 }
 .item{
     position: relative;

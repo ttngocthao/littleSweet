@@ -10,6 +10,7 @@ xhr.responseType='text';
 xhr.onload = function(){
     if(xhr.status===200){
         var cakes= JSON.parse(xhr.responseText);
+        console.log(cakes);
         var showCake= document.getElementById('showCake');
         var choice = document.getElementById('cakeList');
 
@@ -24,6 +25,30 @@ xhr.onload = function(){
                 
                 case "childrenList":
                 cakeArray= cakes[1]
+                break;
+
+                case "dessertList":
+                cakeArray =  cakes[2]
+                break;
+
+                case "savouryList":
+                cakeArray = cakes[3]
+                break;
+
+                case "cupcakeList":
+                cakeArray =cakes[4]
+                break;
+
+                case "muffinList":
+                cakeArray = cakes[5]
+                break;
+
+                case "macaronList":
+                cakeArray = cakes[6]
+                break;
+
+                case "cateringList":
+                cakeArray = cakes[7]
                 break;
             }
             
