@@ -4,7 +4,7 @@
             "itemId":"clb1",
             "name":"Birthday",
             "starRating":3.5,
-            "imageUrl":"./images/birthday1.jpg",
+            "imageUrl":"./images/CLB/birthday1.jpg",
             "price":12,
             "info":"Birthday 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -13,7 +13,7 @@
             "itemId":"clb2",
             "name":"Birthday",
             "starRating":4,
-            "imageUrl":"./images/birthday2.jpg",
+            "imageUrl":"./images/CLB/birthday2.jpg",
             "price":58,
             "info":"Birthday 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -22,7 +22,7 @@
             "itemId":"clb3",
             "name":"Birthday",
             "starRating": 4.4,
-            "imageUrl":"./images/birthday3.jpg",
+            "imageUrl":"./images/CLB/birthday3.jpg",
             "price":38,
             "info":"Birthday 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -31,7 +31,7 @@
             "itemId":"clb4",
             "name":"Birthday",
             "starRating": 4.5,
-            "imageUrl":"./images/birthday4.jpg",
+            "imageUrl":"./images/CLB/birthday4.jpg",
             "price":68,
             "info":"Birthday 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -40,7 +40,7 @@
             "itemId":"clb5",
             "name":"Anniversary",
             "starRating": 4.5,
-            "imageUrl":"./images/anniver1.jpg",
+            "imageUrl":"./images/CLB/anniver1.jpg",
             "price":68,
             "info":"Anniversary 1 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -49,7 +49,7 @@
             "itemId":"clb6",
             "name":"Anniversary",
             "starRating": 5,
-            "imageUrl":"./images/anniver2.jpg",
+            "imageUrl":"./images/CLB/anniver2.jpg",
             "price":68,
             "info":"Anniversary 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -58,7 +58,7 @@
             "itemId":"clb7",
             "name":"Anniversary",
             "starRating": 4,
-            "imageUrl":"./images/anniver3.jpg",
+            "imageUrl":"./images/CLB/anniver3.jpg",
             "price":68,
             "info":"Anniversary 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -67,7 +67,7 @@
             "itemId":"clb8",
             "name":"Anniversary",
             "starRating": 5,
-            "imageUrl":"./images/anniver4.jpg",
+            "imageUrl":"./images/CLB/anniver4.jpg",
             "price":68,
             "info":"Anniversary 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -76,7 +76,7 @@
             "itemId":"clb9",
             "name":"Wedding",
             "starRating": 4.5,
-            "imageUrl":"./images/wedding1.jpg",
+            "imageUrl":"./images/CLB/wedding1.jpg",
             "price":68,
             "info":"Wedding 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -85,7 +85,7 @@
             "itemId":"clb10",
             "name":"Wedding",
             "starRating": 4.3,
-            "imageUrl":"./images/wedding2.jpg",
+            "imageUrl":"./images/CLB/wedding2.jpg",
             "price":68,
             "info":"Wedding 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -94,7 +94,7 @@
             "itemId":"clb11",
             "name":"Wedding",
             "starRating": 4,
-            "imageUrl":"./images/wedding3.jpg",
+            "imageUrl":"./images/CLB/wedding3.jpg",
             "price":68,
             "info":"Wedding 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -103,7 +103,7 @@
             "itemId":"clb12",
             "name":"Wedding",
             "starRating": 5,
-            "imageUrl":"./images/wedding4.jpg",
+            "imageUrl":"./images/CLB/wedding4.jpg",
             "price":68,
             "info":"Wedding 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
@@ -114,7 +114,7 @@
             "itemId":"ch1",
             "name":"Mermaid",
             "starRating":5,
-            "imageUrl":"https://via.placeholder.com/200",
+            "imageUrl":"./images/CH/mermaid1.jpg",
             "price":26,
             "info":"Mermaid Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -123,7 +123,7 @@
             "itemId":"ch2",
             "name":"Dragon",
             "starRating":4.5,
-            "imageUrl":"https://via.placeholder.com/200",
+            "imageUrl":"./images/CH/dragon.jpg",
             "price":30,
             "info":"Dragon Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -132,9 +132,65 @@
             "itemId":"ch3",
             "name":"Cat",
             "starRating":4,
-            "imageUrl":"./images/cat.jpg",
+            "imageUrl":"./images/CH/cat.jpg",
             "price":40,
             "info":"Cat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"ch4",
+            "name":"Dragon Egg",
+            "starRating":4,
+            "imageUrl":"./images/CH/dragonEgg.jpg",
+            "price":30,
+            "info":"Dragon Egg Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"ch5",
+            "name":"Minion",
+            "starRating":4.2,
+            "imageUrl":"./images/CH/minion.jpg",
+            "price":30,
+            "info":"Minion Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"ch6",
+            "name":"Rocket",
+            "starRating":4,
+            "imageUrl":"./images/CH/rocket.jpg",
+            "price":30,
+            "info":"Rocket Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"ch7",
+            "name":"Spider Man",
+            "starRating":4.5,
+            "imageUrl":"./images/CH/spiderMan.jpg",
+            "price":30,
+            "info":"Spider Man Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
+        ,
+    
+        {
+            "itemId":"ch8",
+            "name":"Lego",
+            "starRating":4,
+            "imageUrl":"./images/CH/lego.jpg",
+            "price":30,
+            "info":"Lego Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+    
+        {
+            "itemId":"ch9",
+            "name":"Unicorn",
+            "starRating":5,
+            "imageUrl":"./images/CH/unicorn.jpg",
+            "price":45,
+            "info":"Unicorn Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+
     ]
 ]
