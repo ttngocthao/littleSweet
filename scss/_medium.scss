@@ -7,7 +7,7 @@ body{
     margin: 0;
 }
 header #logo img{
-    width: 5rem;
+    width: 3rem;
     transition: .5s ease-in-out;   
  }
 .shrinkLogo{
@@ -48,6 +48,13 @@ header #logo img{
     }
     ul a:hover li{
         color: $lemonColor;
+    }
+    .active li{
+        background-color: transparent;
+        border-top: 2px dotted $lemonColor;
+        color:$lemonColor;
+        border-bottom: 2px dotted $lemonColor;
+
     }
     
 }

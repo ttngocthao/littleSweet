@@ -173,6 +173,8 @@ header .menuIcon {
     background-color: white; }
   .navBar ul a:hover li {
     color: #66b9bf; }
+  .navBar .active li {
+    background-color: #dcb239; }
   .navBar a {
     text-decoration: none;
     color: white; }
@@ -223,6 +225,7 @@ main {
 
 #slide {
   width: 100%;
+  height: 100%;
   text-align: center;
   background-color: #fedcd2;
   z-index: -5; }
@@ -431,7 +434,7 @@ footer {
   float: left;
   position: relative;
   border-radius: 50%;
-  border: solid .5rem transparent; }
+  border: solid 1.5rem transparent; }
   .forLogoImg img {
     position: relative;
     width: 90%;
@@ -842,7 +845,7 @@ input[name=searchBar]:focus {
     margin: 0; }
 
   header #logo img {
-    width: 5rem;
+    width: 3rem;
     transition: .5s ease-in-out; }
 
   .shrinkLogo {
@@ -877,6 +880,11 @@ input[name=searchBar]:focus {
       border-bottom: 2px dotted #dcb239; }
     .navBar ul a:hover li {
       color: #dcb239; }
+    .navBar .active li {
+      background-color: transparent;
+      border-top: 2px dotted #dcb239;
+      color: #dcb239;
+      border-bottom: 2px dotted #dcb239; }
 
   /*-------BANNER-------------*/
   .banner img:first-child {

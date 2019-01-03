@@ -89,6 +89,9 @@ header .menuIcon{
     ul a:hover li{
         color: $primaryColor;
     }
+    .active li{
+        background-color: $lemonColor;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -142,7 +145,8 @@ main{
     animation-direction: alternate;    
 }
 #slide{
-    width:100%;    
+    width:100%; 
+    height: 100%;   
     text-align:center;
     background-color:$secondaryColor;
     z-index: -5;
@@ -379,7 +383,7 @@ footer{
   float:left;
   position: relative;
   border-radius:50%;
-  border: solid .5rem transparent;
+  border: solid 1.5rem transparent;
     
     img{
         position: relative;
