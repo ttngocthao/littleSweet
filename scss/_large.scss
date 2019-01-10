@@ -6,6 +6,7 @@
 /*------------------- NAVIGATION ----------------*/
 .navBar ul li {
     padding: .5rem 3rem;
+    font-size:1.4rem;
 }
 
 /*------------------- MAIN ----------------*/
@@ -22,11 +23,25 @@
     font-size: 1rem;
     line-height: 2em;
  }   
+ .info{
+    line-height: 1.5rem;
+    
+  }
+
+  
  #slide .info{
     width: 70%;
     line-height: 2rem;
-} 
+    font-size: 1.2rem;
+}
+#slide .info h3 {
+    font-size: 1.7rem;
+    margin-bottom: .7rem;
+}
 /*-------------ABOUT US------------*/
+#aboutUs{
+    margin-top:8rem;
+}
 .forLogoImg{  
    
    height: 15rem;
@@ -48,7 +63,7 @@
 
 /*OUR RANGE*/
 #ourRange{
-    margin-top: 7rem;
+    margin-top: 9rem;
 }
 .infoContent {
     width: 70%;

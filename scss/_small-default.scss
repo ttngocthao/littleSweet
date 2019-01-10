@@ -597,11 +597,15 @@ table th:nth-child(1),#tableContent td:nth-child(1), table th:nth-child(7),#tabl
     padding: .5rem 1rem;
     border-radius: 10px;
     width: 80%;
-    letter-spacing: .1rem;
+    
     background-color: $secondaryColor;
     font-family: $defaultFont;
     color: $fontColor;
     
+}
+#cakeList option{
+    font-size:.9rem;
+    letter-spacing: .1rem;
 }
 #showCake img{
     width:100%;

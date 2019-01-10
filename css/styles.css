@@ -645,10 +645,13 @@ table th:nth-child(1), #tableContent td:nth-child(1), table th:nth-child(7), #ta
   padding: .5rem 1rem;
   border-radius: 10px;
   width: 80%;
-  letter-spacing: .1rem;
   background-color: #fedcd2;
   font-family: "Merienda", cursive;
   color: #827775; }
+
+#cakeList option {
+  font-size: .9rem;
+  letter-spacing: .1rem; }
 
 #showCake img {
   width: 100%; }
@@ -916,7 +919,11 @@ input[name=searchBar]:focus {
     grid-template-columns: repeat(2, 50% 50%);
     align-items: center; }
     #slide .info {
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      font-size: 1.2rem; }
+    #slide .info h3 {
+      font-size: 1.7rem;
+      margin-bottom: .7rem; }
 
   /*-------------ABOUT US-----------------*/
   #aboutUs {
@@ -999,6 +1006,14 @@ input[name=searchBar]:focus {
     width: 80%;
     border-radius: 10px; }
 
+  #cakeList {
+    font-size: 1.5rem;
+    letter-spacing: .2rem; }
+
+  #cakeList option {
+    font-size: 1rem;
+    letter-spacing: .2rem; }
+
   /*------------FLAG------------------*/
   .item {
     position: relative;
@@ -1050,7 +1065,8 @@ input[name=searchBar]:focus {
   /*------------------- BODY ----------------*/
   /*------------------- NAVIGATION ----------------*/
   .navBar ul li {
-    padding: .5rem 3rem; }
+    padding: .5rem 3rem;
+    font-size: 1.4rem; }
 
   /*------------------- MAIN ----------------*/
   /*-------------BANNER--------------*/
@@ -1065,11 +1081,22 @@ input[name=searchBar]:focus {
     font-size: 1rem;
     line-height: 2em; }
 
+  .info {
+    line-height: 1.5rem; }
+
   #slide .info {
     width: 70%;
-    line-height: 2rem; }
+    line-height: 2rem;
+    font-size: 1.2rem; }
+
+  #slide .info h3 {
+    font-size: 1.7rem;
+    margin-bottom: .7rem; }
 
   /*-------------ABOUT US------------*/
+  #aboutUs {
+    margin-top: 8rem; }
+
   .forLogoImg {
     height: 15rem;
     width: 15rem;
@@ -1084,7 +1111,7 @@ input[name=searchBar]:focus {
 
   /*OUR RANGE*/
   #ourRange {
-    margin-top: 7rem; }
+    margin-top: 9rem; }
 
   .infoContent {
     width: 70%;

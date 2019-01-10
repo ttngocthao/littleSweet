@@ -6,7 +6,7 @@
             "starRating":3.5,
             "imageUrl":"./images/CLB/birthday1.jpg",
             "price":12,
-            "info":"Birthday 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"A chocolate fruity combination for added indulgence. Our unique recipe results in a lighter density cake, just right to be encased in freshly whipped cream and grated chocolate. This light and fluffy sponge will melt in your mouth and the icing flowers add a delightful feminine flair."
         },
     
         {
@@ -15,7 +15,7 @@
             "starRating":4,
             "imageUrl":"./images/CLB/birthday2.jpg",
             "price":58,
-            "info":"Birthday 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"A chocolate fruity combination for added indulgence. Our unique recipe results in a lighter density cake, just right to be encased in freshly whipped cream and grated chocolate. This light and fluffy sponge will melt in your mouth and the icing flowers add a delightful feminine flair."
         },
     
         {
@@ -196,19 +196,19 @@
     [
         {
             "itemId":"dss1",
-            "name":"Choco-CheeseCake",
+            "name":"Three layers of chocolate sponge",
             "starRating":5,
             "imageUrl":"./images/DSS/cheese1.jpg",
             "price":16,
-            "info":"Chocolate Cheese Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"A luscious concoction comprising three layers of chocolate sponge filled with chocolate cream and topped with grated dark chocolate shavings.."
         },
         {
             "itemId":"dss2",
-            "name":"CheeseCake",
+            "name":"Rich Chocolate Mousse",
             "starRating":3.8,
             "imageUrl":"./images/DSS/cheese2.jpg",
             "price":10,
-            "info":"Cheese 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Rich chocolate mousse on a chocolate sponge base and crowned with a luxurious layer of ganache."
         },
         {
             "itemId":"dss3",
@@ -216,7 +216,7 @@
             "starRating":4,
             "imageUrl":"./images/DSS/cheese3.jpg",
             "price":18,
-            "info":"Cheese 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Decadently rich, yet not as dense as some, our own-recipe mud cake topped with gorgeous ganache is the ultimate crowd pleaser."
         },
         {
             "itemId":"dss4",
@@ -224,7 +224,7 @@
             "starRating":4.5,
             "imageUrl":"./images/DSS/cheese4.jpg",
             "price":20,
-            "info":"Cheese 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Our pretty mixed berry mousse cake has a light texture and a sweet fruity flavour. Topped with a strawberry glaze and a generous handful of fresh berries."
         },
         {
             "itemId":"dss5",
@@ -232,7 +232,7 @@
             "starRating":4.2,
             "imageUrl":"./images/DSS/cheese5.jpg",
             "price":10,
-            "info":"Cheese 5 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Layers of melt-in-your mouth sponge, lashings of cream, glossy icing and a cherry on the top. Perfection."
         },
         {
             "itemId":"dss6",
@@ -240,7 +240,7 @@
             "starRating":4.5,
             "imageUrl":"./images/DSS/cheese6.jpg",
             "price":16,
-            "info":"Cheese 6 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Baked with flavour filled almond meal and lovingly garnished with candied orange peel."
         },
         {
             "itemId":"dss7",
@@ -277,7 +277,7 @@
             "starRating":5,
             "imageUrl":"./images/SVR/pastry1.jpg",
             "price":8,
-            "info":"Pastry 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Our Cottage Pie is a firm favourite with the locals, but then again, so are all our other tasty varieties."
         },
         {
             "itemId":"svr2",
@@ -285,7 +285,7 @@
             "starRating":4.5,
             "imageUrl":"./images/SVR/pastry2.jpg",
             "price":8,
-            "info":"Pastry 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Come in and see what's hot! Our extensive range of meal-size pies are available ready to enjoy or cold in take-home packs."
         },
         {
             "itemId":"svr3",
@@ -293,7 +293,7 @@
             "starRating":5,
             "imageUrl":"./images/SVR/pastry3.jpg",
             "price":8,
-            "info":"Pastry 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"A delicious blend of fresh vegetables and meat, our pasties are a complete meal in themselves. Perfect for lunch on the run."
         },
         {
             "itemId":"svr4",
@@ -317,15 +317,15 @@
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry6.jpg",
             "price":8,
-            "info":"Pastry 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"It's the quality beef in our party pies that make them stand out from the crowd."
         },
         {
             "itemId":"svr7",
-            "name":"Pastry 7",
+            "name":"Sausage Rolls",
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry7.jpg",
             "price":8,
-            "info":"Pastry 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Fabulous finger food. Served hot with a splash of sauce, sausage rolls are the perfect snack."
         }
 
     ],

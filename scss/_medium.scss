@@ -94,6 +94,12 @@ header #logo img{
   
   .info{
     line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .info h3 {
+      font-size: 1.7rem;
+      margin-bottom: .7rem;
   }
   
 }
@@ -201,7 +207,14 @@ input[name=searchBar] {
     width: 80%;
     border-radius: 10px;
 }
-
+#cakeList{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+#cakeList option{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
 /*------------FLAG------------------*/
 .item{
     position: relative;
