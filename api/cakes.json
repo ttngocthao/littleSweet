@@ -24,7 +24,7 @@
             "starRating": 4.4,
             "imageUrl":"./images/CLB/birthday3.jpg",
             "price":38,
-            "info":"Birthday 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Impress your loved ones with Little Sweet exclusive selection of cakes in a range of delicious flavours. Make someone's birthday extra special with one of these incredibly delicious and crowd-pleasing birthday cakes."
         },
     
         {
@@ -33,7 +33,7 @@
             "starRating": 4.5,
             "imageUrl":"./images/CLB/birthday4.jpg",
             "price":68,
-            "info":"Birthday 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Impress your loved ones with Little Sweet exclusive selection of cakes in a range of delicious flavours. Make someone's birthday extra special with one of these incredibly delicious and crowd-pleasing birthday cakes."
         },
     
         {
@@ -42,7 +42,7 @@
             "starRating": 4.5,
             "imageUrl":"./images/CLB/anniver1.jpg",
             "price":68,
-            "info":"Anniversary 1 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Romantic and classic cakes to celebrate your wedding anniversary, whether it's your silver, golden, ruby, emerald or diamond anniversary! They’re made with high-quality ingredients to deliver a tantalizing taste experience but we also aim to reduce the sugar and fat content of our cakes without interfering with their signature taste."
         },
     
         {
@@ -51,7 +51,7 @@
             "starRating": 5,
             "imageUrl":"./images/CLB/anniver2.jpg",
             "price":68,
-            "info":"Anniversary 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Romantic and classic cakes to celebrate your wedding anniversary, whether it's your silver, golden, ruby, emerald or diamond anniversary! They’re made with high-quality ingredients to deliver a tantalizing taste experience but we also aim to reduce the sugar and fat content of our cakes without interfering with their signature taste."
         },
     
         {
@@ -60,7 +60,7 @@
             "starRating": 4,
             "imageUrl":"./images/CLB/anniver3.jpg",
             "price":68,
-            "info":"Anniversary 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Romantic and classic cakes to celebrate your wedding anniversary, whether it's your silver, golden, ruby, emerald or diamond anniversary! They’re made with high-quality ingredients to deliver a tantalizing taste experience but we also aim to reduce the sugar and fat content of our cakes without interfering with their signature taste."
         },
     
         {
@@ -69,7 +69,7 @@
             "starRating": 5,
             "imageUrl":"./images/CLB/anniver4.jpg",
             "price":68,
-            "info":"Anniversary 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Romantic and classic cakes to celebrate your wedding anniversary, whether it's your silver, golden, ruby, emerald or diamond anniversary! They’re made with high-quality ingredients to deliver a tantalizing taste experience but we also aim to reduce the sugar and fat content of our cakes without interfering with their signature taste."
         },
     
         {
@@ -78,7 +78,7 @@
             "starRating": 4.5,
             "imageUrl":"./images/CLB/wedding1.jpg",
             "price":68,
-            "info":"Wedding 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -87,7 +87,7 @@
             "starRating": 4.3,
             "imageUrl":"./images/CLB/wedding2.jpg",
             "price":68,
-            "info":"Wedding 2 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -96,7 +96,7 @@
             "starRating": 4,
             "imageUrl":"./images/CLB/wedding3.jpg",
             "price":68,
-            "info":"Wedding 3 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -105,7 +105,7 @@
             "starRating": 5,
             "imageUrl":"./images/CLB/wedding4.jpg",
             "price":68,
-            "info":"Wedding 4 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         }
     ],
    
@@ -116,7 +116,7 @@
             "starRating":5,
             "imageUrl":"./images/CH/mermaid1.jpg",
             "price":26,
-            "info":"Mermaid Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"This rippled mermaid buttercream cake is decorated with golden shells, pastel sea horses, pearlescent meringue kisses and topped with a blue mermaid tail. Delectable mermaid cakes sure to tickle your taste buds for any occasion! Planning a mermaid party? The party is not complete without a mermaid cake!"
         },
     
         {
@@ -125,7 +125,7 @@
             "starRating":4.5,
             "imageUrl":"./images/CH/dragon.jpg",
             "price":30,
-            "info":"Dragon Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Cakes by Little Sweet in amazing children's birthday cakes and can create a tasty centerpiece to your child's special day based on any idea or theme.The cakes are delivered fresh to your door in perfect condition for that special day."
         },
 
         {
@@ -134,7 +134,7 @@
             "starRating":4,
             "imageUrl":"./images/CH/cat.jpg",
             "price":40,
-            "info":"Cat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"If you're a crazy cat lover, then these fifteen cutesy cat cakes are going to be right up your alley! Is there anything cuter than a kitten made of sugar and delicious cream?"
         },
     
         {
@@ -143,7 +143,7 @@
             "starRating":4,
             "imageUrl":"./images/CH/dragonEgg.jpg",
             "price":30,
-            "info":"Dragon Egg Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Cakes by Little Sweet in amazing children's birthday cakes and can create a tasty centerpiece to your child's special day based on any idea or theme.The cakes are delivered fresh to your door in perfect condition for that special day."
         },
     
         {
@@ -152,7 +152,7 @@
             "starRating":4.2,
             "imageUrl":"./images/CH/minion.jpg",
             "price":30,
-            "info":"Minion Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Invite the Minions from Despicable Me to your child's birthday party!Sponge filled with raspberry jam and sweet filling, covered with soft icing and edible decorations.what a better way to put a smile on your little ones face!"
         },
     
         {
@@ -161,7 +161,7 @@
             "starRating":4,
             "imageUrl":"./images/CH/rocket.jpg",
             "price":30,
-            "info":"Rocket Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Space Rocket Cake Chocolate Sponge birthday cakes, for smaller parties and great value, delivered all over London by Little Sweet. Let's give it a go!"
         },
     
         {
@@ -170,7 +170,7 @@
             "starRating":4.5,
             "imageUrl":"./images/CH/spiderMan.jpg",
             "price":30,
-            "info":"Spider Man Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Did someone say Spiderman? This spectacular Spiderman cake will blow any superhero fan away. Guaranteed to impress, it's the perfect birthday cake!The cakes are delivered fresh to your door in perfect condition for that special day."
         },
     
         {
@@ -179,7 +179,7 @@
             "starRating":4,
             "imageUrl":"./images/CH/lego.jpg",
             "price":30,
-            "info":"Lego Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Are you planning your child's next birthday party? Does your child LOVE LEGO? Then this LEGO Cake would be a hit at any LEGO themed party!The cakes are delivered fresh to your door in perfect condition for that special day."
         },
     
         {
@@ -188,7 +188,7 @@
             "starRating":5,
             "imageUrl":"./images/CH/unicorn.jpg",
             "price":45,
-            "info":"Unicorn Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Birthday is a special day for everyone, and a perfect cake will seal the deal. Fantasy fictions create some of the best birthday cake ideas. Surprise your loved one with our adorable and yummmy Unicorn cake."
         }
 
     ],
@@ -196,75 +196,75 @@
     [
         {
             "itemId":"dss1",
-            "name":"Three layers of chocolate sponge",
+            "name":"Chocolate sponge",
             "starRating":5,
-            "imageUrl":"./images/DSS/cheese1.jpg",
+            "imageUrl":"./images/DSS/choco-cheese.jpg",
             "price":16,
-            "info":"A luscious concoction comprising three layers of chocolate sponge filled with chocolate cream and topped with grated dark chocolate shavings.."
+            "info":"The perfect chocolate cake, with plenty of dark chocolate flavor and a light and silky texture.Rich chocolate mousse on a chocolate sponge base and crowned with a luxurious cream."
         },
         {
             "itemId":"dss2",
-            "name":"Rich Chocolate Mousse",
+            "name":"Fruit cheesecake",
             "starRating":3.8,
-            "imageUrl":"./images/DSS/cheese2.jpg",
+            "imageUrl":"./images/DSS/fruit-cheese.jpg",
             "price":10,
-            "info":"Rich chocolate mousse on a chocolate sponge base and crowned with a luxurious layer of ganache."
+            "info":"Looking to have a delicious cheesecake? Try one of our cheesecakes and discover why the cheesecake is one of the most popular desserts in the world."
         },
         {
             "itemId":"dss3",
-            "name":"CheeseCake",
+            "name":"Biscuit CheeseCake",
             "starRating":4,
-            "imageUrl":"./images/DSS/cheese3.jpg",
+            "imageUrl":"./images/DSS/cookies-cheese.jpg",
             "price":18,
-            "info":"Decadently rich, yet not as dense as some, our own-recipe mud cake topped with gorgeous ganache is the ultimate crowd pleaser."
+            "info":"Indulge in a rich creamy cheesecake filled with chocolatey biscuit pieces.Decadently rich, yet not as dense as some, our own-recipe with gorgeous ganache is the ultimate crowd pleaser.The cakes are delivered fresh to your door in perfect condition."
         },
         {
             "itemId":"dss4",
-            "name":"CheeseCake",
+            "name":"Choco CheeseCake",
             "starRating":4.5,
-            "imageUrl":"./images/DSS/cheese4.jpg",
+            "imageUrl":"./images/DSS/3choco-cheese.jpg",
             "price":20,
-            "info":"Our pretty mixed berry mousse cake has a light texture and a sweet fruity flavour. Topped with a strawberry glaze and a generous handful of fresh berries."
+            "info":"A luscious concoction comprising three layers of chocolate sponge filled with chocolate cream and topped with grated dark chocolate shavings."
         },
         {
             "itemId":"dss5",
-            "name":"CheeseCake",
+            "name":"Tiramisu",
             "starRating":4.2,
-            "imageUrl":"./images/DSS/cheese5.jpg",
+            "imageUrl":"./images/DSS/tiramisu.jpg",
             "price":10,
             "info":"Layers of melt-in-your mouth sponge, lashings of cream, glossy icing and a cherry on the top. Perfection."
         },
         {
             "itemId":"dss6",
-            "name":"CheeseCake",
+            "name":"Blueberry CheeseCake",
             "starRating":4.5,
-            "imageUrl":"./images/DSS/cheese6.jpg",
+            "imageUrl":"./images/DSS/blueberry-cheese.jpg",
             "price":16,
-            "info":"Baked with flavour filled almond meal and lovingly garnished with candied orange peel."
+            "info":"Home crafted cheesecakes, freshly made using only the finest ingredients. We put our hearts into everything to create cheesecake heaven for our customers."
         },
         {
             "itemId":"dss7",
-            "name":"CheeseCake",
+            "name":"Mango CheeseCake",
             "starRating":4,
-            "imageUrl":"./images/DSS/cheese7.jpg",
+            "imageUrl":"./images/DSS/mango-cheese.jpg",
             "price":20,
-            "info":"Cheese 7 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When you're looking for the smoothest, most scrumptious cheesecake, the exotic flavor of this mango cheesecake is hard to beat. Made with fresh, delicious mangoes,it is a perfect dessert to share with family and friends this holiday season."
         },
         {
             "itemId":"dss8",
-            "name":"CheeseCake",
+            "name":"Lemon CheeseCake",
             "starRating":5,
-            "imageUrl":"./images/DSS/cheese8.jpg",
+            "imageUrl":"./images/DSS/lemon-cheese.jpg",
             "price":16,
-            "info":"Cheese 8 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Need a simple zingy dessert? A light layer of of graham cracker crumbs adds a bit of crunch to the top of this luscious lemon cheesecake is the perfect choice."
         },
         {
             "itemId":"dss9",
-            "name":"CheeseCake",
+            "name":"Japan CheeseCake",
             "starRating":3.8,
-            "imageUrl":"./images/DSS/cheese10.jpg",
+            "imageUrl":"./images/DSS/japanese-cheese.jpg",
             "price":16,
-            "info":"Cheese 9 Cake Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Light and fluffy, Japanese Cheesecake is a delicious gift for a real cheesecake lover. It’s a melt-in-your-mouth combination of creamy cheesecake and airy soufflé. A second (or more) serving is a guarantee!"
         }
 
     

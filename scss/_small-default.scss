@@ -757,11 +757,13 @@ input[name=searchBar]:focus {
 .starsOuter, .infoStarsOuter{
     display: inline-block;
     position: relative;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
   }
    
   .starsOuter::before , .infoStarsOuter::before{
     content: "\f006 \f006 \f006 \f006 \f006";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;  
   }
   
   .starsInner, .infoStarsInner {
@@ -775,6 +777,8 @@ input[name=searchBar]:focus {
   .starsInner::before , .infoStarsInner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     color: #f8ce0b;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
   }
 
   /*-----------------CONTACT US HTML ------------------*/

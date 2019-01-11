@@ -27,8 +27,17 @@
     line-height: 1.5rem;
     
   }
+ #slide{
+    height: 550px;
+ }
+#slide .photo {
+    width:85%;
+    margin: 0 auto;
+}
 
-  
+#slide .photo img{
+    width:100%;
+}
  #slide .info{
     width: 70%;
     line-height: 2rem;

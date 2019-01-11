@@ -792,10 +792,12 @@ input[name=searchBar]:focus {
 .starsOuter, .infoStarsOuter {
   display: inline-block;
   position: relative;
-  font-family: FontAwesome; }
+  font-family: "Font Awesome 5 Free"; }
 
 .starsOuter::before, .infoStarsOuter::before {
-  content: "\f006 \f006 \f006 \f006 \f006"; }
+  content: "\f006 \f006 \f006 \f006 \f006";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400; }
 
 .starsInner, .infoStarsInner {
   position: absolute;
@@ -806,7 +808,9 @@ input[name=searchBar]:focus {
 
 .starsInner::before, .infoStarsInner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
-  color: #f8ce0b; }
+  color: #f8ce0b;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
 
 /*-----------------CONTACT US HTML ------------------*/
 #contact_form {
@@ -917,13 +921,20 @@ input[name=searchBar]:focus {
   #slide {
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
-    align-items: center; }
+    align-items: center;
+    min-height: 350px;
+    max-height: 550px; }
     #slide .info {
       line-height: 1.5rem;
-      font-size: 1.2rem; }
+      font-size: .9rem; }
     #slide .info h3 {
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       margin-bottom: .7rem; }
+    #slide .photo {
+      width: 90%;
+      margin: 0 auto; }
+    #slide .photo img {
+      width: 100%; }
 
   /*-------------ABOUT US-----------------*/
   #aboutUs {
@@ -1083,6 +1094,16 @@ input[name=searchBar]:focus {
 
   .info {
     line-height: 1.5rem; }
+
+  #slide {
+    height: 550px; }
+
+  #slide .photo {
+    width: 85%;
+    margin: 0 auto; }
+
+  #slide .photo img {
+    width: 100%; }
 
   #slide .info {
     width: 70%;

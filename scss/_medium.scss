@@ -91,16 +91,28 @@ header #logo img{
   display: grid;
   grid-template-columns: repeat(2, 50% 50%);
   align-items: center;
-  
+  min-height: 350px; 
+  max-height: 550px;
+
   .info{
     line-height: 1.5rem;
-    font-size: 1.2rem;
+    font-size: .9rem;
   }
 
   .info h3 {
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       margin-bottom: .7rem;
   }
+
+  .photo {
+      width:90%;
+      margin: 0 auto;
+  }
+
+  .photo img{
+      width:100%;
+  }
+  
   
 }
 /*-------------ABOUT US-----------------*/
