@@ -78,7 +78,7 @@
             "starRating": 4.5,
             "imageUrl":"./images/CLB/wedding1.jpg",
             "price":68,
-            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
+            "info":"Say 'I do!' to fresh Little Sweet baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -87,7 +87,7 @@
             "starRating": 4.3,
             "imageUrl":"./images/CLB/wedding2.jpg",
             "price":68,
-            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
+            "info":"Say 'I do!' to fresh Little Sweet baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -96,7 +96,7 @@
             "starRating": 4,
             "imageUrl":"./images/CLB/wedding3.jpg",
             "price":68,
-            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
+            "info":"Say 'I do!' to fresh Little Sweet baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         },
     
         {
@@ -105,7 +105,7 @@
             "starRating": 5,
             "imageUrl":"./images/CLB/wedding4.jpg",
             "price":68,
-            "info":"Say 'I do!' to fresh American home baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
+            "info":"Say 'I do!' to fresh Little Sweet baking for your big day with our special range of wedding cakes. We offer the most beautiful no fuss handmade buttercream wedding cakes in London.Our range of spectacular centrepiece creations for your special day. Choose from one of our gorgeous standard cakes, or contact us for details of our bespoke service."
         }
     ],
    
@@ -273,27 +273,27 @@
     [
         {
             "itemId":"svr1",
-            "name":"Pastry 1",
+            "name":"Cherry filling",
             "starRating":5,
             "imageUrl":"./images/SVR/pastry1.jpg",
             "price":8,
-            "info":"Our Cottage Pie is a firm favourite with the locals, but then again, so are all our other tasty varieties."
+            "info":"Puff pastry and a simple cherry filling made with fresh cherries bake into a rustic-looking cherry pie, with a light, tender and flaky crust, that's both beautiful and delicious."
         },
         {
             "itemId":"svr2",
-            "name":"Pastry 2",
+            "name":"Pork pie",
             "starRating":4.5,
             "imageUrl":"./images/SVR/pastry2.jpg",
             "price":8,
-            "info":"Come in and see what's hot! Our extensive range of meal-size pies are available ready to enjoy or cold in take-home packs."
+            "info":"Who doesn’t love a pork pie? Well, they aren’t to everyone’s taste. But for those of us who do like these crumbly, meaty parcels, there have never been more ways to enjoy them. Try our mouth watering pork pies for a quick and easy way to enjoy pork that tastes delicious. "
         },
         {
             "itemId":"svr3",
-            "name":"Pastry 3",
+            "name":"Choux Pastry",
             "starRating":5,
             "imageUrl":"./images/SVR/pastry3.jpg",
             "price":8,
-            "info":"A delicious blend of fresh vegetables and meat, our pasties are a complete meal in themselves. Perfect for lunch on the run."
+            "info":"Cream puffs are a very simple dessert, but it’s their elegance that makes them so perfect. When it comes to cream puffs and eclairs, freshness is everything. Creamy and luscious vanilla pastry cream encased with a light and golden dough…it’s irresistible."
         },
         {
             "itemId":"svr4",
@@ -305,19 +305,19 @@
         },
         {
             "itemId":"svr5",
-            "name":"Pastry 5",
+            "name":"Pastry Swirls",
             "starRating":5,
             "imageUrl":"./images/SVR/pastry5.jpg",
             "price":8,
-            "info":"Pastry 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Our best savoury swirls for kids including feta, pumpkin, bacon, zucchini and corn, plus healthy gluten free for school/work lunches. Everybody just loves these swirls."
         },
         {
             "itemId":"svr6",
-            "name":"Pastry 6",
+            "name":"Creamy Tart",
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry6.jpg",
             "price":8,
-            "info":"It's the quality beef in our party pies that make them stand out from the crowd."
+            "info":"Sometimes we all need a quick snack to keep us going through the day, and our collection of savoury tarts will not make you disappointed."
         },
         {
             "itemId":"svr7",
@@ -325,209 +325,209 @@
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry7.jpg",
             "price":8,
-            "info":"Fabulous finger food. Served hot with a splash of sauce, sausage rolls are the perfect snack."
+            "info":"Delicious Bake-It-Fresh croissants from Little Sweet croissants are deliciously moreish with a wonderfully light and flaky texture."
         }
 
     ],
     [
         {
             "itemId":"cup1",
-            "name":"Cup cake 1",
+            "name":"Strawberry Chocolate",
             "starRating":4,
             "imageUrl":"./images/CUP/cup1.jpg",
             "price":5,
-            "info":"Cup Cake 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         },
         {
             "itemId":"cup2",
-            "name":"Cup Cake 2",
+            "name":"Rich Chocolate",
             "starRating":5,
             "imageUrl":"./images/CUP/cup2.jpg",
             "price":5,
-            "info":"Cup Cake 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         },
         {
             "itemId":"cup3",
-            "name":"Cup Cake 3",
+            "name":"The Mermaid",
             "starRating":4.2,
             "imageUrl":"./images/CUP/cup3.jpg",
             "price":5,
-            "info":"Cup Cake 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         },
         {
             "itemId":"cup4",
-            "name":"Cup Cake 4",
+            "name":"Little Unicorn",
             "starRating":4,
             "imageUrl":"./images/CUP/cup4.jpg",
             "price":5,
-            "info":"Cup Cake 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         },
         {
             "itemId":"cup5",
-            "name":"Cup Cake 5",
+            "name":"The Queen Crown",
             "starRating":4.5,
             "imageUrl":"./images/CUP/cup5.jpg",
             "price":5,
-            "info":"Cup Cake 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion."
         },
         {
             "itemId":"cup6",
-            "name":"Cup Cake 6",
+            "name":"Original Chocolate",
             "starRating":5,
             "imageUrl":"./images/CUP/cup6.jpg",
             "price":5,
-            "info":"Cup Cake 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         },
         {
             "itemId":"cup7",
-            "name":"Cup Cake 7",
+            "name":"Matcha Greentea ",
             "starRating":4,
             "imageUrl":"./images/CUP/cup7.jpg",
             "price":5,
-            "info":"Cup Cake 7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
         }
     ],
     [
         {
             "itemId":"mff1",
-            "name":"Muffin 1",
+            "name":"Chocolate lover",
             "starRating":5,
             "imageUrl":"./images/MFF/muffin1.jpg",
             "price":5,
-            "info":"Muffin 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins.."
         },
         {
             "itemId":"mff2",
-            "name":"Muffin 2",
+            "name":"Blueberry",
             "starRating":4.5,
             "imageUrl":"./images/MFF/muffin2.jpg",
             "price":5,
-            "info":"Muffin 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins."
         },
         {
             "itemId":"mff3",
-            "name":"Muffin 3",
+            "name":"Raspberry",
             "starRating":4.8,
             "imageUrl":"./images/MFF/muffin3.jpg",
             "price":5,
-            "info":"Muffin 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins."
         },
         {
             "itemId":"mff4",
-            "name":"Muffin 4",
+            "name":"Oatmeal",
             "starRating":5,
             "imageUrl":"./images/MFF/muffin4.jpg",
             "price":5,
-            "info":"Muffin 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins."
         },
         {
             "itemId":"mff5",
-            "name":"Muffin 5",
+            "name":"Apple & Oatmeal",
             "starRating":5,
             "imageUrl":"./images/MFF/muffin5.jpg",
             "price":5,
-            "info":"Muffin 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins."
         }
     ],
 
     [
         {
             "itemId":"mcr1",
-            "name":"Macaron 1",
+            "name":"Chocolate",
             "starRating":4,
             "imageUrl":"./images/MCR/mcr1.jpg",
             "price":5,
-            "info":"Macaron 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr2",
-            "name":"Macaron 2",
+            "name":"Matcha Greentea",
             "starRating":4.5,
             "imageUrl":"./images/MCR/mcr2.jpg",
             "price":5,
-            "info":"Macaron 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr3",
-            "name":"Macaron 3",
+            "name":"Rose",
             "starRating":5,
             "imageUrl":"./images/MCR/mcr3.jpg",
             "price":5,
-            "info":"Macaron 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr4",
-            "name":"Macaron 4",
+            "name":"Lavender",
             "starRating":4,
             "imageUrl":"./images/MCR/mcr4.jpg",
             "price":5,
-            "info":"Macaron 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr5",
-            "name":"Macaron 5",
+            "name":"Strawberry & Cream",
             "starRating":4.5,
             "imageUrl":"./images/MCR/mcr5.jpg",
             "price":5,
-            "info":"Macaron 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr6",
-            "name":"Macaron 6",
+            "name":"Rainbow Collection",
             "starRating":5,
             "imageUrl":"./images/MCR/mcr6.jpg",
             "price":5,
-            "info":"Macaron 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         }
     ],
     [
         {
             "itemId":"ctr1",
-            "name":"Sandwich 1",
+            "name":"Cheese on toast",
             "starRating":5,
             "imageUrl":"./images/CTR/ctr1.jpg",
             "price":5,
-            "info":"Sandwich 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options."
         },
         {
             "itemId":"ctr2",
-            "name":"Sandwich 2",
+            "name":"Egg & avocado sandwich",
             "starRating":4.5,
             "imageUrl":"./images/CTR/ctr2.jpg",
             "price":5,
-            "info":"Sandwich 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options"
         },
         {
             "itemId":"ctr3",
-            "name":"Sandwich 3",
+            "name":"Bacon, egg & avocado",
             "starRating":5,
             "imageUrl":"./images/CTR/ctr3.jpg",
             "price":5,
-            "info":"Sandwich 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options."
         },
         {
             "itemId":"ctr4",
-            "name":"Sandwich 4",
+            "name":"tuna & egg baguette",
             "starRating":4,
             "imageUrl":"./images/CTR/ctr4.jpg",
             "price":5,
-            "info":"Sandwich 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options."
         },
         {
             "itemId":"ctr5",
-            "name":"Sandwich 5",
+            "name":"ham & cheese sandwich",
             "starRating":5,
             "imageUrl":"./images/CTR/ctr5.jpg",
             "price":5,
-            "info":"Sandwich 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options."
         },
         {
             "itemId":"ctr6",
-            "name":"Sandwich 6",
+            "name":"Breakfast muffin",
             "starRating":4.8,
             "imageUrl":"./images/CTR/ctr6.jpg",
             "price":5,
-            "info":"Sandwich 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "info":"When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options."
         }
     ]
 ]
