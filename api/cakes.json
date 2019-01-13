@@ -256,7 +256,7 @@
             "starRating":5,
             "imageUrl":"./images/DSS/lemon-cheese.jpg",
             "price":16,
-            "info":"Need a simple zingy dessert? A light layer of of graham cracker crumbs adds a bit of crunch to the top of this luscious lemon cheesecake is the perfect choice."
+            "info":"Need a simple zingy dessert? A light layer of of graham cracker crumbs adds a bit of crunch to the top of this luscious lemon cheesecake for the perfect choice."
         },
         {
             "itemId":"dss9",
@@ -293,31 +293,31 @@
             "starRating":5,
             "imageUrl":"./images/SVR/pastry3.jpg",
             "price":8,
-            "info":"Cream puffs are a very simple dessert, but it’s their elegance that makes them so perfect. When it comes to cream puffs and eclairs, freshness is everything. Creamy and luscious vanilla pastry cream encased with a light and golden dough…it’s irresistible."
+            "info":"Cream puffs are a very simple dessert, but it’s their elegance that makes them so perfect. When it comes to cream puffs and eclairs, freshness is everything. Creamy and luscious vanilla pastry cream encased with a light and golden dough…it’s irresistible!!"
         },
         {
             "itemId":"svr4",
-            "name":"Pastry 4",
+            "name":"Pastry Swirls",
             "starRating":4,
             "imageUrl":"./images/SVR/pastry4.jpg",
-            "price":8,
-            "info":"Pastry 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-            "itemId":"svr5",
-            "name":"Pastry Swirls",
-            "starRating":5,
-            "imageUrl":"./images/SVR/pastry5.jpg",
             "price":8,
             "info":"Our best savoury swirls for kids including feta, pumpkin, bacon, zucchini and corn, plus healthy gluten free for school/work lunches. Everybody just loves these swirls."
         },
         {
-            "itemId":"svr6",
+            "itemId":"svr5",
             "name":"Creamy Tart",
+            "starRating":5,
+            "imageUrl":"./images/SVR/pastry5.jpg",
+            "price":8,
+            "info":"Sometimes we all need a quick snack to keep us going through the day, and our collection of savoury tarts will not leave you disappointed."
+        },
+        {
+            "itemId":"svr6",
+            "name":"Croissants",
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry6.jpg",
             "price":8,
-            "info":"Sometimes we all need a quick snack to keep us going through the day, and our collection of savoury tarts will not make you disappointed."
+            "info":"Delicious Bake-It-Fresh croissants from Little Sweet - croissants are deliciously moreish with a wonderfully light and flaky texture."
         },
         {
             "itemId":"svr7",
@@ -325,7 +325,7 @@
             "starRating":3.8,
             "imageUrl":"./images/SVR/pastry7.jpg",
             "price":8,
-            "info":"Delicious Bake-It-Fresh croissants from Little Sweet croissants are deliciously moreish with a wonderfully light and flaky texture."
+            "info":"Sometimes we all need a quick snack to keep us going through the day, and our collection of savoury tarts will not leave you disappointed."
         }
 
     ],
@@ -336,7 +336,7 @@
             "starRating":4,
             "imageUrl":"./images/CUP/cup1.jpg",
             "price":5,
-            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion."
         },
         {
             "itemId":"cup2",
@@ -344,7 +344,7 @@
             "starRating":5,
             "imageUrl":"./images/CUP/cup2.jpg",
             "price":5,
-            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion."
         },
         {
             "itemId":"cup3",
@@ -352,7 +352,7 @@
             "starRating":4.2,
             "imageUrl":"./images/CUP/cup3.jpg",
             "price":5,
-            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion."
         },
         {
             "itemId":"cup4",
@@ -360,11 +360,11 @@
             "starRating":4,
             "imageUrl":"./images/CUP/cup4.jpg",
             "price":5,
-            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion"
+            "info":"For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion."
         },
         {
             "itemId":"cup5",
-            "name":"The Queen Crown",
+            "name":"The Queen's Crown",
             "starRating":4.5,
             "imageUrl":"./images/CUP/cup5.jpg",
             "price":5,
@@ -394,7 +394,7 @@
             "starRating":5,
             "imageUrl":"./images/MFF/muffin1.jpg",
             "price":5,
-            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins.."
+            "info":"Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins."
         },
         {
             "itemId":"mff2",
@@ -437,7 +437,7 @@
             "starRating":4,
             "imageUrl":"./images/MCR/mcr1.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr2",
@@ -445,7 +445,7 @@
             "starRating":4.5,
             "imageUrl":"./images/MCR/mcr2.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr3",
@@ -453,7 +453,7 @@
             "starRating":5,
             "imageUrl":"./images/MCR/mcr3.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr4",
@@ -461,7 +461,7 @@
             "starRating":4,
             "imageUrl":"./images/MCR/mcr4.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr5",
@@ -469,7 +469,7 @@
             "starRating":4.5,
             "imageUrl":"./images/MCR/mcr5.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         },
         {
             "itemId":"mcr6",
@@ -477,7 +477,7 @@
             "starRating":5,
             "imageUrl":"./images/MCR/mcr6.jpg",
             "price":5,
-            "info":"Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
+            "info":"Macarons embody traditional recipes and original pastry making know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure."
         }
     ],
     [
@@ -507,7 +507,7 @@
         },
         {
             "itemId":"ctr4",
-            "name":"tuna & egg baguette",
+            "name":"Tuna & egg baguette",
             "starRating":4,
             "imageUrl":"./images/CTR/ctr4.jpg",
             "price":5,
@@ -515,7 +515,7 @@
         },
         {
             "itemId":"ctr5",
-            "name":"ham & cheese sandwich",
+            "name":"Ham & cheese sandwich",
             "starRating":5,
             "imageUrl":"./images/CTR/ctr5.jpg",
             "price":5,
