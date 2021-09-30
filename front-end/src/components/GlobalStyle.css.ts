@@ -1,19 +1,26 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-export const colors={   
+const colors={   
     second:'#0d7a82',
     main:'#fedcd2',
     third:'#906b00'
-}
-export const constants = {
+};
+const fontSizes = {
     xlarge:'4rem',
     large:'3rem',
     mid:'2rem',
     reg:'1rem',
     small:'.75rem',
-    xsmall:'.5rem',
-    maxScreenWidth:'120rem' 
-}
+    xsmall:'.5rem'
+     
+};
+
+export const theme = {
+    colors: colors,
+    fontSizes: fontSizes,
+    maxScreenWidth:'120rem'
+};
+
 export default createGlobalStyle`
     *{
         font-size: 16px;
@@ -41,15 +48,16 @@ export default createGlobalStyle`
         list-style: none;
         padding:0;
     }
-    h1{
-        font-size: ${constants.xlarge};
-        color:${colors.second};
+    h1,h2{
+        font-size: ${theme.fontSizes.mid};
+        color:${theme.colors.second};
         font-weight:700;
     }
-    h2{
-        font-size: ${constants.mid};
-        font-weight:700;
-    }
+    
+ @media only screen and (min-width: 1000px){
+              h1,h2{
+                  font-size: ${theme.fontSizes.large};
+              }
+          }
 
-
-`
+`;

@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { colors, constants } from '../GlobalStyle.css'
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from '../GlobalStyle.css';
 
 interface Props{
     title: string
@@ -8,13 +8,13 @@ interface Props{
 const TitleWrap = styled.div`
     width: 100%;
     position: relative;
-    max-width: ${constants.maxScreenWidth};
+    max-width: ${theme.maxScreenWidth};
     margin: 0 auto;
     &::before{
         content: '';
         position: absolute;
         width: 100%;
-        border-top: 3px dotted ${colors.third} ;
+        border-top: 3px dotted ${theme.colors.third} ;
         top:50%;
         transform: translateY(-50%);
         z-index: 0;
@@ -37,16 +37,16 @@ const TitleWrap = styled.div`
         z-index: 1;
         display: inline-block;
         padding:2rem;
-        color: ${colors.second};
+        color: ${theme.colors.second};
 
     }
-`
+`;
 const Title = ({title}:Props) => {
     return (
         <TitleWrap>
             <h2>{title}</h2>
         </TitleWrap>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;

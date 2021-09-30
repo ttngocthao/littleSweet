@@ -1,13 +1,13 @@
-import React from 'react'
-import Title from '../title/Title'
+import React from 'react';
+import Title from '../title/Title';
 
 const Contact = () => {
     return (
         <div>
-           <Title title='Contact Us'/> 
+           <Title title='Contact'/> 
            <h3>Thinking about getting a site to sell your products?</h3>
         </div>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

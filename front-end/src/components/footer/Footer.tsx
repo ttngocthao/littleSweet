@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import { colors, constants } from '../GlobalStyle.css'
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from '../GlobalStyle.css';
 const BkgFooter= styled.footer` 
-background-color: ${colors.second};
-`
+background-color: ${theme.colors.second};
+`;
 const StyledFooter = styled.div`
-    max-width: ${constants.maxScreenWidth};  
+    max-width: ${theme.maxScreenWidth};  
   padding:1rem 2rem;
   margin:0 auto;
   p,a{
@@ -16,7 +16,7 @@ const StyledFooter = styled.div`
        justify-content: space-between;
        align-items: center;
    }
-`
+`;
 const currentYear = new Date().getFullYear();
 const Footer = () => {
     return (
@@ -27,7 +27,7 @@ const Footer = () => {
         </StyledFooter>
         </BkgFooter>
        
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

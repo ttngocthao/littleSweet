@@ -1,5 +1,7 @@
 import React from "react";
+import About from "../components/about/About";
 import Contact from "../components/contact/Contact";
+import Hero from "../components/hero/Hero";
 import Layout from "../components/Layout";
 
 
@@ -9,7 +11,8 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <Layout title='Home'>
-      <h1>Revamp Little Sweet site</h1>
+      <Hero/>
+     <About/>
       <Contact/>
       
     </Layout>
