@@ -1,0 +1,33 @@
+import React from 'react'
+import styled from 'styled-components'
+import { colors, constants } from '../GlobalStyle.css'
+const BkgFooter= styled.footer` 
+background-color: ${colors.second};
+`
+const StyledFooter = styled.div`
+    max-width: ${constants.maxScreenWidth};  
+  padding:1rem 2rem;
+  margin:0 auto;
+  p,a{
+      color: white; font-size: .75rem;
+  }
+   @media only screen and (min-width: 700px){
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+`
+const currentYear = new Date().getFullYear();
+const Footer = () => {
+    return (
+        <BkgFooter>
+             <StyledFooter>
+            <p>@copyright-{currentYear}</p>
+            <p>Designed & Developed by <a href='https://my-page-thaotruong.netlify.app'>ThaoTruong</a></p>
+        </StyledFooter>
+        </BkgFooter>
+       
+    )
+}
+
+export default Footer

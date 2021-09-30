@@ -5,21 +5,23 @@ export const colors={
     main:'#fedcd2',
     third:'#906b00'
 }
-export const fontSize = {
+export const constants = {
     xlarge:'4rem',
     large:'3rem',
     mid:'2rem',
     reg:'1rem',
     small:'.75rem',
-    xsmall:'.5rem'
+    xsmall:'.5rem',
+    maxScreenWidth:'120rem' 
 }
 export default createGlobalStyle`
     *{
         font-size: 16px;
         line-height: 1.4;
-        font-family: 'Merienda', cursive;;
+        font-family: 'Merienda', cursive;
         font-weight: 400;
         margin: 0;
+        box-sizing: border-box;
     }
     h1,h2,h3,h4,h5,h6,div,p,ul,ol{
         margin:0;
@@ -40,9 +42,13 @@ export default createGlobalStyle`
         padding:0;
     }
     h1{
-        font-size: ${fontSize.xlarge};
+        font-size: ${constants.xlarge};
         color:${colors.second};
-        font-weight:900;
+        font-weight:700;
+    }
+    h2{
+        font-size: ${constants.mid};
+        font-weight:700;
     }
 
 

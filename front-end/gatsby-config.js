@@ -34,5 +34,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Merienda`,
+          `cursive\:,400,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
   ],
 };

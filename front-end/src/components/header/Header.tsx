@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 const StyledHeader = styled.header`
-    border:1px solid black;
+    color:red;
 `
 const Header = () => {
     return (

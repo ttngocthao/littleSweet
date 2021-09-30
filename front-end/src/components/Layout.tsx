@@ -6,10 +6,14 @@ import GlobalStyle from './GlobalStyle.css'
 
 import styled from 'styled-components'
 const LayoutWrap = styled.section`
-    max-width: 1920px;
+  
     margin: 0 auto;
 `
-const Layout = ({ title, children }) => {
+interface Props{
+    title?:string
+    children: React.ReactNode
+}
+const Layout = ({ title, children }:Props) => {
     return (
         <>
             <GlobalStyle />
