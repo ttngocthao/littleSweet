@@ -18,17 +18,19 @@ const fontSizes = {
 export const theme = {
     colors: colors,
     fontSizes: fontSizes,
-    maxScreenWidth:'120rem'
+    maxScreenWidth:'120rem',
+    iconStarWidth:'20px'
 };
 
 export default createGlobalStyle`
     *{
-        font-size: 16px;
-        line-height: 1.4;
+        font-size: 18px;
+        line-height: 1.5;
         font-family: 'Merienda', cursive;
         font-weight: 400;
         margin: 0;
         box-sizing: border-box;
+        color:#454545;
     }
     h1,h2,h3,h4,h5,h6,div,p,ul,ol,section{
         margin:0;

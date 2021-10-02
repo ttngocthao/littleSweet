@@ -6,7 +6,7 @@ exports.sourceNodes = async ({actions,createNodeId,createContentDigest})=>{
     const {createNode}= actions;
     const res = await fetch(dataUrl);
     const cakes = await res.json();
-    console.log(cakes);
+  //  console.log(cakes);
     cakes.forEach((cake)=>{
         createNode({
             ...cake,
