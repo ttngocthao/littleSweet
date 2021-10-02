@@ -15,7 +15,8 @@
     },
     "ignorePatterns": [
         "gatsby-config.js",
-        "global.d.ts"
+        "global.d.ts",
+        "gatsby-node.js"
     ],
     "rules": {
         "@typescript-eslint/semi": [
