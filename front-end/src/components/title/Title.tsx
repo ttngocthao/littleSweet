@@ -36,7 +36,7 @@ const TitleWrap = styled.div`
         position: relative;
         z-index: 1;
         display: inline-block;
-        padding:2rem;
+        padding:2rem 1rem;
         color: ${theme.colors.second};
 
     }

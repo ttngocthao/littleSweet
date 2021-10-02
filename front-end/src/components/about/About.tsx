@@ -13,7 +13,7 @@ const Wrap = styled.div`
    
     
     .info{
-        padding: 0 2rem;
+        padding: 0 1rem;
         position: relative;
         
         .paragraphs{

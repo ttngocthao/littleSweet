@@ -83,7 +83,7 @@ const Ul = styled.ul`
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 2rem;
     grid-row-gap:2rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
    
     /* & li:nth-child(2n){
         padding-right: 0;

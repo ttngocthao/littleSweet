@@ -6,7 +6,7 @@ background-color: ${theme.colors.second};
 `;
 const StyledFooter = styled.div`
     max-width: ${theme.maxScreenWidth};  
-  padding:1rem 2rem;
+  padding:1rem;
   margin:0 auto;
   p,a{
       color: white; font-size: .75rem;
@@ -22,7 +22,7 @@ const Footer = () => {
     return (
         <BkgFooter>
              <StyledFooter>
-            <p>@copyright-{currentYear}</p>
+            <p style={{paddingBottom:'1rem'}}>@copyright-{currentYear}</p>
             <p>Designed & Developed by <a href='https://my-page-thaotruong.netlify.app'>ThaoTruong</a></p>
         </StyledFooter>
         </BkgFooter>

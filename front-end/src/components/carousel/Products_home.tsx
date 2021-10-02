@@ -78,7 +78,10 @@ const Wrap = styled.div`
         
        
          max-width: ${theme.maxScreenWidth};
-         padding:0 2rem 2rem;
+         padding:0 0rem 2rem;
+           @media only screen and (min-width: 850px){
+               padding:0 1rem 2rem;
+           }
     }
    .slide{
         background-color: ${theme.colors.main};
