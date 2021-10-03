@@ -62,12 +62,12 @@ const ProductInfo = styled.div`
     box-shadow: 3px 3px 3px lightgrey;
     max-width: 300px;
 `;
-const StyledBtn = styled.div`
+const StyledBtn = styled.button`
     background-color: ${theme.colors.main};
     border:1px solid ${theme.colors.third};
     min-width: 100px;
     text-align: center;
- 
+    cursor: pointer;
     padding: .25rem;
     border-radius: 0 .5rem;
 `;

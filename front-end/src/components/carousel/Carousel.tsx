@@ -25,50 +25,50 @@ const slideContent:ISlide[]=[
       name:'Celebration Cakes', 
   info:'Our traditional celebration cakes are the perfect finishing touch to your special occasion. Make yours unique by selecting your base, size, colour, sides and message.', 
   imageUrl:CelebrationImg as string,
-  linkPage:'https://#',
+  linkPage:'./products',
   orderInList:1 },
   {
       name:'Children Cakes', 
   info:'Our fully-customised, fun and friendly range of specialty cakes for children are guaranteed to bring a smile to the face of the birthday boy or girl', 
   imageUrl:CartoonImg as string,
-  linkPage:'https://#' ,
+  linkPage:'./products' ,
   orderInList:1},
   {
       name:'Desserts', 
       info:'Make your get-together an occasion to remember with one of our amazing dessert cake selections', 
       imageUrl:DessertImg as string,
-      linkPage:'https://#' ,
+      linkPage:'./products' ,
       orderInList:1},
   {
       name:'Savouries', 
       info:'Sometimes we all need a quick snack to keep us going through the day and our collection of savoury snacks will not make you disappointed', 
       imageUrl:SavouriesImg as string,
-      linkPage:'https://#',
+      linkPage:'./products',
       orderInList:1 },
   {
       name:'Cupcakes', 
   info:'For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion', 
   imageUrl:CupcakeImg as string,
-  linkPage:'https://#' ,
+  linkPage:'./products' ,
   orderInList:1},
   {
       name:'Muffins', 
       info:'Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins.',
        imageUrl:MuffinImg as string,
-      linkPage:'https://#',
+      linkPage:'./products',
       orderInList:1 },
   {
       name:'Macarons', 
       info:'Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure.', 
       imageUrl:MacaroonImg as string,
-      linkPage:'https://#',
+      linkPage:'./products',
       orderInList:1 
       },
   {
       name:'Sandwiches', 
       info:'When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options', 
       imageUrl:SandwichImg as string,
-      linkPage:'https://#',
+      linkPage:'./products',
       orderInList:1 }
 ];
 const Wrap = styled.div`
