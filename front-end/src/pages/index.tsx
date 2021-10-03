@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/carousel/Products_home";
+import Carousel from "../components/carousel/Carousel";
 import About from "../components/about/About";
 import Clients from "../components/clients/Clients";
 import Contact from "../components/contact/Contact";
@@ -15,7 +15,7 @@ const IndexPage = () => {
     <Layout title='Home'>
       <Hero/>
      <About/>
-     <Products/>
+     <Carousel/>
      <Clients/>
       <Contact/>
       

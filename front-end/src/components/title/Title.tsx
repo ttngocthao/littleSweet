@@ -38,6 +38,7 @@ const TitleWrap = styled.div`
         display: inline-block;
         padding:2rem 1rem;
         color: ${theme.colors.second};
+        text-transform: capitalize;
 
     }
 `;

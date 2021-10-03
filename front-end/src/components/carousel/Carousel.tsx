@@ -140,10 +140,10 @@ const Wrap = styled.div`
         }
      }
 `;
-interface IProductItem{
+interface ICarouselItem{
     item: ISlide
 }
-const ProductItem =({item}:IProductItem)=>{
+const CarouselItem =({item}:ICarouselItem)=>{
     const {name,linkPage,imageUrl,info}=item;
     return(
        
@@ -166,7 +166,7 @@ const ProductItem =({item}:IProductItem)=>{
     );
 };
 
-const Products = () => {  
+const ProductCarousel = () => {  
    const carouselSetting ={
        showStatus:false,
     //    autoPlay:true,
@@ -178,35 +178,11 @@ const Products = () => {
         <Wrap>
             <Title title='Products'/>
           <Carousel {...carouselSetting}>
-            {/* <div className="item">
-                <figure className="img">
-                    <img src="/static/celebrationCake-5c4b14439037665c2ea59c379eb5c69d.jpg" alt=""/>
-                    </figure>
-                    <div className="info">
-                        <h3>Celebration Cakes</h3>
-                        <p>Our traditional celebration cakes are the perfect finishing touch to your special occasion. Make yours unique by selecting your base, size, colour, sides and message.</p>
-                        <a href="https://#">View our Celebration Cakes</a></div>
-            </div>
-
-             <div className="item"><figure className="img"><img src="/static/mermaid-39c9a49060e2f13e17f1cad6c6a9ab22.jpg" alt=""/></figure><div className="info"><h3>Children Cakes</h3><p>Our fully-customised, fun and friendly range of specialty cakes for children are guaranteed to bring a smile to the face of the birthday boy or girl</p><a href="https://#">View our Children Cakes</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/cheeseCake-17b20ae2213b0d8c544ffbc206b3c7b4.jpg" alt=""/></figure><div className="info"><h3>Desserts</h3><p>Make your get-together an occasion to remember with one of our amazing dessert cake selections</p><a href="https://#">View our Desserts</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/sausageRoll-f4aebf60e9999a8b37f526230cf91106.jpg" alt=""/></figure><div className="info"><h3>Savouries</h3><p>Sometimes we all need a quick snack to keep us going through the day and our collection of savoury snacks will not make you disappointed</p><a href="https://#">View our Savouries</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/pink-cupcake-996fe7befa6289825bd89ea68fd456b3.jpg" alt=""/></figure><div className="info"><h3>Cupcakes</h3><p>For tea, school lunches, birthdays, weddings, baby showers and even corporate events, our cupcakes are the ideal treat for every occasion</p><a href="https://#">View our Cupcakes</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/muffins-7b8e1647c9144fb948689d2409bf422e.jpg" alt=""/></figure><div className="info"><h3>Muffins</h3><p>Muffins are a lunch box favourite and perfect for afternoon tea. Get out the muffin tray and explore our range of savoury, decadent, sweet and healthy muffins.</p><a href="https://#">View our Muffins</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/frenchMacaron-ee2ddb5312fbc7246e47ec628fc929ae.jpg" alt=""/></figure><div className="info"><h3>Macarons</h3><p>Macarons embody traditional recipes and original pastrymaking know-how expressed in the French art of meringue. Made using a high-quality recipe, these macarons will whisk you off to a moment of pure gourmet pleasure.</p><a href="https://#">View our Macarons</a></div>
-             </div>
-             <div className="item"><figure className="img"><img src="/static/catering-e6e01851124ebb98fe191e2ff5cd3740.jpg" alt=""/></figure><div className="info"><h3>Sandwiches</h3><p>When it comes to keeping your event fuss-free, there is no better choice than a selection of our freshly-made catering meal options</p><a href="https://#">View our Sandwiches</a></div>
-             </div> */}
-             {slideContent.map((item)=><ProductItem key={item.name} item={item}/>)}
+             {slideContent.map((item)=><CarouselItem key={item.name} item={item}/>)}
       </Carousel>
      
       </Wrap>
     );
 };
 
-export default Products;
+export default ProductCarousel;

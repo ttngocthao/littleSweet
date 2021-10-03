@@ -12,7 +12,7 @@ const Wrap = styled.li`
    max-width: 370px;
     width: 100%;
 `;
-const ProductName = styled.h3`
+const ProductName = styled.h4`
     /* width: 90%; */
     margin: 2rem auto 0 1rem;
     top: .5rem;

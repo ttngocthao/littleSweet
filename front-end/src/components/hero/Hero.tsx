@@ -18,6 +18,7 @@ const Slogan = styled.h1`
    color: ${theme.colors.third};
    font-size: ${theme.fontSizes.mid};
    padding:1rem;
+   background-color: rgba(255,255,255,.4);
    @media only screen and (min-width: 700px){
        
         position: absolute;
@@ -30,14 +31,18 @@ const Slogan = styled.h1`
          font-size: ${theme.fontSizes.xlarge};
     }
 `;
-const Hero = () => {
+interface Props {
+    imgSrc?:string
+    text?:string
+}
+const Hero = ({imgSrc,text}:Props) => {
     return (
         <Wrapper>
              <Banner>
-            <img alt='' src={BannerImg as string}/>
+            <img alt='' src={imgSrc ? imgSrc : BannerImg as string}/>
             {/* <img className='slogan' alt='' src={SloganImg as string}/> */}
         </Banner>
-        <Slogan>Little Sweet Bakery</Slogan>
+        <Slogan>{text ? text: 'Little Sweet Bakery'}</Slogan>
         </Wrapper>
        
     );
