@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../GlobalStyle.css';
-import {Basket3} from '@styled-icons/bootstrap/Basket3';
+import {Basket2Fill} from '@styled-icons/bootstrap/Basket2Fill';
 
 const StyledHeader = styled.header`
     color:red;
 `;
-const BasketIcon = styled(Basket3)`
+const BasketIcon = styled(Basket2Fill)`
     width:30px;
     fill: ${theme.colors.second};
 `;
@@ -14,7 +14,8 @@ const BasketIcon = styled(Basket3)`
 const Header = () => {
     return (
         <StyledHeader>
-            this is header <BasketIcon/>
+            this is header <a href='/basket' aria-label='shopping basket'><BasketIcon aria-hidden='true'/></a>
+            <a href='/products'>View products</a>
         </StyledHeader>
     );
 };

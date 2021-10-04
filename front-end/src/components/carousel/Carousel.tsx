@@ -157,7 +157,7 @@ const CarouselItem =({item}:ICarouselItem)=>{
                   <p>
                    {info}
                   </p>
-                  <a href={linkPage}>View our {name}</a>
+                  <a href={linkPage}>View our products</a>
               </div>
           </div>  
         

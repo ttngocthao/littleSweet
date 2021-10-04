@@ -35,15 +35,24 @@ justify-content: center;
 
 const FilterBar = styled.div`
     text-align: right;
-    padding: 2rem 0;
-    position: relative;
+    padding: 0 ;
+   
     select,input{
-        display: inline-block;
+        display: inline-block; 
+        width: 100%;
     }
     select{
-        margin-right: 1rem; 
+       
         text-transform: capitalize;
        
+       
+    }
+    .input-wrap{
+         position: relative;
+         margin-bottom: .5rem; 
+         max-width: 218px;
+         margin-left: auto;
+         width: 100%;
     }
    .searchBar-icon{
         width: 32px;
@@ -54,6 +63,13 @@ const FilterBar = styled.div`
     top: 5;
     transform: translateY(-50%);
    }
+    @media only screen and (min-width: 700px){
+        display: flex;
+        max-width: 450px;
+        justify-content: flex-end;
+        margin-left: auto;
+         padding: 2rem 0 0;
+    }
 `;
 
 
@@ -118,18 +134,20 @@ const ProductList = () => {
     return(
         <Wrap>
             <Hero imgSrc={Banner as string} text='Our Products'/>
-           {/* <figure>
-               <img src={Banner as string} alt=''/>
-           </figure> */}
+          
             <FilterBar>
+                 <div className='input-wrap'>
                 <select value={filterCategory} name='filterCategory' onChange={(e)=>setFilterCategory(e.target.value) }>
                     <option value=''>All Category</option>
                     {allCategories.map(c=><option key={c} value={c}>{c}</option>)}
-                </select>
+                </select></div>
+                <div className='input-wrap'>
                 <input value={filterInput} name='filterInput' onChange={(e)=>setFilterInput(e.target.value)}/>
                 {
                     filterInput ? <Clear className='searchBar-icon' onClick={()=>setFilterInput('')}/> :<Search className='searchBar-icon'/>
                 }
+                </div>
+                
             </FilterBar>
             
 
