@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme } from '../GlobalStyle.css';
-import BannerImg from '../../images/banner.png';
 
+import { theme } from '../GlobalStyle.css';
+
+import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image";
 const Wrapper = styled.section`
 max-width: ${theme.maxScreenWidth};
 position: relative;
@@ -32,15 +33,16 @@ const Slogan = styled.h1`
     }
 `;
 interface Props {
-    imgSrc?:string
+   
     text?:string
+    image: IGatsbyImageData
 }
-const Hero = ({imgSrc,text}:Props) => {
+const Hero = ({text,image}:Props) => {
+    
     return (
         <Wrapper>
              <Banner>
-            <img alt='' src={imgSrc ? imgSrc : BannerImg as string}/>
-            {/* <img className='slogan' alt='' src={SloganImg as string}/> */}
+               <GatsbyImage image={image} alt='testing' />   
         </Banner>
         <Slogan>{text ? text: 'Little Sweet Bakery'}</Slogan>
         </Wrapper>
@@ -49,3 +51,5 @@ const Hero = ({imgSrc,text}:Props) => {
 };
 
 export default Hero;
+
+ 

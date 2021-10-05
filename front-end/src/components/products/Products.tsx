@@ -4,9 +4,9 @@ import ProductItem from "./ProductItem";
 import styled from 'styled-components';
 import Title from "../title/Title";
 import { theme } from "../GlobalStyle.css";
-import Banner from '../../images/products-banner.png';
 import Hero from "../hero/Hero";
 import {Search} from '@styled-icons/evil/Search';
+import{ IGatsbyImageData,getImage } from 'gatsby-plugin-image';
 import {Clear} from '@styled-icons/material/Clear';
 
 export interface IProduct{
@@ -78,7 +78,7 @@ const ProductList = () => {
     const [filterCategory,setFilterCategory]=useState('');
     const [filterInput,setFilterInput]=useState('');
 
-    const data:{allCake:{nodes:IProduct[]}} = useStaticQuery(graphql`
+    const data:{allCake:{nodes:IProduct[]},file:IGatsbyImageData} = useStaticQuery(graphql`
         {
         allCake {
            
@@ -93,9 +93,19 @@ const ProductList = () => {
                 }
             
             }
+        file(name: {eq: "products-banner"}) {
+                childImageSharp {
+                gatsbyImageData(
+                    blurredOptions: {toFormat: NO_CHANGE}
+                    layout: FULL_WIDTH
+                    placeholder: DOMINANT_COLOR
+                )
+                }
+            }
         }
     `);
     const allCakes = data.allCake.nodes;   
+    const image = getImage(data.file) as IGatsbyImageData;
   //  console.log(allCakes);
     const getCategories =(dataSource:IProduct[])=>{
       return dataSource.reduce<string[]>((result,item)=>{
@@ -133,7 +143,7 @@ const ProductList = () => {
     
     return(
         <Wrap>
-            <Hero imgSrc={Banner as string} text='Our Products'/>
+            <Hero image={image} text='Our Products'/>
           
             <FilterBar>
                  <div className='input-wrap'>

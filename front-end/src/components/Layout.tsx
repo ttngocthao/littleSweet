@@ -13,7 +13,7 @@ const LayoutWrap = styled.section`
 `;
 interface Props{
     title?:string
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 
