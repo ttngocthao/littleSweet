@@ -1,2 +1,6 @@
-new site url:
-server url:
+new site url: https://little-sweet-thaotruong.netlify.app/
+snipcart: the testing site is not completely working as it is on testing environment
+- no config payment method
+- no live token setup
+- no environment variable set up for token.
+For production, need to solve of them above. and hopefully the email service will work.
