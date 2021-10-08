@@ -10,9 +10,13 @@ export type BasketContextType={
     orders:IBasketItem[]
     addOrders:(newItem:IBasketItem)=>void
     updateOrders:(itemId:string)=>void
+    updateItemCount:(amount?:number)=>void
+    itemCount:number
 };
 const defaultState ={
   orders:[],
+  itemCount:0,
+  updateItemCount: ()=>console.log('item added'),
   addOrders: ()=>console.log('added order'),
   updateOrders:()=>console.log('update item')
 };
@@ -32,7 +36,7 @@ export const useStore = ()=>{
             price:2,
             amount:8
         }]);
-
+    const [itemCount,setItemCount]=useState(0);
   const addOrders =(newItem:IBasketItem)=>{        
       setOrders([...orders,newItem]);
   };
@@ -40,8 +44,13 @@ export const useStore = ()=>{
       setOrders(orders.map(item=>item.id===itemId ? {...item,amount:100}:item ));
   };
 
+  const updateItemCount = (amount:number)=>{
+   
+      setItemCount(itemCount + amount);
+
+  };
   const store = useContext(BasketContext);
 
-  return {orders,addOrders,updateOrders,store};
+  return {orders,addOrders,updateOrders,store, itemCount,updateItemCount};
   
   };

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../GlobalStyle.css';
 import Title from '../title/Title';
-import {  useStore } from '../../storeContext/storeContext';
+//import {  useStore } from '../../storeContext/storeContext';
 import CakeCoffeeImg from '../../images/cake-coffee.jpg';
 
 
@@ -46,27 +46,27 @@ const Img = styled.figure`
 
 
 const About = () => {
-    const value =useStore();
-   const {orders,addOrders,updateOrders} = value;
+//     const value =useStore();
+//    const {orders,addOrders,updateOrders} = value;
     
-    const addOrdersHandle =()=>{
-       // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-        const newItem ={            
-            id:'1',
-            name:'item 1',
-            price:5,
-            amount:10
-       };
-       console.log(orders);
-       addOrders(newItem);
+    // const addOrdersHandle =()=>{
+    //    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    //     const newItem ={            
+    //         id:'1',
+    //         name:'item 1',
+    //         price:5,
+    //         amount:10
+    //    };
+    //    console.log(orders);
+    //    addOrders(newItem);
        
-    };
+    // };
 
-    const updateOrdersHandle =(itemId:string)=>{
-        updateOrders(itemId);
-    };
+    // const updateOrdersHandle =(itemId:string)=>{
+    //     updateOrders(itemId);
+    // };
 
-    console.log('orders',orders);
+ //   console.log('orders',orders);
     return (
         <Wrap>
             <Title title='About'/>

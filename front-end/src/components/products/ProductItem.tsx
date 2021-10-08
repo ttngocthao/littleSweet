@@ -111,7 +111,7 @@ const InnerStar = styled(StarFill)`
 
 
 const ProductItem = ({item}:Props) => {
-    const {name,id,imageUrl,starRating,price,info,category}=item;
+    const {name,id,imageUrl,starRating,price,info}=item;
     const reShapeImgUrl='https://raw.githubusercontent.com/ttngocthao/littleSweet/master/back-end'+imageUrl.slice(1);
     const calculateInnerStarsWidth =(ratingPoint:number):string=>{
         //convert to 100% ~ 100px for 5stars
@@ -125,6 +125,15 @@ const ProductItem = ({item}:Props) => {
             outcome.push(<IconComponent key={i}/>);
         }
         return outcome;
+    };
+    const addItemAttributes ={
+        'className':'snipcart-add-item',
+        'data-item-id':id,        
+          "data-item-price":price,
+         'data-item-name':name,
+         'data-item-image':reShapeImgUrl,//item.frontmatter.image.childImageSharp.fluid.src
+         'data-item-url':'/products' //REPLACE WITH OWN URL
+        // data-item-custom1-value={this.state.selected}>
     };
     return (
         <Wrap>
@@ -148,7 +157,7 @@ const ProductItem = ({item}:Props) => {
                 
                 <ActionBtnGroup>
                     <StyledBtn onClick={()=>alert('Details')}>Details</StyledBtn>
-                    <StyledBtn onClick={()=>alert('Added')}>Add to basket</StyledBtn>
+                    <StyledBtn {...addItemAttributes}>Add to basket</StyledBtn>
                 </ActionBtnGroup>
             </ProductInfo>    
         </Wrap>

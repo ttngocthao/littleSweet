@@ -20,13 +20,13 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -150,
-        duration: 2000,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-anchor-links",
+    //   options: {
+    //     offset: -150,
+    //     duration: 2000,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -51,13 +51,14 @@ module.exports = {
         display: "swap",
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: path.join(__dirname, `src`, `images`),
-    //   },
-    // },
+     {
+            resolve: 'gatsby-plugin-snipcart',
+            options: {
+                //replace with own Snipcart API key
+                apiKey:'NTFiNmIyNTItMGQyNi00MzE2LTkzZGMtYTA0YjExMzNhNTc2NjM3NjkwNDgxODY4MTUwMDYz',
+                autopop: true,
+            }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`

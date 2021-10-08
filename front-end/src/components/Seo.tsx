@@ -8,7 +8,7 @@ const Seo = ({ title }:Props) => {
   return (
     <Helmet>
       <title>Little Sweet{title ? ` - ${title}` : ""}</title>
-      <link rel="icon" type="image/icon" href={TabIcon} />
+      <link rel="icon" type="image/icon" href={TabIcon as string} />
       {/* add some google font here if needed */}
     
     </Helmet>

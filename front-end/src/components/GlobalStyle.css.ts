@@ -57,6 +57,41 @@ export default createGlobalStyle`
         font-weight:700;
     }
     
+    .snip-layout #snipcart-header.snip-header {
+        background-color: ${theme.colors.main};
+    }
+    .snip-layout .snip-ico {  
+        color: ${theme.colors.third};
+        font-size: 2rem;
+    }
+    .snip-layout #snipcart-footer.snip-footer {
+        background: ${theme.colors.main};
+       
+    }
+    /* #snipcart-actions a.snip-btn.snip-btn--highlight,a#snipcart-next {
+        background: ${theme.colors.second}!important;
+        color: white;
+    } */
+    a#snipcart-previous{
+        background-color: ${theme.colors.main};
+        color: #454545;
+    }
+.snip-layout .snip-header__title {
+    color: ${theme.colors.third};
+    text-transform: initial;
+}
+.snip-layout .snip-btn--highlight {
+     background: ${theme.colors.second}!important;
+        color: white!important;
+}
+#snipcart-header-total {
+    background: ${theme.colors.second};
+    .snip-header__total-label, #snipcart-amount {
+        color: white;
+    }
+}
+
+
  @media only screen and (min-width: 1000px){
               h1,h2{
                   font-size: ${theme.fontSizes.large};

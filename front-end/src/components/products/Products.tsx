@@ -147,15 +147,16 @@ const ProductList = () => {
           
             <FilterBar>
                  <div className='input-wrap'>
-                <select value={filterCategory} name='filterCategory' onChange={(e)=>setFilterCategory(e.target.value) }>
-                    <option value=''>All Category</option>
-                    {allCategories.map(c=><option key={c} value={c}>{c}</option>)}
-                </select></div>
+                    <select value={filterCategory} name='filterCategory' onChange={(e)=>setFilterCategory(e.target.value) }>
+                        <option value=''>All Category</option>
+                        {allCategories.map(c=><option key={c} value={c}>{c}</option>)}
+                    </select>
+                </div>
                 <div className='input-wrap'>
-                <input value={filterInput} name='filterInput' onChange={(e)=>setFilterInput(e.target.value)}/>
-                {
-                    filterInput ? <Clear className='searchBar-icon' onClick={()=>setFilterInput('')}/> :<Search className='searchBar-icon'/>
-                }
+                    <input value={filterInput} name='filterInput' onChange={(e)=>setFilterInput(e.target.value)}/>
+                    {
+                        filterInput ? <Clear className='searchBar-icon' onClick={()=>setFilterInput('')}/> :<Search className='searchBar-icon'/>
+                    }
                 </div>
                 
             </FilterBar>
