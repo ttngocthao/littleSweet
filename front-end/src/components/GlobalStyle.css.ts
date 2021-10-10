@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const colors={   
     second:'#0d7a82',
     main:'#fedcd2',
-    third:'#906b00'
+    third:'#906b00',
+    mainTxt:'#454545'
 };
 const fontSizes = {
     xlarge:'4rem',
@@ -31,6 +32,13 @@ export default createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
         color:#454545;
+    }
+    button{
+        border:none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
     }
     h1,h2,h3,h4,h5,h6,div,p,ul,ol,section{
         margin:0;

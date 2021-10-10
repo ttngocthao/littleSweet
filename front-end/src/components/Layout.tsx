@@ -10,6 +10,12 @@ import styled from 'styled-components';
 const LayoutWrap = styled.section`
   
     margin: 0 auto;
+    main{
+        padding-top: 90.2px;
+         @media only screen and (min-width: 700px){
+        padding-top: 175.81px;
+     }
+    }
 `;
 interface Props{
     title?:string
