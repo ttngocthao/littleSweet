@@ -24,7 +24,7 @@ const Wrap = styled.div`
         }
           @media only screen and (min-width: 850px){
               display: flex; 
-              align-items: center;
+              align-items: flex-start;
               .paragraphs{
                   padding-right: 2rem;
 

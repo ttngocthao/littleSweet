@@ -20,7 +20,7 @@ interface ISlide{
     linkPage:string
     orderInList:number
 }
-const slideContent:ISlide[]=[
+export const slideContent:ISlide[]=[
   {
       name:'Celebration Cakes', 
   info:'Our traditional celebration cakes are the perfect finishing touch to your special occasion. Make yours unique by selecting your base, size, colour, sides and message.', 

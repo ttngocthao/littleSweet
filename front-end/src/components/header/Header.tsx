@@ -226,9 +226,12 @@ const Header = () => {
         <StyledHeader>
            
             <TopBar>
-                <Logo className={`mobile`}>
+                <a href='/' aria-label='Home'>
+                   <Logo className={`mobile`}>
                     <img alt='' src={LogoImg as string}/>
-                </Logo>
+                </Logo>  
+                </a>
+               
                 <TopBarRightCol>
                     <ProfileIcon/>
                      <BasketButtonWrap className="snipcart-summary">
@@ -244,7 +247,7 @@ const Header = () => {
             </TopBar>
            {showMenu &&   <Nav role='navigation' aria-label='main navigation'>
                 <NavListMobile>
-                    {navItems.sort((itemA,itemB)=>itemA.orderInList-itemB.orderInList).map((item,index)=>{
+                    {navItems.sort((itemA,itemB)=>itemA.orderInList-itemB.orderInList).filter(item=>item.name!=='Logo').map((item,index)=>{
                        
                            return(
                              <NavItem className={index===0 ? 'active':''} key={index}>

@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/carousel/Carousel";
+//import Carousel from "../components/carousel/Carousel";
 import About from "../components/about/About";
 import Clients from "../components/clients/Clients";
 import Contact from "../components/contact/Contact";
@@ -7,6 +7,7 @@ import Hero from "../components/hero/Hero";
 import Layout from "../components/Layout";
 import { graphql ,useStaticQuery} from "gatsby";
 import {getImage,IGatsbyImageData} from 'gatsby-plugin-image';
+import Products_Home from "../components/products/Products_Home";
 
 
 
@@ -32,7 +33,8 @@ const IndexPage = () => {
       {/* <GatsbyImage image={image} alt='testing' /> */}
       <Hero image={image}/>
      <About/>
-     <Carousel/>
+     {/* <Carousel/> */}
+     <Products_Home/>
      <Clients/>
       <Contact/>
       
