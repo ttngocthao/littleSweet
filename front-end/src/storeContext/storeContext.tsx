@@ -1,24 +1,30 @@
 import {createContext,useContext,useState} from 'react';
+
 export interface IBasketItem {
     id:string
     name:string
     price:number
     amount:number
     imgUrl?:string
+   
 }
 export type BasketContextType={
     orders:IBasketItem[]
     addOrders:(newItem:IBasketItem)=>void
     updateOrders:(itemId:string)=>void
-    updateItemCount:(amount?:number)=>void
-    itemCount:number
+    updateItemCount:(amount:number)=>void
+    itemCount:number,
+    modalOpened:boolean,
+    toggleModal:()=>void
 };
 const defaultState ={
   orders:[],
   itemCount:0,
+  modalOpened:false,
   updateItemCount: ()=>console.log('item added'),
   addOrders: ()=>console.log('added order'),
-  updateOrders:()=>console.log('update item')
+  updateOrders:()=>console.log('update item'),
+  toggleModal: ()=>console.log('toggle modal')
 };
 
 
@@ -36,7 +42,8 @@ export const useStore = ()=>{
             price:2,
             amount:8
         }]);
-    const [itemCount,setItemCount]=useState(0);
+  const [itemCount,setItemCount]=useState(0);
+  const [modalOpened,setModalOpened] = useState(false);
   const addOrders =(newItem:IBasketItem)=>{        
       setOrders([...orders,newItem]);
   };
@@ -46,11 +53,17 @@ export const useStore = ()=>{
 
   const updateItemCount = (amount:number)=>{
    
-      setItemCount(itemCount + amount);
+      setItemCount(amount);
 
   };
+
+  const toggleModal = ()=>{
+      console.log('modalOpened',modalOpened);
+      setModalOpened(!modalOpened);
+  };
+
   const store = useContext(BasketContext);
 
-  return {orders,addOrders,updateOrders,store, itemCount,updateItemCount};
+  return {orders,addOrders,updateOrders,store, itemCount,updateItemCount,toggleModal,modalOpened};
   
   };

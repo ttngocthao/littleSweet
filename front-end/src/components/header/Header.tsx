@@ -8,6 +8,7 @@ import {MenuAlt1} from '@styled-icons/heroicons-solid/MenuAlt1';
 import LogoImg from '../../images/logo.png';
 import {PersonCircle} from '@styled-icons/bootstrap/PersonCircle';
 import useScroll from '../../hooks/useScroll';
+import AuthForm from '../Profile/AuthForm';
 
 
 const StyledHeader = styled.header`
@@ -195,7 +196,7 @@ const Header = () => {
     const store = useStore();
     const {y,lastY}= useScroll();
     const[pageIsScrollingDown,setPageIsScrollingDown]= useState(false);
-    const {itemCount,updateItemCount} = store;
+    const {itemCount,updateItemCount,toggleModal,modalOpened} = store;
     const [showMenu,setShowMenu]= useState(false);
     useEffect(()=>{
        
@@ -222,7 +223,9 @@ const Header = () => {
     const menuClickHandle =()=>{
         setShowMenu(!showMenu);
     };
+   
     return (
+        <>
         <StyledHeader>
            
             <TopBar>
@@ -233,7 +236,10 @@ const Header = () => {
                 </a>
                
                 <TopBarRightCol>
-                    <ProfileIcon/>
+                    <button onClick={toggleModal}>
+                        <ProfileIcon aria-hidden='true'/>
+                    </button>
+                    
                      <BasketButtonWrap className="snipcart-summary">
                         <button className="snipcart-checkout" aria-label='shopping basket'><BasketIcon aria-hidden='true'/></button>
                         <span  className="snipcart-items-count">{itemCount}</span>
@@ -287,6 +293,8 @@ const Header = () => {
                 </NavListDesktop>
            
         </StyledHeader>
+        {modalOpened && <AuthForm closeHandler={toggleModal}/>}
+        </>
     );
 };
 

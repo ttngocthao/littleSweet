@@ -7,6 +7,7 @@ import { BasketContext, useStore} from '../storeContext/storeContext';
 
 import styled from 'styled-components';
 
+
 const LayoutWrap = styled.section`
   
     margin: 0 auto;
@@ -37,6 +38,7 @@ const Layout = ({ title, children }:Props) => {
                     {children}
                 </main>
                 <Footer />
+            
             </LayoutWrap>
         </BasketContext.Provider>
     );
