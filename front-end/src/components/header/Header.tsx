@@ -236,9 +236,9 @@ const Header = () => {
                 </a>
                
                 <TopBarRightCol>
-                    <button onClick={toggleModal}>
+                    {/* <button onClick={toggleModal}>
                         <ProfileIcon aria-hidden='true'/>
-                    </button>
+                    </button> */}
                     
                      <BasketButtonWrap className="snipcart-summary">
                         <button className="snipcart-checkout" aria-label='shopping basket'><BasketIcon aria-hidden='true'/></button>
