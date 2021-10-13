@@ -5,8 +5,7 @@ import ProductList from '../components/products/Products';
 
 
 const ProductsPage = () => {
-    console.log('location',location);
-    
+      
     return (
         <Layout title='Products' >
             <ProductList/>
