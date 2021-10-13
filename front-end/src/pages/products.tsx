@@ -5,7 +5,8 @@ import ProductList from '../components/products/Products';
 
 
 const ProductsPage = () => {
-      
+   
+    
     return (
         <Layout title='Products' >
             <ProductList/>
