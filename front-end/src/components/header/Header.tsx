@@ -229,8 +229,8 @@ const Header = () => {
         setShowMenu(!showMenu);
     };
     const setActiveNavItem =(item:INavItem)=>{
-        
-        if(window){
+        const isSSR = typeof window !== "undefined";
+        if(isSSR){
             //console.log(window.location);
             const pathname = window.location.pathname;
             const hash = window.location.hash;
