@@ -203,8 +203,16 @@ const Header = () => {
     const[pageIsScrollingDown,setPageIsScrollingDown]= useState(false);
     const {itemCount,updateItemCount,toggleModal,modalOpened} = store;
     const [showMenu,setShowMenu]= useState(false);
+    const [location,setLocation] = useState({pathname:'/',hash:''});
     useEffect(()=>{
-       
+        const isSSR = typeof window !== "undefined";
+        if(isSSR){
+            const pathname = window.location.pathname;
+            const hash = window.location.hash;
+            setLocation({
+                pathname,hash
+            });
+        }
         if (window['Snipcart']) {
             const count = window["Snipcart"].api.items.count() as number;
             updateItemCount(count);
@@ -229,11 +237,12 @@ const Header = () => {
         setShowMenu(!showMenu);
     };
     const setActiveNavItem =(item:INavItem)=>{
-        const isSSR = typeof window !== "undefined";
-        if(isSSR){
-            //console.log(window.location);
-            const pathname = window.location.pathname;
-            const hash = window.location.hash;
+        // const isSSR = typeof window !== "undefined";
+        // if(isSSR){
+        //     //console.log(window.location);
+        //     const pathname = window.location.pathname;
+        //     const hash = window.location.hash;
+        const {pathname, hash} = location;
             if(pathname==='/products/' && item.url==='/products'){
                 return 'active';
             }
@@ -247,8 +256,6 @@ const Header = () => {
                 }
             }
            
-        }
-        return '';
     };
     return (
         <>
