@@ -68,7 +68,7 @@ const About = () => {
 
  //   console.log('orders',orders);
     return (
-        <Wrap>
+        <Wrap id='about'>
             <Title title='About'/>
             {/* <button onClick={addOrdersHandle}>Add item</button>
             <button onClick={()=>updateOrdersHandle('2')}>Edit item</button> */}

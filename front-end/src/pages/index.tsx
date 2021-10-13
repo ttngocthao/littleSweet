@@ -13,7 +13,7 @@ import Products_Home from "../components/products/Products_Home";
 
 // markup
 const IndexPage = () => {
- 
+  
   const data:{file:IGatsbyImageData}=useStaticQuery(graphql`
    { file(name: {eq: "banner"}) 
     {
@@ -33,9 +33,10 @@ const IndexPage = () => {
       {/* <GatsbyImage image={image} alt='testing' /> */}
       <Hero image={image}/>
      <About/>
+      <Clients/>
      {/* <Carousel/> */}
      <Products_Home/>
-     <Clients/>
+    
       <Contact/>
       
     </Layout>

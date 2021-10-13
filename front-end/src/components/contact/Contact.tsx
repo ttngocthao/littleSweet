@@ -89,7 +89,7 @@ const Contact = () => {
         },
     ];
     return (
-        <Wrap>
+        <Wrap id='contact'>
            <Title title='Contact'/> 
            <Content>
              

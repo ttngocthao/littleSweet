@@ -11,11 +11,11 @@ import { theme } from '../GlobalStyle.css';
 const Products = styled.ul`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: cente;
     align-items: center;
     padding:1rem;
      @media only screen and (min-width: 700px){
-      justify-content: space-between;
+      
         max-width: ${theme.maxScreenWidth};
         margin: 0 auto;
      }
@@ -27,7 +27,7 @@ const ProductCard = styled.li`
     width: 200px;
     height: 200px;
     border-radius: 15px;
-    margin-bottom: 1rem;
+    margin: 1rem;
     a{
         display: flex;
         width: 100%;
