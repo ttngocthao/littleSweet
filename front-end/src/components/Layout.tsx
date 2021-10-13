@@ -5,6 +5,7 @@ import Header from './header/Header';
 import GlobalStyle from './GlobalStyle.css';
 import { BasketContext, useStore} from '../storeContext/storeContext';
 
+
 import styled from 'styled-components';
 
 
@@ -21,6 +22,7 @@ const LayoutWrap = styled.section`
 interface Props{
     title?:string
     children?: React.ReactNode
+  
 }
 
 

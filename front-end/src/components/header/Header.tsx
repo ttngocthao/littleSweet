@@ -162,7 +162,12 @@ const ProfileIcon = styled(PersonCircle)`
           width: 2.75rem;
       }
 `;
-const navItems = [
+interface INavItem {
+    name:string
+    url: string
+    orderInList: number
+}
+const navItems:INavItem[] = [
     {
         name:'Home',
         url:'/',
@@ -223,7 +228,25 @@ const Header = () => {
     const menuClickHandle =()=>{
         setShowMenu(!showMenu);
     };
-   
+    const setActiveNavItem =(item:INavItem)=>{
+        
+        if(window){
+            //console.log(window.location);
+            const pathname = window.location.pathname;
+            const hash = window.location.hash;
+            if(pathname==='/products/' && item.url==='/products'){
+                return 'active';
+            }
+            if(pathname==='/'){
+                //console.log('hash',hash);
+                if(item.url===`/${hash}`){
+                    return 'active';
+                }
+            }
+           
+        }
+        return '';
+    };
     return (
         <>
         <StyledHeader>
@@ -256,7 +279,8 @@ const Header = () => {
                     {navItems.sort((itemA,itemB)=>itemA.orderInList-itemB.orderInList).filter(item=>item.name!=='Logo').map((item,index)=>{
                        
                            return(
-                             <NavItem className={index===0 ? 'active':''} key={index}>
+                             <NavItem className={setActiveNavItem(item)} key={index}>
+                                 
                                 <a  href={item.url}>
                                     {item.name}
                                 </a>
@@ -281,7 +305,8 @@ const Header = () => {
                             );
                         }else{
                            return(
-                             <NavItem className={index===0 ? 'active':''} key={index}>
+                             <NavItem className={setActiveNavItem(item)} key={index}>
+                               
                                 <a  href={item.url}>
                                     {item.name}
                                 </a>
