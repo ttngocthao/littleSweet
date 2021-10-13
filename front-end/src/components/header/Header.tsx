@@ -239,6 +239,9 @@ const Header = () => {
             }
             if(pathname==='/'){
                 //console.log('hash',hash);
+                if(item.url==='/'){
+                    return 'active';
+                }
                 if(item.url===`/${hash}`){
                     return 'active';
                 }
