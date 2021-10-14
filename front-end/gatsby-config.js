@@ -63,22 +63,22 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-create-client-paths`,
+      resolve: `gatsby-plugin-create-client-paths`,//These paths exist on the client only and do not correspond to index.html files in an app’s built assets.
       options: { prefixes: [`/app/*`] }
     },
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        credentials: {
-          apiKey: "AIzaSyC8t5fcjctNhWp8Qk2nGWkzLYNHshjVrAw",
-          authDomain: "little-sweet-82aa6.firebaseapp.com",
-          databaseURL: "little-sweet-82aa6.firebaseapp.com",
-          projectId: "little-sweet-82aa6",
-          storageBucket: "little-sweet-82aa6.appspot.com",
-          messagingSenderId: "122014673849",
-          appId: "1:122014673849:web:d27e83c86d74f97875a468"
-        }
-      }
-    }
+    // {
+    //   resolve: "gatsby-plugin-firebase",
+    //   options: {
+    //     credentials: {
+    //       apiKey: "AIzaSyC8t5fcjctNhWp8Qk2nGWkzLYNHshjVrAw",
+    //       authDomain: "little-sweet-82aa6.firebaseapp.com",
+    //       databaseURL: "little-sweet-82aa6.firebaseapp.com",
+    //       projectId: "little-sweet-82aa6",
+    //       storageBucket: "little-sweet-82aa6.appspot.com",
+    //       messagingSenderId: "122014673849",
+    //       appId: "1:122014673849:web:d27e83c86d74f97875a468"
+    //     }
+    //   }
+    // }
   ],
 };

@@ -4,6 +4,7 @@ import { theme } from '../GlobalStyle.css';
 import Title from '../title/Title';
 //import {  useStore } from '../../storeContext/storeContext';
 import CakeCoffeeImg from '../../images/cake-coffee.jpg';
+import { checkCurrentUser, createAccount, logoutAccount, signInAccount } from '../../utils/users';
 
 
 const Wrap = styled.div`
@@ -70,6 +71,12 @@ const About = () => {
     return (
         <Wrap id='about'>
             <Title title='About'/>
+            <button style={{border:'1px solid red'}} onClick={createAccount}>Create account</button>
+            <button style={{border:'1px solid red'}} onClick={logoutAccount}>log out</button>
+            <button style={{border:'1px solid red'}} onClick={checkCurrentUser}>check current user</button>
+            <button style={{border:'1px solid red'}} onClick={signInAccount}>sign in</button>
+
+            
             {/* <button onClick={addOrdersHandle}>Add item</button>
             <button onClick={()=>updateOrdersHandle('2')}>Edit item</button> */}
             <div className='info'>
