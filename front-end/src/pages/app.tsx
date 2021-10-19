@@ -1,9 +1,9 @@
 import React from 'react';
 import {} from 'gatsby';
-import {Router,RouteComponentProps} from '@reach/router';
+import {Router} from '@reach/router';
 import Layout from '../components/Layout';
 import Profile from '../components/Profile/Profile';
-import { Login } from '@styled-icons/entypo';
+import Login from '../components/Profile/SignIn';
 
 const app = () => {
     return (
