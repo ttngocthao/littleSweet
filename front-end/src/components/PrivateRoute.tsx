@@ -1,17 +1,22 @@
 import React from 'react';
-import { navigate } from 'gatsby-link';
-import { checkCurrentUser } from '../utils/users';
 
-const PrivateRoute = () => {
-    const isSignedIn = checkCurrentUser();
-    if(!isSignedIn && location.pathname!==`/app/login`){
-        navigate('/app/login');
-        return null;
+import { navigate } from 'gatsby-link';
+import { isLoggedIn } from '../utils/users';
+
+interface Props {
+component: React.FunctionComponent,
+location:{pathname:string}
+}
+
+const PrivateRoute = ({ component: Component, location, ...rest }:Props) => {
+   
+   
+    if(!isLoggedIn() && location.pathname!=='/app/login'){
+       void navigate('/app/login');
     }
+   
     return (
-        <div>
-            
-        </div>
+        <Component {...rest} />
     );
 };
 
