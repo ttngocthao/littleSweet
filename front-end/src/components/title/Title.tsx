@@ -42,9 +42,9 @@ const TitleWrap = styled.div`
 
     }
 `;
-const Title = ({title}:Props) => {
+const Title = ({title,...rest}:Props) => {
     return (
-        <TitleWrap>
+        <TitleWrap {...rest}>
             <h2>{title}</h2>
         </TitleWrap>
     );

@@ -3,6 +3,6 @@ front-end/public
 .DS_Store
 node_modules
 public
-
+.vscode
 .cache
 OLD

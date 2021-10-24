@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { auth} from "./firebase";
-import {createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from 'firebase/auth';
+import {createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,AuthError,UserCredential} from 'firebase/auth';
 
 export const isBrowser = () => typeof window !== "undefined";
 
@@ -29,7 +29,19 @@ const createAccount = async()=>{
     }  
     
 };
-const signInAccount = async()=>{
+export interface IErrorRes {
+    status:number
+    code:string
+    message:string
+    // userCredential?:UserCredential
+}
+export interface IUserCredentialRes{   
+    userCredential:UserCredential
+    // status?:number
+    // code?:string
+    // message?:string
+}
+const signInAccount = async({email,password}:{email:string,password:string}):Promise<UserCredential|IErrorRes>=>{
     try {
         const userCredential = await signInWithEmailAndPassword(auth,email,password);
         console.log('signed in',userCredential);
@@ -39,11 +51,9 @@ const signInAccount = async()=>{
            photoUrl:userCredential.user.photoURL
        });
         return userCredential;
-    } catch (error) {
-    //     const errorCode = error.code;
-    // const errorMessage = error.message as string;
-    console.log('signInAccount error',error);
-        return error;
+    } catch (error:unknown|AuthError){
+        const errorAuth = error as AuthError;        
+        return {status:400,code:errorAuth.code,message:errorAuth.message};
     }
    
 };
