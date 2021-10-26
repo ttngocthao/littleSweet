@@ -18,7 +18,10 @@ const Form = styled.form`
     margin: 0 auto;
     border: 1px solid silver;
     width: 100%;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
+     @media only screen and (min-width: 700px){
+          border-radius: 8px 0 0 8px;
+     }
 `;
 const Field = styled.div`
     label{
@@ -64,7 +67,7 @@ const Content = styled.div`
     display: flex;
     justify-content: space-between;
     max-width: 740px;
-    margin:0 auto;
+    margin:2rem auto 4rem;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 3px 3px 20px rgb(0 0 0 / 15%);
@@ -84,6 +87,23 @@ h2{
             width: 0;
         }
     }  
+`;
+const FormSwitchWrap = styled.div`
+    padding-top: 1rem;
+    button{
+        font-size: .75rem;
+        display: block;
+        text-align: right;
+        text-decoration: underline;
+        width: 100%;
+    }
+`;
+const ErrorMsg = styled.p`
+    color: red;
+    @media only screen and (min-width: 700px){
+        padding-left: 1rem;
+        padding-bottom: 1.5rem;
+    }
 `;
 interface IInputs {
     email:IInput
@@ -118,9 +138,9 @@ const SignIn = () => {
     const onClickHandle =async(e:MouseEvent)=>{
         e.preventDefault();
         const emptyFields = displayInputs.filter(item=>item.value==='');
-        if(emptyFields.length===0){
-            alert('process form');
-            console.log(inputs.email.value,inputs.password.value);
+        if(emptyFields.length===0 && signInMode){
+            // alert('process form');
+            // console.log(inputs.email.value,inputs.password.value);
             
             const res= await signInAccount({email:inputs.email.value,password:inputs.password.value});
 
@@ -138,7 +158,12 @@ const SignIn = () => {
                void navigate('/app/profile');
             }
            
-        }else{           
+        }
+        if(emptyFields.length=== 0 && !signInMode){
+            console.log('call sign up function');
+        }
+
+        if(emptyFields.length!==0){         
             setErrorMsg('Please fill all the inputs');
             
         }
@@ -151,6 +176,7 @@ const SignIn = () => {
                 <Form>
                 
             <FormTitle title={signInMode ? 'Sign in' : 'Sign up'}/>
+                {errorMsg!== '' && <ErrorMsg>{errorMsg}</ErrorMsg>}
                 {displayInputs.map((item,index)=>{
                 
                 return (<Field key={index}>
@@ -161,8 +187,14 @@ const SignIn = () => {
 
               
             })}
-                {errorMsg!== '' && <p>{errorMsg}</p>}
-                <p>{signInMode ? <span>Forgot password?</span> : <span>Sign up with us</span>}</p>   
+            <Field>
+            
+                {signInMode && <p>Forgot password?</p>} 
+                <FormSwitchWrap>
+                   {signInMode ? <button onClick={()=>setSignInMode(false)}>Sign up with us</button> : <button onClick={()=>setSignInMode(true)}>Sign in to your account</button>}
+                </FormSwitchWrap>
+            </Field>
+               
                 <Button onClick={onClickHandle}>
                     {signInMode ? 'Sign in' : 'Sign up'}
                 </Button>

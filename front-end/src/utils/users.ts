@@ -4,18 +4,18 @@ import {createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,AuthEr
 
 export const isBrowser = () => typeof window !== "undefined";
 
- const formInputs = {
-     email:'jane_doe@mail.com',
-     password:'1234567890'
- };
- const {email,password}=formInputs;   
+//  const formInputs = {
+//      email:'jane_doe@mail.com',
+//      password:'1234567890'
+//  };
+   
 interface IUser{
     email:string|null
     displayName:string|null
     photoUrl:string|null
 }
 
-const createAccount = async()=>{ 
+const createAccount = async({email,password}:{email:string,password:string})=>{ 
     try {
         const userCredential = await createUserWithEmailAndPassword(auth,email,password);
     console.log('account created',userCredential);
@@ -68,7 +68,8 @@ const logoutAccount = async()=>{
 
 const getUser =():IUser|null=>{
    
-    if(isBrowser() && window.localStorage.getItem("LSB-User")!==null){       
+    if(isBrowser()  ){  
+
         const obj = JSON.parse(window.localStorage.getItem("LSB-User") as string);
       return  obj as IUser;
     }
@@ -86,7 +87,10 @@ const getUser =():IUser|null=>{
 };//get user from localStorage--> for isLoggedIn method.
 
 const setUser =(user: IUser|null)=>{
-     window.localStorage.setItem("LSB-User", JSON.stringify(user));
+    if(isBrowser()){
+         window.localStorage.setItem("LSB-User", JSON.stringify(user));
+    }
+    
 };//run when login and log out.
 
 const isLoggedIn =():boolean=>{
