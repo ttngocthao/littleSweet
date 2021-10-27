@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { theme } from '../GlobalStyle.css';
 import DecoImg from '../../images/formPage.jpg';
 import Title from '../title/Title';
-import { IErrorRes, signInAccount } from '../../utils/users';
-import { navigate } from 'gatsby-link';
-import { UserCredential } from '@firebase/auth';
+// import { IErrorRes, signInAccount } from '../../utils/users';
+// import { navigate } from 'gatsby-link';
+// import { UserCredential } from '@firebase/auth';
 
 const Wrap = styled.div`
     padding: 1rem;
@@ -135,28 +135,28 @@ const SignIn = () => {
     };
     const displayInputs = !signInMode ? Object.values(inputs) : Object.values(inputs).filter(item=>item.name!=='repeatPassword');
     
-    const onClickHandle =async(e:MouseEvent)=>{
+    const onClickHandle =(e:MouseEvent)=>{
         e.preventDefault();
         const emptyFields = displayInputs.filter(item=>item.value==='');
         if(emptyFields.length===0 && signInMode){
             // alert('process form');
             // console.log(inputs.email.value,inputs.password.value);
             
-            const res= await signInAccount({email:inputs.email.value,password:inputs.password.value});
+            // const res= await signInAccount({email:inputs.email.value,password:inputs.password.value});
 
-            const userRes = res as UserCredential;
-            const errorRes = res as IErrorRes;
+            // const userRes = res as UserCredential;
+            // const errorRes = res as IErrorRes;
 
-            console.log('res',res);
+            // console.log('res',res);
 
-            if(errorRes.status ===400){
-                alert(errorRes.message);
-                console.log(errorRes);
-                return;
-            }
-            if(userRes){
-               void navigate('/app/profile');
-            }
+            // if(errorRes.status ===400){
+            //     alert(errorRes.message);
+            //     console.log(errorRes);
+            //     return;
+            // }
+            // if(userRes){
+            //    void navigate('/app/profile');
+            // }
            
         }
         if(emptyFields.length=== 0 && !signInMode){

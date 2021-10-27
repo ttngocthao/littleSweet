@@ -94,7 +94,8 @@ const setUser =(user: IUser|null)=>{
 };//run when login and log out.
 
 const isLoggedIn =():boolean=>{
-    const currentUser = getUser();
+    // const currentUser = getUser();
+    const currentUser = false;
     
     if(currentUser){
         return true;
