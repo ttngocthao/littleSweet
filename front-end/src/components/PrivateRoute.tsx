@@ -1,7 +1,7 @@
 import React from 'react';
 
-// import { navigate } from 'gatsby-link';
-// import { isLoggedIn } from '../utils/users';
+import { navigate } from 'gatsby-link';
+import { isLoggedIn } from '../utils/users';
 
 interface Props {
 component: React.FunctionComponent,
@@ -9,11 +9,12 @@ location:{pathname:string}
 }
 
 const PrivateRoute = ({ component: Component, location, ...rest }:Props) => {
-   console.log(location);
    
-    // if(!isLoggedIn() && location.pathname!=='/app/signin'){
-    //    void navigate('/app/signin');
-    // }//this line cause an issue.
+
+    if(!isLoggedIn() &&location.pathname!=='/app/signin'){
+       void navigate('/app/signin');
+       return null;
+    }//this line cause an issue.
    
     return (
         <Component {...rest} />

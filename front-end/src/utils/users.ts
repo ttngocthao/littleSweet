@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+// if(typeof window !== `undefined`){
+    
+// }
 import { auth} from "./firebase";
 import {createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,AuthError,UserCredential} from 'firebase/auth';
 
@@ -17,6 +20,7 @@ interface IUser{
 
 const createAccount = async({email,password}:{email:string,password:string})=>{ 
     try {
+        
         const userCredential = await createUserWithEmailAndPassword(auth,email,password);
     console.log('account created',userCredential);
     return userCredential;
@@ -43,14 +47,19 @@ export interface IUserCredentialRes{
 }
 const signInAccount = async({email,password}:{email:string,password:string}):Promise<UserCredential|IErrorRes>=>{
     try {
-        const userCredential = await signInWithEmailAndPassword(auth,email,password);
+        if(!isBrowser()){
+           return {status:400,code:'',message:'window is not ready'};
+        }
+       
+           const userCredential = await signInWithEmailAndPassword(auth,email,password);
         console.log('signed in',userCredential);
          setUser({
            email: userCredential.user.email,
            displayName: userCredential.user.displayName,
            photoUrl:userCredential.user.photoURL
        });
-        return userCredential;
+        return userCredential; 
+      
     } catch (error:unknown|AuthError){
         const errorAuth = error as AuthError;        
         return {status:400,code:errorAuth.code,message:errorAuth.message};
@@ -93,13 +102,11 @@ const setUser =(user: IUser|null)=>{
     
 };//run when login and log out.
 
-const isLoggedIn =():boolean=>{
-    // const currentUser = getUser();
-    const currentUser = false;
+const isLoggedIn =()=>{
+   if (!isBrowser()) return false;
+    const currentUser = getUser();
     
-    if(currentUser){
-        return true;
-    }
-    return false;
+    console.table(currentUser);
+    return !!currentUser;
 };
 export {createAccount,signInAccount,logoutAccount,isLoggedIn};

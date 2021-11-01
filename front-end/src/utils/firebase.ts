@@ -1,6 +1,6 @@
 import {initializeApp} from "firebase/app";
-import {getFirestore} from 'firebase/firestore';
-import {getAuth} from 'firebase/auth';
+//import {getFirestore} from 'firebase/firestore';
+import {getAuth,Auth} from 'firebase/auth';
 
 const config = {
      apiKey: "AIzaSyC8t5fcjctNhWp8Qk2nGWkzLYNHshjVrAw",
@@ -15,8 +15,12 @@ const config = {
 //if(!firebase.apps.length) ..not sure why the tutorial do it this way
 
 initializeApp(config);//initialise the app 
+let auth:Auth;
+//let firestore;
+if (typeof window !== 'undefined'){
+ auth = getAuth() ; //create an instance of authentication
+ //firestore = getFirestore(); //create an instance of firestore
+}
 
-const auth = getAuth() ; //create an instance of authentication
-const firestore = getFirestore(); //create an instance of firestore
 
-export {auth,firestore};
+export {auth};
