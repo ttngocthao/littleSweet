@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../GlobalStyle.css';
 import DecoImg from '../../images/formPage.jpg';
 import Title from '../title/Title';
-import { IErrorRes, signInAccount } from '../../utils/users';
+import { createAccount, IErrorRes, signInAccount } from '../../utils/users';
 
 import { navigate } from 'gatsby-link';
 import { UserCredential } from '@firebase/auth';
@@ -55,13 +55,15 @@ const Button = styled.button`
     margin-top: 2rem;
 `;
 const DecorationImg = styled.figure`
-    max-width: 300px;
+    /* max-width: 300px; */
     display: none;
     border: 1px solid silver;
     border-radius: 0 8px 8px 0;
     overflow: hidden;
+    width:100%;
     @media only screen and (min-width: 700px){
         display: block;
+
     }
 `;
 const Content = styled.div`
@@ -139,28 +141,37 @@ const SignIn = () => {
     const onClickHandle =async(e:MouseEvent)=>{
         e.preventDefault();
         const emptyFields = displayInputs.filter(item=>item.value==='');
-        if(emptyFields.length===0 && signInMode){
-            // alert('process form');
-            // console.log(inputs.email.value,inputs.password.value);
+        if(emptyFields.length===0){
+            
+            const {email,password,repeatPassword}=inputs;
+            let res;
             if(signInMode){
-                const res=  await signInAccount({email:inputs.email.value,password:inputs.password.value});
+                res=  await signInAccount({email:email.value,password:password.value});               
+            }
 
-                const userRes = res as UserCredential;
-                const errorRes = res as IErrorRes;
-
-                console.log('res',res);
-
-                if(errorRes.status ===400){
-                    alert(errorRes.message);
-                    console.log(errorRes);
+            if(!signInMode){
+                if(password.value === repeatPassword.value){
+                    res = await createAccount({email:email.value,password:password.value});
+                }else{
+                    alert('password not match');
                     return;
                 }
-                if(userRes){
-                void navigate('/app/profile');
-                }
-               
+                
             }
-            
+
+            const userRes = res as UserCredential;
+            const errorRes = res as IErrorRes;
+
+            console.log('res',res);
+
+            if(errorRes.status ===400){
+                alert(errorRes.message);
+                console.log(errorRes);
+                return;
+            }
+            if(userRes){
+                void navigate('/app/profile');
+            }
            
         }
         if(emptyFields.length=== 0 && !signInMode){

@@ -17,22 +17,6 @@ interface IUser{
     displayName:string|null
     photoUrl:string|null
 }
-
-const createAccount = async({email,password}:{email:string,password:string})=>{ 
-    try {
-        
-        const userCredential = await createUserWithEmailAndPassword(auth,email,password);
-    console.log('account created',userCredential);
-    return userCredential;
-    } catch (error) {
-       
-          //   console.log('createAccount error', '+',error.code,'+',error.message);
-        return error;    
-    
-        
-    }  
-    
-};
 export interface IErrorRes {
     status:number
     code:string
@@ -45,6 +29,22 @@ export interface IUserCredentialRes{
     // code?:string
     // message?:string
 }
+const createAccount = async({email,password}:{email:string,password:string}):Promise<UserCredential|IErrorRes>=>{ 
+    try {
+        
+        const userCredential = await createUserWithEmailAndPassword(auth,email,password);
+    console.log('account created',userCredential);
+    return userCredential;
+    } catch (error:unknown|AuthError) {
+       
+         const errorAuth = error as AuthError;        
+        return {status:400,code:errorAuth.code,message:errorAuth.message};
+    
+        
+    }  
+    
+};
+
 const signInAccount = async({email,password}:{email:string,password:string}):Promise<UserCredential|IErrorRes>=>{
     try {
         if(!isBrowser()){
