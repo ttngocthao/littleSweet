@@ -32,8 +32,7 @@ const Slogan = styled.h1`
          font-size: ${theme.fontSizes.xlarge};
     }
 `;
-interface Props {
-   
+interface Props {   
     text?:string
     image: IGatsbyImageData
 }

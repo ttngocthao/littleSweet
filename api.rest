@@ -1,0 +1,3 @@
+GET https://app.snipcart.com/api/orders
+Accept: application/json
+Authorization: Basic U1RfWmpKaVpHRm1PVFl0Wm1NNE9TMDBPR1ZsTFdFMU5HWXRaRE5qTTJZeFlqQXdNMkZsTmpNM056STVNelV3TlRjNE5qWTNPRFF5
