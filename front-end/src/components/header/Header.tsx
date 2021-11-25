@@ -9,6 +9,7 @@ import LogoImg from '../../images/logo.png';
 import {PersonCircle} from '@styled-icons/bootstrap/PersonCircle';
 import useScroll from '../../hooks/useScroll';
 import AuthForm from '../Profile/AuthForm';
+import { navigate } from 'gatsby-link';
 
 
 const StyledHeader = styled.header`
@@ -237,11 +238,6 @@ const Header = () => {
         setShowMenu(!showMenu);
     };
     const setActiveNavItem =(item:INavItem)=>{
-        // const isSSR = typeof window !== "undefined";
-        // if(isSSR){
-        //     //console.log(window.location);
-        //     const pathname = window.location.pathname;
-        //     const hash = window.location.hash;
         const {pathname, hash} = location;
             if(pathname==='/products/' && item.url==='/products'){
                 return 'active';
@@ -257,6 +253,9 @@ const Header = () => {
             }
            
     };
+    const clickProfileHandle = ()=>{
+        void navigate('/app/profile');
+    };
     return (
         <>
         <StyledHeader>
@@ -269,9 +268,9 @@ const Header = () => {
                 </a>
                
                 <TopBarRightCol>
-                    {/* <button onClick={toggleModal}>
+                    <button onClick={clickProfileHandle}>
                         <ProfileIcon aria-hidden='true'/>
-                    </button> */}
+                    </button>
                     
                      <BasketButtonWrap className="snipcart-summary">
                         <button className="snipcart-checkout" aria-label='shopping basket'><BasketIcon aria-hidden='true'/></button>

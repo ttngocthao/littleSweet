@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {ChevronDown} from '@styled-icons/octicons/ChevronDown';
 import { theme } from '../GlobalStyle.css';
 import { IOrder,getOrderDetails, IDetail } from '../../utils/snipcart';
+import OrderDetailsDesktop from './OrderDetailsDesktop';
+import OrderDetailsMobile from './OrderDetailsMobile';
 
 const ChevronDownIcon =styled(ChevronDown)`
     width: 1.75rem;
@@ -12,7 +14,8 @@ const OrderLi = styled.li`
 `;
 const TopContent = styled.div`
  padding:.5rem 1rem;
-   
+   max-width: 900px;
+   margin: 0 auto;
     background-color: ${theme.colors.main};
     display: flex;
     align-items: center;
@@ -22,10 +25,6 @@ const DetailContent = styled.div`
      padding:.5rem 1rem;
 `;
 
-const ProductImg = styled.img`
-    max-width: 100px;
-    display: block;
-`;
 
 
 const OrderItem = ({item}:{item:IOrder}) => {
@@ -53,36 +52,8 @@ const OrderItem = ({item}:{item:IOrder}) => {
                 <button onClick={()=>setShowDetails(!showDetails)}><ChevronDownIcon/></button>
             </TopContent>
             {showDetails && details.length!==0 && <DetailContent>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Image</td>
-                            <td>Name</td>
-                            <td>Price/Unit</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        { details.map(i=><tr key={i.uniqueId}>
-                            <td >
-                                <ProductImg src={i.image} alt={i.name}/>
-                            </td>
-                            <td>
-                                {i.name}
-                            </td>
-                            <td>
-                                {i.price}
-                            </td>
-                            <td>
-                                x{i.quantity}
-                            </td>
-                            <td>
-                                {i.totalPrice}
-                            </td>
-                        </tr>) }
-                    </tbody>
-                </table>
+                <OrderDetailsDesktop details={details}/>
+                <OrderDetailsMobile details={details}/>
             </DetailContent> }
             
         </OrderLi>

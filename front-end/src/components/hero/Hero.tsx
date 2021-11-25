@@ -10,7 +10,7 @@ position: relative;
 margin: 0 auto;
 `;
 const Banner =styled.figure`
-    
+   
    
 `;
 const Slogan = styled.h1`

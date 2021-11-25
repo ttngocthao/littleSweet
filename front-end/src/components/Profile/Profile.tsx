@@ -1,35 +1,50 @@
 import React,{useEffect, useState} from 'react';
-// import {RouteComponentProps} from '@reach/router';
+import { useStaticQuery,graphql } from 'gatsby';
 import { logoutAccount,getUser, updateCurrentUserProfile} from '../../utils/users';
 import { IOrder,getSnipcartOrders,getSnipcartUser } from '../../utils/snipcart';
 import { navigate } from 'gatsby-link';
 import {PersonCircle} from '@styled-icons/bootstrap/PersonCircle';
 import styled from 'styled-components';
-
-import HeroImg from '../../images/profile-hero.jpg';
+import{ IGatsbyImageData,getImage } from 'gatsby-plugin-image';
+import { StyledBtn } from '../products/ProductItem';
 import OrderList from '../orders/OrderList';
+import Hero from '../hero/Hero';
+import Title from '../title/Title';
+import { theme } from '../GlobalStyle.css';
 
-const PersonDetails = styled.div`
-
+const TopContent = styled.div`
+    max-width: 940px;
+    margin: 0 auto;
+    padding:1rem;
+    display:flex;
+    justify-content: space-between;
+`;
+const PersonInfo = styled.div`
+   display: flex;
+   flex-direction: column;
+     @media only screen and (min-width: 700px){
+         flex-direction: row;
+     }
 `;
 const ProfileIcon = styled(PersonCircle)`
     width: 2.75rem;
-   
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 `;
 const ProfileAvatar = styled.figure`
     width: 2.75rem;
-   
-`;
-const PurchaseHistory = styled.div`
-
-`;
-const MainContent = styled.div`
-
+    fill: ${theme.colors.third};
 `;
 
 
+const OrderHistoryTitle = styled(Title)`
+    max-width: 940px;
+`;
 
-
+const LogoutBtn = styled(StyledBtn)`
+    justify-self:flex-end;
+    height: 50px;
+`;
 
 
 const Profile = () => {
@@ -37,7 +52,22 @@ const Profile = () => {
         await logoutAccount();
         void navigate('/app/signin');
     };
-  
+  const hero:{file:IGatsbyImageData} = useStaticQuery(graphql`
+        {
+        
+        file(name: {eq: "pastry"}) {
+                childImageSharp {
+                gatsbyImageData(
+                    blurredOptions: {toFormat: NO_CHANGE}
+                    layout: FULL_WIDTH
+                    placeholder: DOMINANT_COLOR
+                )
+                }
+            }
+        }
+    `);
+    
+    const heroImage = getImage(hero.file) as IGatsbyImageData;
 
    
    const [data,setData] = useState<IOrder[]>([]);
@@ -69,28 +99,19 @@ const Profile = () => {
   
     return (
         <div>
-            <figure>
-                <img src={HeroImg as string} alt=''/>
-            </figure>
-         
-            <MainContent>
-                 <PersonDetails>
+            <Hero image={heroImage} text='Profile'/>
+            <TopContent> 
+                <PersonInfo>   
+                {user?.photoUrl ? ProfileAvatar :<ProfileIcon/>}  
                 <div>
-                  {user?.photoUrl ? ProfileAvatar :<ProfileIcon/>}   
-                  <button style={{border:'1px solid red'}} onClick={logoutHandle}>log out</button>
-                 
-                </div>
-               
-                <p>{user?.displayName ? user.displayName : 'Customer Name'}</p>
-                <p>{user?.email}</p>
-            </PersonDetails>
-            <PurchaseHistory>
-                <h6>List of orders here</h6>
-                <OrderList data={data}/>
-            </PurchaseHistory>
-            </MainContent>
-           
-               
+                    <p>{user?.displayName ? user.displayName : 'Customer Name'}</p>
+                    <p>{user?.email}</p>
+                </div>                 
+                </PersonInfo>
+                <LogoutBtn onClick={logoutHandle}>log out</LogoutBtn>
+            </TopContent>            
+            <OrderHistoryTitle title='Order History'/>
+            <OrderList data={data}/>
         </div>
     );
 };

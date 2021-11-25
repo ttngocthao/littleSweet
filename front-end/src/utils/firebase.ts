@@ -3,7 +3,7 @@ import {initializeApp} from "firebase/app";
 import {getAuth,Auth} from 'firebase/auth';
 
 const config = {
-     apiKey: "AIzaSyC8t5fcjctNhWp8Qk2nGWkzLYNHshjVrAw",
+  apiKey: process.env.GATSBY_FIREBASE_API,
   authDomain: "little-sweet-82aa6.firebaseapp.com",
   projectId: "little-sweet-82aa6",
   storageBucket: "little-sweet-82aa6.appspot.com",
